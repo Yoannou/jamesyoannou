@@ -1,0 +1,35 @@
+/* BIG TABLET TO 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* SMALL TABLET TO BIG TABLET 768-1023px */
+@media only screen and (max-width: 1023px) {
+
+}
+
+/* SMALL PHONES 0-480px */
+/*These rules will apply when screen width is <= 480px: */
+@media only screen and (max-width: 480px) {
+
+    .mid-container {
+        width: 100%;
+    }
+
+    .hero-box {
+        position: absolute;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        margin: none;
+    }
+    .coder-james {
+        width: 100%;
+        padding: none;
+        margin: none;
+    }
+    p {
+        font-size: 12px;
+    }
+    
+}
