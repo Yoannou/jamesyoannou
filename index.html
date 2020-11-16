@@ -10,27 +10,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"> 
     </head>
-    <body>
-        <nav>
-            <div class="nav-link"><a href="">About Me</a></div>
-            <div class="nav-link"><a href="">My Portfolio</a></div>
-            <div class="nav-link"><a href="">Contact Me</a></div>
 
-        </nav>
-        <header>
-            <h1>James Yoannou</h1>
-            <div class="mid-container">
-                <div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+    <body>
+        <div id="global-wrapper">
+            <nav>
+                <div class="nav-link" id="sound-option"><a href=""><ion-icon name="volume-high"></ion-icon></a></div>
+                <div class="nav-link"><a href="">About Me</a></div>
+                <div class="nav-link"><a href="">My Portfolio</a></div>
+                <div class="nav-link"><a href="">Contact Me</a></div>
+            </nav>
+            <header>
+                <div class="name-wrapper">
+                    <div id="nl-J" class="name_letter">J</div>
+                    <div id="nl-A"class="name_letter">A</div>
+                    <div id="nl-M" class="name_letter">M</div>
+                    <div id="nl-E" class="name_letter">E</div>
+                    <div id="nl-S" class="name_letter">S</div>
+                    <div class="name_letter"></div>
+                    <div id="nl-Y" class="name_letter">Y</div>
+                    <div id="nl-O" class="name_letter">O</div>
+                    <div id="nl-A-2" class="name_letter">A</div>
+                    <div id="nl-N" class="name_letter">N</div>
+                    <div id="nl-N-2" class="name_letter">N</div>
+                    <div id="nl-O-2" class="name_letter">O</div>
+                    <div id="nl-U" class="name_letter">U</div>
+                </div>
+            </header>
+            <section id="about">
+                <div class="mid-container">
+                    <div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+                <h4>Why you should hire me.</h4>
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>I'm a front-end web developer based out of Toronto.</p>
+                </div>
+            </section>
+            <section id="gallery">
+                <div class="hero-box">
+                    <img class="coder-james" src="img/Coder James optimizilla.JPG" alt="James sipping a coffee">
+                    <p class="caption">James sips a cup of coffee</p>
+                </div>
+            </section>
+            <div id="scroll-button">
+                <div id="scroll-button-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
             </div>
-            <h4>Why you should hire me.</h4>
-        </header>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a front-end web developer based out of Toronto.</p>
-            <div class="hero-box">
-                <img class="coder-james" src="img/Coder James optimizilla.JPG" alt="James sipping a coffee">
-                <p class="caption">James sips a cup of coffee</p>
-            </div>
-        </section>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </body>
 </html>

@@ -1,53 +1,31 @@
+/******************* GENERAL ********************/
+:root {
+    --white: #ddd;
+    --orange: #f28500;
+    --blue: #706fd3;
+    --silver: #d2dae2;
+}
+
 html {
     font-size: 16px;
 }
 
 body {
-    /*background-color: #222;*/
-    background-color: #ddd;
+    color: var(--white);
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-    width: 100%;
-    height: 20px;
-    padding: 10px 0px;
-    background-color: tomato;
-    /*background-color: indianred;*/
+#global-wrapper {
+    background-image: url(../img/jy_background.jpg);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.2)), url(../img/jy_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-a{
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:link, a:visited{
-    color: white;
-    font-style: none;
-}
-
-a:hover {
-    font-size: 110%;
-    text-shadow: 0px 2px rgba(50, 50, 50, 0.4);
-}
-
-a:active {
-    color: red;
-}
-
-a:focus{
-	color: #333;
-}
-
-header {
-    padding-top: 40px;
-    height: 100vh;
-    background-color: #44444f;
-    /*background-color: #888;*/
+section {
+    padding: 20px 0;
+    /*Give them all the same height / padding settings */
 }
 
 h1, h2, h3, h4 {
@@ -56,7 +34,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    color: white;
+    color: var(--white);
     font-size: 300%;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0px 2px rgba(50, 50, 50, 0.6);
@@ -69,20 +47,98 @@ h2 {
 
 h4 {
     font-size: 150%;
-    color: #f28500;
-    /*color: #f28500;*/
+    color: var(--orange);
     text-shadow: 0px 1px #555;
-
 }
 
 p {
-    
     font-size: 14px;
-    color: #222;
 }
 
+/******************* NAVIGATION ********************/
+nav {
+    display: grid;
+    align-items: center;
+    grid-template: 100% / 10% 1fr 1fr 1fr;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+}
+
+.nav-link {
+    justify-self: center;
+}
+
+#sound-option:hover {
+    font-size: 130%;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: var(--white);
+    font-style: none;
+}
+a:hover {
+    font-size: 110%;
+    text-shadow: 0px 2px rgba(50, 50, 50, 0.4);
+}
+a:active {
+    color: tomato;
+}
+a:focus{
+	color: #333;
+}
+
+
+/******************* HEADER ********************/
+header {
+    padding-top: 40px;
+    height: 100vh;
+}
+
+.name-wrapper {
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    top: 40%;
+    left: 100px;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: var(--orange);
+    font-size: 40px;
+    transition: 6ms;
+}
+
+/*
+.name-wrapper:hover {
+    width: 20%;
+}
+*/
+
+#nl-J {
+    grid-column: 2;
+    color: var(--silver);
+}
+
+#nl-N, #nl-S {
+    color: var(--silver);
+}
+
+#nl-Y, #nl-U, #nl-M {
+    color: var(--blue);
+}
+
+
+/******************* SECTION: ABOUT ********************/
 .mid-container {
-    width: 75%;
+    width: 50vw;
     margin: auto;
 }
 
@@ -90,7 +146,6 @@ p {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
-    height: 0;
     border: 4px solid black;
 }
 
@@ -102,15 +157,12 @@ p {
     height: 100%;
 }
 
+
+/******************* SECTION: GALLERY ********************/
 .hero-box {
     width: 80%;
     margin: auto;
     padding: 1px 0px 8px 0px;
-    /*
-    background-color: #222;
-    border: 1px solid black;
-    box-shadow: 3px 3px rgba(10, 10, 10, 0.5);
-    */
 }
 
 .coder-james {
@@ -119,4 +171,33 @@ p {
     width: 96%;
     height: auto;
     border: 1px solid black;
+}
+
+
+/******************* SCROLL-BUTTON ********************/
+#scroll-button {
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#scroll-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 100%;
+    background: rgba(100, 100, 100, 0.4);
+    padding: 0 20px;
+}
+
+#scroll-button-icon:hover {
+    color: tomato;
+    font-size: 140%;
+    font-weight: bold;
+    background: rgba(100, 100, 100, 0.3);
 }
