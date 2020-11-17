@@ -17,8 +17,8 @@ body {
 }
 
 #global-wrapper {
-    background-image: url(../img/jy_background.jpg);
-    background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.2)), url(../img/jy_background.jpg);
+    background-image: url(../img/jy_background_light.jpg);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.2)), url(../img/jy_background_light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
