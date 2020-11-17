@@ -8,6 +8,13 @@
 
 }
 
+/* SMALL PHONE TO SMALL TABLET */
+@media screen and (max-width: 768px) {
+    #scroll-down-button {
+        width: 100%;
+    }
+}
+
 /* SMALL PHONES 0-480px */
 /*These rules will apply when screen width is <= 480px: */
 @media only screen and (max-width: 480px) {
@@ -32,4 +39,11 @@
         font-size: 12px;
     }
     
+}
+
+/* SUPER TIGHT */
+/* These rules apply when the screen gets so small that the letters of my name get squished */
+
+@media screen and (max-width: 352) {
+
 }

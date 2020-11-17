@@ -4,18 +4,22 @@
     <head>
         <title>James Yoannou</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/queries.css">
+        <link rel="stylesheet" href="vendors/css/reset.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"> 
+        <!-- <script src="vendors/js/zounds.js"></script> -->
     </head>
 
 
     <body>
+        <audio id="background-music" preload="auto" loop>
+            <source src="vendors/audio/sumo_blanco_Atmosphere_cavern_of_lost_souls_05.mp3">
+        </audio>
         <div id="global-wrapper">
             <nav>
-                <div class="nav-link" id="sound-option"><a href=""><ion-icon name="volume-high"></ion-icon></a></div>
+                <div class="nav-link"><button type="button"><ion-icon id="sound-toggle-button" name="volume-mute"></ion-icon></button></div>
                 <div class="nav-link"><a href="">About Me</a></div>
                 <div class="nav-link"><a href="">My Portfolio</a></div>
                 <div class="nav-link"><a href="">Contact Me</a></div>
@@ -23,7 +27,7 @@
             <header>
                 <div class="name-wrapper">
                     <div id="nl-J" class="name_letter">J</div>
-                    <div id="nl-A"class="name_letter">A</div>
+                    <div id="nl-A" class="name_letter">A</div>
                     <div id="nl-M" class="name_letter">M</div>
                     <div id="nl-E" class="name_letter">E</div>
                     <div id="nl-S" class="name_letter">S</div>
@@ -38,25 +42,26 @@
                 </div>
             </header>
             <section id="about">
-                <div class="mid-container">
-                    <div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                </div>
-                <h4>Why you should hire me.</h4>
-                <div class="about-me">
-                    <h2>About Me</h2>
-                    <p>I'm a front-end web developer based out of Toronto.</p>
-                </div>
-            </section>
-            <section id="gallery">
-                <div class="hero-box">
-                    <img class="coder-james" src="img/Coder James optimizilla.JPG" alt="James sipping a coffee">
-                    <p class="caption">James sips a cup of coffee</p>
-                </div>
+                <div class="about">
+                    <!--<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
+                    <div class="about-left">
+                        <div class="image-box">
+                            <img class="coder-james" src="resources/img/Coder James optimizilla.JPG" alt="James sipping a coffee">
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <h4>About Me</h4>
+                        <p>I'm a front-end web developer based out of Toronto.</p>
+                    </div>
+                </div>   
             </section>
             <div id="scroll-button">
-                <div id="scroll-button-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
+                <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
             </div>
         </div>
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="resources/js/audio.js"></script>
     </body>
 </html>

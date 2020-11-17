@@ -96,6 +96,12 @@ a:focus{
 	color: #333;
 }
 
+nav button:hover, .sound-on {
+    color: var(--orange);
+    font-size: 120%;
+    cursor: pointer;
+}
+
 
 /******************* HEADER ********************/
 header {
@@ -137,9 +143,25 @@ header {
 
 
 /******************* SECTION: ABOUT ********************/
-.mid-container {
-    width: 50vw;
+.about {
+    display: flex;
+    width: 100%;
     margin: auto;
+}
+
+.about-left {
+    flex: 3;
+}
+
+.about-right {
+    flex: 4;
+}
+
+.coder-james {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
 }
 
 .youtube-video {
@@ -159,19 +181,9 @@ header {
 
 
 /******************* SECTION: GALLERY ********************/
-.hero-box {
-    width: 80%;
-    margin: auto;
-    padding: 1px 0px 8px 0px;
-}
 
-.coder-james {
-    display: block;
-    margin: 20px auto 10px auto;
-    width: 96%;
-    height: auto;
-    border: 1px solid black;
-}
+
+
 
 
 /******************* SCROLL-BUTTON ********************/
@@ -184,7 +196,7 @@ header {
     height: 50px;
 }
 
-#scroll-button-icon {
+#scroll-down-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,7 +207,7 @@ header {
     padding: 0 20px;
 }
 
-#scroll-button-icon:hover {
+#scroll-down-button:hover {
     color: tomato;
     font-size: 140%;
     font-weight: bold;
