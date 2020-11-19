@@ -4,6 +4,9 @@
     --orange: #f28500;
     --blue: #706fd3;
     --silver: #d2dae2;
+    --hologram: rgba(255, 255, 240, 0.1);
+    --holoshadow: -2px 2px rgba(100, 100, 100, 0.4);
+
 }
 
 html {
@@ -30,29 +33,37 @@ section {
 
 h1, h2, h3, h4 {
     display: block;
-    padding: 20px 20px;;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--orange);
+    font-family: 'Orbitron', sans-serif;
+
 }
 
 h1 {
-    color: var(--white);
     font-size: 300%;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 0px 2px rgba(50, 50, 50, 0.6);
+    /*text-shadow: 0px 2px rgba(50, 50, 50, 0.6);*/
 }
 
 h2 {
     font-size: 200%;
-    text-decoration: underline;
 }
 
-h4 {
+h3 {
     font-size: 150%;
-    color: var(--orange);
-    text-shadow: 0px 1px #555;
+    /*text-shadow: 0px 1px #555;*/
 }
 
 p {
     font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.hologram {
+    margin: 10px 0;
+    background: var(--hologram);
+    /*box-shadow: -2px -2px rgba(100, 100, 100, 0.4);*/
 }
 
 /******************* NAVIGATION ********************/
@@ -143,13 +154,20 @@ header {
 
 
 /******************* SECTION: ABOUT ********************/
-.about {
+.about-heading {
+    text-align: right;
+    margin-right: 15%;
+    margin-left: auto;
+}
+
+.about-wrapper {
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
 .about-left {
+    visibility: hidden;
     flex: 3;
 }
 
@@ -157,11 +175,21 @@ header {
     flex: 4;
 }
 
+.image-box{
+    padding: 2px;
+}
+
 .coder-james {
     display: block;
     width: 100%;
     height: auto;
     border: 1px solid black;
+}
+
+.about-description {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
 }
 
 .youtube-video {
@@ -180,10 +208,35 @@ header {
 }
 
 
-/******************* SECTION: GALLERY ********************/
+/******************* SECTION: PORTFOLIO ********************/
 
+.portfolio-heading {
+    text-align: left;
+    margin-left: 15%;
+    margin-right: auto;
+}
 
+.portfolio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
 
+.portfolio-left {
+    padding: 10px;
+    flex: 3;
+}
+
+.portfolio-right {
+    padding: 10px;
+    flex: 1;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /******************* SCROLL-BUTTON ********************/

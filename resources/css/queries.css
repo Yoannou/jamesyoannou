@@ -5,14 +5,14 @@
 
 /* SMALL TABLET TO BIG TABLET 768-1023px */
 @media only screen and (max-width: 1023px) {
-
+    #scroll-down-button {
+        width: 100%;
+    }
 }
 
 /* SMALL PHONE TO SMALL TABLET */
 @media screen and (max-width: 768px) {
-    #scroll-down-button {
-        width: 100%;
-    }
+    
 }
 
 /* SMALL PHONES 0-480px */
