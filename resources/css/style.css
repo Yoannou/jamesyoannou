@@ -23,6 +23,7 @@ body {
     background-image: url(../img/jy_background_light.jpg);
     background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.2)), url(../img/jy_background_light.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -36,7 +37,10 @@ h1, h2, h3, h4 {
     padding-bottom: 10px;
     margin-bottom: 20px;
     color: var(--orange);
-    font-family: 'Orbitron', sans-serif;
+    /*font-family: 'Orbitron', sans-serif;*/
+    font-family: neuropol-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -58,6 +62,10 @@ p {
     font-size: 14px;
     padding-bottom: 10px;
     line-height: 1.4em;
+}
+
+span {
+    display: block;
 }
 
 
@@ -109,6 +117,10 @@ a:focus{
 	color: #333;
 }
 
+#about-icon:hover, #contact-icon:hover {
+    color: var(--blue);
+}
+
 nav button:hover, .sound-on {
     color: var(--orange);
     font-size: 130%;
@@ -124,12 +136,18 @@ header {
     font-style: normal;
 }
 
-.name-wrapper {
+.header-wrapper {
     position: absolute;
-    width: 50%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     top: 40%;
-    left: 100px;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-wrapper {
+    height: 80%;
     display: grid;
     grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     color: var(--orange);
@@ -137,31 +155,54 @@ header {
     transition: 6ms;
 }
 
-/*
-.name-wrapper:hover {
-    width: 20%;
-}
-*/
-
-#nl-J {
-    grid-column: 2;
+.web-developer-wrapper {
+    align-self: flex-end;
+    overflow: hidden;
     color: var(--silver);
 }
 
-#nl-N, #nl-S {
+.web-developer {
+    transition: all 500ms ease;
+    transform: translateX(-2000px);
+}
+
+#name-letter-1, #name-letter-3, #name-letter-5,
+#name-letter-7, #name-letter-10, #name-letter-13 {
     color: var(--silver);
 }
 
-#nl-Y, #nl-U, #nl-M {
-    color: var(--silver);
+.name-letter-holder {
+    overflow: hidden;
 }
 
+.name-letter {
+    opacity: 0;
+    transition: all 500ms cubic-bezier(.12,.79,.65,.55);
+    transform: translateY(-50px);
+}
+
+.james {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.yoannou {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* GIVE THIS OPACITY */
+.slide-in {
+    opacity: 0.0;
+    transform: translateX(0);
+}
 
 /******************* SECTION: ABOUT ********************/
 .about-heading {
     text-align: right;
     margin-right: 15%;
     margin-left: auto;
+    color: var(--blue);
 }
 
 .about-wrapper {
@@ -240,6 +281,12 @@ header {
 .social-media-links {
     display: flex;
     flex-direction: column;
+}
+
+
+/******************* SECTION: CONTACT ********************/
+.contact-heading {
+    color: var(--blue);
 }
 
 

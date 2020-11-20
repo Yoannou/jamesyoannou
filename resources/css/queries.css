@@ -12,12 +12,12 @@
 
 /* SMALL PHONE TO SMALL TABLET */
 @media screen and (max-width: 768px) {
-    .name-wrapper {
+    .header-wrapper {
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        width: 70%;
     }
 }
 
