@@ -18,78 +18,82 @@
         <audio id="background-music" preload="auto" loop>
             <source src="vendors/audio/sumo_blanco_Atmosphere_cavern_of_lost_souls_05.mp3">
         </audio>
-        <div id="global-wrapper">
-            <nav>
-                <div class="nav-link"><button title="Toggle volume" type="button"><ion-icon id="sound-toggle-button" name="volume-mute"></ion-icon></button></div>
-                <div class="nav-link"><a title="About" href=""><ion-icon id="about-icon" name="person"></ion-icon></a></div>
-                <div class="nav-link"><a href=""><ion-icon id="portfolio-icon" name="documents"></ion-icon></a></div>
-                <div class="nav-link contact-link"><a href=""><ion-icon id="contact-icon" name="call"></ion-icon></a></div>
-            </nav>
-            <header>
-                <div class="header-wrapper">
-                    <div class="name-wrapper"></div>
-                    <h4 class="web-developer-wrapper"><span class="web-developer">/* web developer */</span></h4>
+        <div id="global-wrapper-outer">
+            <div id="global-wrapper-inner">
+                <nav>
+                    <div class="nav-link"><button title="Toggle volume" type="button"><ion-icon id="sound-toggle-button" name="volume-mute"></ion-icon></button></div>
+                    <div class="nav-link"><a title="About" href=""><ion-icon id="about-icon" name="person"></ion-icon></a></div>
+                    <div class="nav-link"><a href=""><ion-icon id="portfolio-icon" name="documents"></ion-icon></a></div>
+                    <div class="nav-link contact-link"><a href=""><ion-icon id="contact-icon" name="call"></ion-icon></a></div>
+                </nav>
+                <header>
+                    <div class="header-wrapper">
+                        <div class="name-wrapper"></div>
+                        <h4 class="web-developer-wrapper"><span class="web-developer">/* web developer */</span></h4>
+                    </div>
+                </header>
+                <section id="section-about">
+                    <div class="about-wrapper">
+                        <!--<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
+                        <div class="about-left">
+                            <div class="image-box">
+                                <div class="headshot"></div>
+                                <div class="headshot"></div>
+                                <div class="headshot"></div>
+                            </div>
+                        </div>
+                        <div class="about-right">
+                            <div class="about-description">
+                                <h1 class="about-heading">About</h1>
+                                <p>I'm a front-end web developer based out of Toronto.<br><br>I'm a nerd. I like to code lots of websites and games.
+                                    I like to code all day long. I'll code whatever you want me to.<br><br>
+                            I have so much passion and enthusiasm to bring to every project. Hurray. <br><br>Add hologram images of my face to the left.</p>
+                            </div>
+                        </div>
+                    </div>   
+                </section>
+                <section id="section-portfolio" class="hologram">
+                    <h1 class="portfolio-heading">Portfolio</h1>
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-left">
+                            <div class="projects">
+                                <p>I have worked on the following projects:</p>
+                                <ul>
+                                    <li><a href="">Project 1</a></li>
+                                    <li><a href="">Project 2</a></li>
+                                    <li><a href="">Project 3</a></li>
+                                    <li><a href="">Project 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="education">
+                                <p>I have attended the following institutions:</p>
+                                <ul>
+                                    <li>University of Toronto (show details below)</li>
+                                    <li>Ryerson University (show details below)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-right">
+                            <div class="social-media-links">
+                                <ul>
+                                    <li>Put logos here:</li>
+                                    <li>github</li>
+                                    <li>insta</li>
+                                    <li>soundcloud</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-contact">
+                    <h1 class="contact-heading">Contact</h1>
+                    <div>Add contact form and info somewhere here...</div>
+                </section>
+                <div id="scroll-button">
+                    <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                    <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
+                    <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
                 </div>
-            </header>
-            <section id="section-about">
-                <h1 class="about-heading">About</h1>
-                <div class="about-wrapper">
-                    <!--<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
-                    <div class="about-left">
-                        <div class="image-box hologram">
-                            <img class="coder-james" src="resources/img/Coder James optimizilla.JPG" alt="James sipping a coffee">
-                        </div>
-                    </div>
-                    <div class="about-right">
-                        <div class="about-description hologram">
-                            <p>I'm a front-end web developer based out of Toronto.<br><br>My skills are so vast bro.
-                            I can do a lot of things that most people can't do. I can dance and sing. I can cook and code.<br><br>
-                        If any of y'all wanna f*ck with me, be my guest. <br><br>Add hologram images of my face to the left.</p>
-                        </div>
-                    </div>
-                </div>   
-            </section>
-            <section id="section-portfolio">
-                <h1 class="portfolio-heading">Portfolio</h1>
-                <div class="portfolio-wrapper">
-                    <div class="portfolio-left">
-                        <div class="projects hologram">
-                            <p>I have worked on the following projects:</p>
-                            <ul>
-                                <li><a href="">Project 1</a></li>
-                                <li><a href="">Project 2</a></li>
-                                <li><a href="">Project 3</a></li>
-                                <li><a href="">Project 4</a></li>
-                            </ul>
-                        </div>
-                        <div class="education hologram">
-                            <p>I have attended the following institutions:</p>
-                            <ul>
-                                <li>University of Toronto (show details below)</li>
-                                <li>Ryerson University (show details below)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="portfolio-right">
-                        <div class="social-media-links hologram">
-                            <ul>
-                                <li>Put logos here:</li>
-                                <li>github</li>
-                                <li>insta</li>
-                                <li>soundcloud</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-contact">
-                <h1 class="contact-heading">Contact</h1>
-                <div>Add contact form and info somewhere here...</div>
-            </section>
-            <div id="scroll-button">
-                <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>
-                <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
-                <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
             </div>
         </div>
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>

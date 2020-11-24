@@ -3,6 +3,7 @@
     --white: #ddd;
     --orange: #f28500;
     --blue: #706fd3;
+    --green: #b7e117;
     --silver: #d2dae2;
     --hologram: rgba(255, 255, 240, 0.1);
     --holoshadow: -2px 2px rgba(100, 100, 100, 0.4);
@@ -19,7 +20,7 @@ body {
     text-align: center;
 }
 
-#global-wrapper {
+#global-wrapper-outer {
     background-image: url(../img/jy_background_light.jpg);
     background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.2)), url(../img/jy_background_light.jpg);
     background-repeat: no-repeat;
@@ -27,8 +28,16 @@ body {
     background-size: cover;
 }
 
+#global-wrapper-inner {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+}
+
 section {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
     /*Give them all the same height / padding settings */
 }
 
@@ -36,7 +45,7 @@ h1, h2, h3, h4 {
     display: block;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    color: var(--orange);
+    color: var(--silver);
     /*font-family: 'Orbitron', sans-serif;*/
     font-family: neuropol-nova, sans-serif;
     font-weight: 400;
@@ -117,10 +126,6 @@ a:focus{
 	color: #333;
 }
 
-#about-icon:hover, #contact-icon:hover {
-    color: var(--blue);
-}
-
 nav button:hover, .sound-on {
     color: var(--orange);
     font-size: 130%;
@@ -162,8 +167,8 @@ header {
 }
 
 .web-developer {
-    transition: all 500ms ease;
-    transform: translateX(-2000px);
+    transition: all 2s ease;
+    transform: translateX(-500px);
 }
 
 #name-letter-1, #name-letter-3, #name-letter-5,
@@ -193,26 +198,23 @@ header {
 
 /* GIVE THIS OPACITY */
 .slide-in {
-    opacity: 0.0;
+    opacity: 0.7;
     transform: translateX(0);
 }
 
 /******************* SECTION: ABOUT ********************/
 .about-heading {
-    text-align: right;
-    margin-right: 15%;
-    margin-left: auto;
-    color: var(--blue);
+    text-align: center;
 }
 
 .about-wrapper {
     display: flex;
     width: 90%;
     margin: auto;
+    align-items: center;
 }
 
 .about-left {
-    visibility: hidden;
     flex: 3;
 }
 
@@ -220,8 +222,19 @@ header {
     flex: 4;
 }
 
-.image-box{
+.image-box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 2px;
+}
+
+.headshot {
+    width: 60%;
+    height: 200px;
+    margin: 2px 2px;
+    background: var(--hologram);
 }
 
 .coder-james {
@@ -286,7 +299,6 @@ header {
 
 /******************* SECTION: CONTACT ********************/
 .contact-heading {
-    color: var(--blue);
 }
 
 
