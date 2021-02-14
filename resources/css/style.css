@@ -35,10 +35,8 @@ body {
     background-size: contain;
 }
 
-section {
-    padding-top: 20px;
-    padding-bottom: 50px;
-    /*Give them all the same height / padding settings */
+.section {
+    margin-bottom: 50px;
 }
 
 h1, h2, h3, h4 {
@@ -68,7 +66,7 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 10px;
     line-height: 1.4em;
 }
@@ -80,8 +78,8 @@ span {
 
 .hologram {
     margin: 10px 0;
-    background: var(--hologram);
-    /*box-shadow: -2px -2px rgba(100, 100, 100, 0.4);*/
+    /*background: var(--hologram);
+    box-shadow: -2px -2px rgba(100, 100, 100, 0.4);*/
 }
 
 /******************* NAVIGATION ********************/
@@ -134,7 +132,7 @@ nav button:hover, .sound-on {
 
 /******************* HEADER ********************/
 header {
-    padding-top: 40px;
+    /*padding-top: 40px;*/
     height: 100vh;
     font-family: neuropol-nova, sans-serif;
     font-weight: 400;
@@ -143,10 +141,13 @@ header {
 
 .header-wrapper {
     position: absolute;
-    width: 40%;
     height: 40%;
     top: 40%;
-    left: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -161,7 +162,7 @@ header {
 }
 
 .web-developer-wrapper {
-    align-self: flex-end;
+    align-self: center;
     overflow: hidden;
     color: var(--silver);
 }
@@ -203,26 +204,31 @@ header {
 }
 
 /******************* SECTION: ABOUT ********************/
+
+#section-about {
+    background: black;
+}
+
 .about-heading {
     text-align: center;
 }
 
 .about-wrapper {
     display: flex;
+    flex-direction: column;
     width: 90%;
     margin: auto;
     align-items: center;
 }
 
 .about-left {
-    flex: 3;
+    width: 70%;
+    margin: auto;
 }
 
-.about-right {
-    flex: 4;
-}
+.about-right{}
 
-.image-box {
+.hologram-box {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -230,18 +236,16 @@ header {
     padding: 2px;
 }
 
-.headshot {
-    width: 60%;
+.hologram {
+    width: 100%;
     height: 200px;
     margin: 2px 2px;
-    background: var(--hologram);
 }
 
-.coder-james {
-    display: block;
+.hologram-image {
     width: 100%;
     height: auto;
-    border: 1px solid black;
+    margin-bottom: 20px;
 }
 
 .about-description {

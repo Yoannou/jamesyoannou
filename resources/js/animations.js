@@ -26,7 +26,7 @@ let timer = setInterval(addLetter, 100);
 
 /********** FUNCTIONS **********/
 
-/* Used to animate name letters in one-by-one*/
+/* Used to animate name letters in one-by-one */
 function addLetter(){
     if (count === nameArray.length) {
         console.log("FUCKKKKK");
