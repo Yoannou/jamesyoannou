@@ -32,6 +32,12 @@ let timer = setInterval(addLetter, 85);
 
 
 /********** ROTATING FACE **********/
+/* Preload images 
+for (let i=0; i<5; i++) {
+
+}
+*/
+
 window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
 
 document.addEventListener('scroll', () => {
@@ -39,18 +45,23 @@ document.addEventListener('scroll', () => {
         let hologramPos = hologram.getBoundingClientRect();
         if (hologramPos.top > viewportMarkers[0]) {
             hologram.src = "resources/img/compressedpng/holo1(90 deg)-min.png";
+            hologram.style = "opacity: 0.5;";
         }
         else if (hologramPos.top > viewportMarkers[1]){
             hologram.src = "resources/img/compressedpng/holo2(45 deg)-min.png";
+            hologram.style = "opacity: 0.6;";
         }
         else if (hologramPos.bottom < viewportMarkers[3]){
             hologram.src = "resources/img/compressedpng/holo5(-90 deg)-min.png";
+            hologram.style = "opacity: 0.5;";
         }
         else if (hologramPos.bottom < viewportMarkers[2]){
             hologram.src = "resources/img/compressedpng/holo4(-45 deg)-min.png";
+            hologram.style = "opacity: 0.6;";
         }
         else {
             hologram.src = "resources/img/compressedpng/holo3(0 deg)-min.png";
+            hologram.style = "opacity: 0.7;";
         }
     }
 });
