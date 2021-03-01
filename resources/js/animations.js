@@ -1,18 +1,19 @@
-/********** GLOBAL VARIABLES **********/
-
-const nameWrapper = document.querySelector(".name-wrapper");
-const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];
-const webDeveloper = document.querySelector(".web-developer");
-
-const hologram = document.getElementById("hologram-image");
-const hologramReference = document.getElementById("hologram-reference");
-const aboutHeading = document.querySelector(".about-heading");
+/********** INITIALIZATION **********/
+loadHolograms();
+const hologramList = document.querySelectorAll(".hologram-image");
 let viewportMarkers = new Array(4);
 createViewportMarkers(viewportMarkers);
 
 
-/********** ADDING MY NAME **********/
+/********** GLOBAL VARIABLES **********/
+const nameWrapper = document.querySelector(".name-wrapper");
+const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];
+const webDeveloper = document.querySelector(".web-developer");
 
+const hologram = document.querySelector(".about-left");
+//const hologram = document.getElementById("hologram-image");
+
+/********** ADDING MY NAME **********/
 /* Add my name to the grid with 0 opacity */
 for(let i = 0; i < nameArray.length; i++) {
     let nameLetter = document.createTextNode(nameArray[i]);
@@ -38,41 +39,80 @@ for (let i=0; i<5; i++) {
 }
 */
 
+/* START
+
 window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
 
 document.addEventListener('scroll', () => {
     if (isInViewport(hologram)){
         let hologramPos = hologram.getBoundingClientRect();
         if (hologramPos.top > viewportMarkers[0]) {
-            hologram.src = "resources/img/compressedpng/holo1(90 deg)-min.png";
+            hologram.src = "resources/img/compressedpng/holo1-min.png";
             hologram.style = "opacity: 0.5;";
         }
         else if (hologramPos.top > viewportMarkers[1]){
-            hologram.src = "resources/img/compressedpng/holo2(45 deg)-min.png";
+            hologram.src = "resources/img/compressedpng/holo2-min.png";
             hologram.style = "opacity: 0.6;";
         }
         else if (hologramPos.bottom < viewportMarkers[3]){
-            hologram.src = "resources/img/compressedpng/holo5(-90 deg)-min.png";
+            hologram.src = "resources/img/compressedpng/holo5-min.png";
             hologram.style = "opacity: 0.5;";
         }
         else if (hologramPos.bottom < viewportMarkers[2]){
-            hologram.src = "resources/img/compressedpng/holo4(-45 deg)-min.png";
+            hologram.src = "resources/img/compressedpng/holo4-min.png";
             hologram.style = "opacity: 0.6;";
         }
         else {
-            hologram.src = "resources/img/compressedpng/holo3(0 deg)-min.png";
+            hologram.src = "resources/img/compressedpng/holo3-min.png";
             hologram.style = "opacity: 0.7;";
         }
     }
 });
 
+END  */
 
-/********** FUNCTIONS **********/
+/********** ALTERNATE ROTATING FACE **********/
+/* This version should run faster */
+window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
 
-/* Used to animate name letters in one-by-one */
+document.addEventListener('scroll', () => {
+    if (isInViewport(hologram)){
+        let marker;
+        let hologramPos = hologram.getBoundingClientRect();
+        if (hologramPos.top > viewportMarkers[0]) {
+            marker = 1;
+        }
+        else if (hologramPos.top > viewportMarkers[1]){
+            marker = 2;
+        }
+        else if (hologramPos.bottom < viewportMarkers[3]){
+            marker = 5;
+        }
+        else if (hologramPos.bottom < viewportMarkers[2]){
+            marker = 4;
+        }
+        else {
+            marker = 3;
+        }
+        for(let i = 0; i < hologramList.length; i++) {
+            if(hologramList[i].id == `hologram-image-${marker}`){
+                hologramList[i].classList.remove("hidden");
+            }
+            else {
+                hologramList[i].classList.add("hidden");
+            }
+        }
+    }
+})
+
+
+/*********************
+ ***** FUNCTIONS *****
+ *********************/
+
+/* Animates name letters in one-by-one */
 function addLetter(){
     if (count === nameArray.length) {
-        console.log("FUCKKKKK");
         clearInterval(timer);
         timer = null;
         webDeveloper.classList.add("slide-in");
@@ -88,7 +128,6 @@ function addLetter(){
         }
         count++;
     }
-
 }
 
 /* Checks if element is in the viewport */
@@ -100,7 +139,7 @@ function isInViewport(element) {
     );
 }
 
-/* Returns an array of 4 markers representing fractions of the viewports height */
+/* Returns an array of 4 markers representing fractions of the viewport height */
 function createViewportMarkers(arr) {
     console.log("Creating new viewport markers...");
     for(let i = 0; i < 4; i ++) {
@@ -110,4 +149,18 @@ function createViewportMarkers(arr) {
     arr.push(window.innerHeight - window.innerHeight / 3);
     arr.push(window.innerHeight / 2);
     arr.push(window.innerHeight / 3);
+}
+
+/* Preloads hologram images */
+function loadHolograms() {
+    for(let i=1; i<=5; i++) {
+        let hologramImageI = document.createElement("img");
+        hologramImageI.id = `hologram-image-${i}`;
+        hologramImageI.classList.add("hologram-image");
+        if(i != 1) {
+            hologramImageI.classList.add("hidden");
+        }
+        hologramImageI.src = `resources/img/compressedpng/holo${i}-min.png`;
+        document.querySelector(".about-left").appendChild(hologramImageI);
+    }
 }

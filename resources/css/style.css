@@ -36,7 +36,8 @@ body {
 }
 
 .section {
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;
+    /*min-height: 60vh;*/
 }
 
 h1, h2, h3, h4 {
@@ -75,8 +76,13 @@ span {
     display: block;
 }
 
+.hidden {
+    display: none;
+}
 
-/******************* HOLOGRAM REFERENCE POINT ********************/
+/******************* HOLOGRAM REFERENCE POINT (NOT IN USE) ********************/
+
+/*
 #hologram-reference {
     position: fixed;
     top: 50%;
@@ -85,6 +91,7 @@ span {
     height: 1px;
     background-color:red;
 }
+*/
 
 /******************* NAVIGATION ********************/
 nav {
@@ -210,6 +217,7 @@ header {
 /******************* SECTION: ABOUT ********************/
 
 #section-about {
+    position: relative;
     /*background: black;*/
 }
 
@@ -221,8 +229,13 @@ header {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
+    /* For vertical centering : */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);*/
 }
 
 .about-left {
@@ -233,7 +246,7 @@ header {
 .about-right{}
 
 
-#hologram-image {
+.hologram-image {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
