@@ -10,11 +10,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
+
         <!-- <script src="vendors/js/zounds.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.scrollify.js"></script>
     </head>
 
 
     <body>
+        <div id="hologram-reference"></div>
         <audio id="background-music" preload="auto" loop>
             <source src="vendors/audio/sumo_blanco_Atmosphere_cavern_of_lost_souls_05.mp3">
         </audio>
@@ -22,37 +26,48 @@
             <div id="global-wrapper-inner">
                 <nav>
                     <div class="nav-link"><button title="Toggle volume" type="button"><ion-icon id="sound-toggle-button" name="volume-mute"></ion-icon></button></div>
-                    <div class="nav-link"><a title="About" href=""><ion-icon id="about-icon" name="person"></ion-icon></a></div>
-                    <div class="nav-link"><a href=""><ion-icon id="portfolio-icon" name="documents"></ion-icon></a></div>
-                    <div class="nav-link contact-link"><a href=""><ion-icon id="contact-icon" name="call"></ion-icon></a></div>
+                    <div class="nav-link"><a id="about-link" title="About" href="#"><ion-icon id="about-icon" name="person"></ion-icon></a></div>
+                    <div class="nav-link"><a id="portfolio-link" title="Portfolio" href="#"><ion-icon id="portfolio-icon" name="documents"></ion-icon></a></div>
+                    <div class="nav-link contact-link"><a id="contact-link" title="Contact" href="#"><ion-icon id="contact-icon" name="call"></ion-icon></a></div>
                 </nav>
-                <header>
+                <header class="section" data-section-name="Header">
                     <div class="header-wrapper">
                         <div class="name-wrapper"></div>
-                        <h4 class="web-developer-wrapper"><span class="web-developer">/* web developer */</span></h4>
+                        <h4 class="web-developer-wrapper"><span class="web-developer">/* web development&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;sound design */</span></h4>
                     </div>
                 </header>
-                <section id="section-about" class="section">
+                <section id="section-about" class="section" data-section-name="About">
                     <div class="about-wrapper">
                         <!--<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
                         <div class="about-left">
                             <!--<div id="hologram-box" class="hologram-box"><div class="hologram">-->
-                                <img class="hologram-image" src="resources/img/Sweater_0deg_Cutout_0.2.1 - Multi Overlay.jpg" alt="James's face floating in space.">
+                                <img id="hologram-image-1" class="hologram-image" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
+                                <img id="hologram-image-2" class="hologram-image hidden" src="resources/img/compressedpng/holo2-min.png" alt="James's face floating in space.">
+                                <img id="hologram-image-3" class="hologram-image hidden" src="resources/img/compressedpng/holo3-min.png" alt="James's face floating in space.">
+                                <img id="hologram-image-4" class="hologram-image hidden" src="resources/img/compressedpng/holo4-min.png" alt="James's face floating in space.">
+                                <img id="hologram-image-5" class="hologram-image hidden" src="resources/img/compressedpng/holo5-min.png" alt="James's face floating in space.">
                             <!--</div></div>-->
                         </div>
                         <div class="about-right">
                             <div class="about-description">
                                 <h1 class="about-heading">About</h1>
-                                <p>I'm a front-end web developer based out of Toronto.<br><br>I'm a nerd. I like to code lots of websites and games.
-                                    I like to code all day long. I'll code whatever you want me to.<br><br>
-                            I have so much passion and enthusiasm to bring to every project. Hurray. <br><br>Add hologram images of my face to the left.</p>
+                                <p>I'm a front-end web developer based out of Toronto.<br><br>I will be a good employee for you. I like to code websites.
+                                    I like to code all day long. I'll code whatever you want as long as I get payed cash.<br><br>
+                            I have so much passion and enthusiasm to bring to every project. I also have a synth. Hurray. <br></p>
                             </div>
                         </div>
                     </div>   
                 </section>
-                <section id="section-portfolio" class="section hologram">
+                <section id="section-portfolio" class="section" data-section-name="Portfolio">
                     <h1 class="portfolio-heading">Portfolio</h1>
                     <div class="portfolio-wrapper">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis donec et odio pellentesque diam volutpat. Et tortor consequat id porta nibh venenatis. Nunc sed blandit libero volutpat sed cras ornare arcu dui. A lacus vestibulum sed arcu non odio. Et netus et malesuada fames ac turpis egestas maecenas. Facilisis gravida neque convallis a cras semper auctor. Aliquet risus feugiat in ante. Nibh mauris cursus mattis molestie a iaculis at. Sed elementum tempus egestas sed sed risus. At augue eget arcu dictum varius duis. Amet mauris commodo quis imperdiet massa. Ac turpis egestas maecenas pharetra convallis posuere. Fermentum et sollicitudin ac orci. Mattis enim ut tellus elementum sagittis vitae et leo. Diam maecenas sed enim ut sem viverra aliquet eget sit. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit.
+Sit amet venenatis urna cursus eget nunc. Vitae congue mauris rhoncus aenean vel. Pulvinar mattis nunc sed blandit libero volutpat sed. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Duis at consectetur lorem donec massa sapien. Dolor magna eget est lorem ipsum. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. In ante metus dictum at tempor. Enim ut sem viverra aliquet eget sit amet tellus cras. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Nunc mattis enim ut tellus elementum sagittis vitae et leo. Lectus vestibulum mattis ullamcorper velit sed. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Pulvinar mattis nunc sed blandit. Nisl nunc mi ipsum faucibus.
+Purus non enim praesent elementum facilisis leo vel fringilla est. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Ut tortor pretium viverra suspendisse potenti nullam. Mi in nulla posuere sollicitudin aliquam ultrices. Donec adipiscing tristique risus nec feugiat in. Consequat nisl vel pretium lectus quam id leo in vitae. Vitae turpis massa sed elementum tempus. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Adipiscing enim eu turpis egestas pretium. A diam sollicitudin tempor id eu nisl nunc. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Ipsum dolor sit amet consectetur adipiscing. Molestie nunc non blandit massa enim nec dui nunc. Sed cras ornare arcu dui.
+Nibh sed pulvinar proin gravida hendrerit. Neque egestas congue quisque egestas diam in arcu cursus. Id leo in vitae turpis. At auctor urna nunc id cursus metus aliquam. Massa vitae tortor condimentum lacinia quis. Nulla aliquet enim tortor at auctor. Nibh ipsum consequat nisl vel pretium lectus quam. At consectetur lorem donec massa. At tellus at urna condimentum mattis. Consequat nisl vel pretium lectus quam id. Id interdum velit laoreet id. Tristique risus nec feugiat in fermentum posuere. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Volutpat est velit egestas dui id ornare arcu odio ut.
+                        </p>
+                        <!--
                         <div class="portfolio-left">
                             <div class="projects">
                                 <p>I have worked on the following projects:</p>
@@ -81,9 +96,10 @@
                                 </ul>
                             </div>
                         </div>
+                    -->
                     </div>
                 </section>
-                <section id="section-contact" class="section">
+                <section id="section-contact" class="section" data-section-name="Contact">
                     <h1 class="contact-heading">Contact</h1>
                     <div>Add contact form and info somewhere here...</div>
                 </section>
@@ -98,5 +114,6 @@
         <script src="resources/js/audio.js"></script>
         <script src="resources/js/ion-icon-titles.js"></script>
         <script src="resources/js/animations.js"></script>
+        <script src="resources/js/scrolling.js"></script>
     </body>
 </html>
