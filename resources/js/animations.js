@@ -1,5 +1,6 @@
 /********** INITIALIZATION **********/
-loadHolograms();
+
+//loadHolograms();
 const hologramList = document.querySelectorAll(".hologram-image");
 let viewportMarkers = new Array(4);
 createViewportMarkers(viewportMarkers);
@@ -33,6 +34,9 @@ let timer = setInterval(addLetter, 85);
 
 
 /********** ROTATING FACE **********/
+/* Requires .about-left to be empty in HTML */
+
+
 /* Preload images 
 for (let i=0; i<5; i++) {
 
@@ -73,6 +77,8 @@ END  */
 
 /********** ALTERNATE ROTATING FACE **********/
 /* This version should run faster */
+/* Requires .about-left to be empty in HTML */
+
 window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
 
 document.addEventListener('scroll', () => {

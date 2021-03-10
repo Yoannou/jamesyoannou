@@ -1,4 +1,4 @@
-/* INITIALIZE */
+/* INITIALIZE SCROLLIFY */
 $(function(){
     $.scrollify({
         section: ".section",
