@@ -10,16 +10,15 @@
 
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
+    background: black;
+    font-size: 20px;
     color: var(--white);
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
+/*
 #global-wrapper-outer {
     background-image: url(../img/jy_background_light.jpg);
     background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(0, 0, 0, 0.2)), url(../img/jy_background_light.jpg);
@@ -27,6 +26,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+*/
 
 #global-wrapper-inner {
     /*background-image: url(../img/logo.png);*/
@@ -36,7 +36,13 @@ body {
 }
 
 .section {
-    margin-bottom: 50px;
+    margin-bottom: 200px;
+}
+
+p {
+    font-size: 18px;
+    padding-bottom: 10px;
+    line-height: 1.4em;
 }
 
 h1, h2, h3, h4 {
@@ -65,11 +71,7 @@ h3 {
     /*text-shadow: 0px 1px #555;*/
 }
 
-p {
-    font-size: 12px;
-    padding-bottom: 10px;
-    line-height: 1.4em;
-}
+
 
 span {
     display: block;
@@ -157,7 +159,7 @@ header {
     display: grid;
     grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     color: var(--orange);
-    font-size: 40px;
+    font-size: 80px;
     transition: 6ms;
 }
 
@@ -216,17 +218,20 @@ header {
 .about-wrapper {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: auto;
     align-items: center;
 }
 
 .about-left {
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
-.about-right{}
+.about-right{
+    width: 100%;
+    padding-bottom: 20px;
+}
 
 .hologram-box {
     justify-content: center;
@@ -236,12 +241,6 @@ header {
     padding: 2px;
 }
 
-.hologram {
-    width: 100%;
-    height: 200px;
-    margin: 2px 2px;
-}
-
 .hologram-image {
     width: 100%;
     height: auto;
@@ -249,7 +248,7 @@ header {
 }
 
 .about-description {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 10px;
 }
@@ -273,13 +272,13 @@ header {
 /******************* SECTION: PORTFOLIO ********************/
 
 .portfolio-heading {
-    text-align: left;
-    margin-left: 15%;
-    margin-right: auto;
+    text-align: center;
+    margin: auto;
 }
 
 .portfolio-wrapper {
-    display: flex;
+    visibility: hidden;
+    /*display: flex;*/
     justify-content: space-between;
     width: 80%;
     margin: auto;

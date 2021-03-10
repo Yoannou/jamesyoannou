@@ -1,9 +1,9 @@
 /* COMPUTER SCREENS */
 @media only screen and (min-width: 1200px) {
-    
-    p {
-        font-size: 16px;
-    }
+
+    /* General */
+
+    /* Header */
 
     .header-wrapper{
         width: 40%;
@@ -11,16 +11,21 @@
         margin: 0;
     }
 
+    .name-wrapper {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
     .web-developer-wrapper {
         align-self: flex-end;
     }
 
     .about-wrapper {
+        width: 90%;
         flex-direction: row;
     }
 
     .about-left {
-        width: auto;
         flex: 3;
     }
     
@@ -40,8 +45,20 @@
     }
 }
 
+/* TO PREVENT ISSUES ON IPHONES */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
 
-/* EXTRA SMALL PHONES */
-@media only screen and (min-width: 480px) {
-    
+  html,
+  body{
+    width: 100%;
+    overflow-x:hidden;
+  }
+
+  .hologram-image {
+    width: 100%;
+  }
 }

@@ -29,7 +29,6 @@ let timer = setInterval(addLetter, 100);
 /* Used to animate name letters in one-by-one */
 function addLetter(){
     if (count === nameArray.length) {
-        console.log("FUCKKKKK");
         clearInterval(timer);
         timer = null;
         webDeveloper.classList.add("slide-in");
