@@ -1,12 +1,14 @@
-/********** INITIALIZATION **********/
-
-//loadHolograms();
+/**************
+ INITIALIZATION 
+ **************/
 const hologramList = document.querySelectorAll(".hologram-image");
 let viewportMarkers = new Array(4);
 createViewportMarkers(viewportMarkers);
 
 
-/********** GLOBAL VARIABLES **********/
+/****************
+ GLOBAL VARIABLES 
+ ****************/
 const nameWrapper = document.querySelector(".name-wrapper");
 const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];
 const webDeveloper = document.querySelector(".web-developer");
@@ -14,7 +16,8 @@ const webDeveloper = document.querySelector(".web-developer");
 const hologram = document.querySelector(".about-left");
 //const hologram = document.getElementById("hologram-image");
 
-/********** ADDING MY NAME **********/
+
+/********** HOME PAGE NAME ANIMATION **********/
 /* Add my name to the grid with 0 opacity */
 for(let i = 0; i < nameArray.length; i++) {
     let nameLetter = document.createTextNode(nameArray[i]);
@@ -33,52 +36,7 @@ let count = 0;
 let timer = setInterval(addLetter, 85);
 
 
-/********** ROTATING FACE **********/
-/* Requires .about-left to be empty in HTML */
-
-
-/* Preload images 
-for (let i=0; i<5; i++) {
-
-}
-*/
-
-/* START
-
-window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
-
-document.addEventListener('scroll', () => {
-    if (isInViewport(hologram)){
-        let hologramPos = hologram.getBoundingClientRect();
-        if (hologramPos.top > viewportMarkers[0]) {
-            hologram.src = "resources/img/compressedpng/holo1-min.png";
-            hologram.style = "opacity: 0.5;";
-        }
-        else if (hologramPos.top > viewportMarkers[1]){
-            hologram.src = "resources/img/compressedpng/holo2-min.png";
-            hologram.style = "opacity: 0.6;";
-        }
-        else if (hologramPos.bottom < viewportMarkers[3]){
-            hologram.src = "resources/img/compressedpng/holo5-min.png";
-            hologram.style = "opacity: 0.5;";
-        }
-        else if (hologramPos.bottom < viewportMarkers[2]){
-            hologram.src = "resources/img/compressedpng/holo4-min.png";
-            hologram.style = "opacity: 0.6;";
-        }
-        else {
-            hologram.src = "resources/img/compressedpng/holo3-min.png";
-            hologram.style = "opacity: 0.7;";
-        }
-    }
-});
-
-END  */
-
-/********** ALTERNATE ROTATING FACE **********/
-/* This version should run faster */
-/* Requires .about-left to be empty in HTML */
-
+/********** ABOUT SECTION ROTATING FACE ANIMATION **********/
 window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
 
 document.addEventListener('scroll', () => {
@@ -112,12 +70,12 @@ document.addEventListener('scroll', () => {
 })
 
 
-/*********************
- ***** FUNCTIONS *****
- *********************/
+ /********
+ FUNCTIONS
+ *********/
 
-/* Animates name letters in one-by-one */
-function addLetter(){
+ /* Animates name letters in one-by-one */
+function addLetter() {
     if (count === nameArray.length) {
         clearInterval(timer);
         timer = null;
