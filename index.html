@@ -13,7 +13,6 @@
 
         <!-- <script src="vendors/js/zounds.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <!--<script src="vendors/js/jquery.scrollify.js"></script>-->
     </head>
 
 
@@ -26,9 +25,24 @@
             <div id="global-wrapper-inner">
                 <nav>
                     <div class="nav-link"><button title="Toggle volume" type="button"><ion-icon id="sound-toggle-button" name="volume-mute"></ion-icon></button></div>
-                    <div class="nav-link"><a id="about-link" title="About" href="#"><ion-icon id="about-icon" name="person"></ion-icon></a></div>
-                    <div class="nav-link"><a id="portfolio-link" title="Portfolio" href="#"><ion-icon id="portfolio-icon" name="documents"></ion-icon></a></div>
-                    <div class="nav-link contact-link"><a id="contact-link" title="Contact" href="#"><ion-icon id="contact-icon" name="call"></ion-icon></a></div>
+                    <div class="nav-link">
+                        <a id="about-link" title="About" href="#">
+                            <ion-icon id="about-icon" name="person"></ion-icon>
+                            <div class="nav-link-name"><p>About me</p></div>
+                        </a>
+                    </div>
+                    <div class="nav-link">
+                        <a id="portfolio-link" title="Portfolio" href="#">
+                            <ion-icon id="portfolio-icon" name="documents"></ion-icon>
+                            <div class="nav-link-name"><p>My portfolio</p></div>
+                        </a>
+                    </div>
+                    <div class="nav-link contact-link">
+                        <a id="contact-link" title="Contact" href="#">
+                            <ion-icon id="contact-icon" name="call"></ion-icon>
+                            <div class="nav-link-name"><p>Contact me</p></div>
+                        </a>
+                    </div>
                 </nav>
                 <header id="section-header" class="section" data-section-name="Header">
                     <div class="header-wrapper">
@@ -53,6 +67,7 @@
                                 <p>I'm a front-end web developer based out of Toronto.<br><br>I will be a good employee for you. I like to code websites.
                                     I like to code all day long. I'll code whatever you want as long as I get payed cash.<br><br>
                             I have so much passion and enthusiasm to bring to every project. I also have a synth. Hurray. <br></p>
+                                <button>Learn more >></button>
                             </div>
                         </div>
                     </div>   
@@ -113,6 +128,5 @@ Nibh sed pulvinar proin gravida hendrerit. Neque egestas congue quisque egestas 
         <script src="resources/js/audio.js"></script>
         <script src="resources/js/ion-icon-titles.js"></script>
         <script src="resources/js/animations.js"></script>
-        <!--<script src="resources/js/scrolling.js"></script>-->
     </body>
 </html>

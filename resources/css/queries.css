@@ -1,10 +1,41 @@
-/* COMPUTER SCREENS */
+/*** COMPUTER SCREENS ***/
 @media only screen and (min-width: 1200px) {
 
     /* General */
 
-    /* Header */
+    /* Nav */
 
+    /*
+    nav div button,
+    nav div a ion-icon {
+        font-size: 22px;
+    }
+    */
+
+    .nav-link:hover a ion-icon {
+        transition: all 0.2s;
+        transform: translateX(-20px);
+        font-size: 40px;
+    }
+    .nav-link:hover a .nav-link-name p {
+        font-weight: 300;
+        letter-spacing: 1px;
+        transition: transform 0.3s;
+        transform: translateX(0px);
+    }
+
+    .nav-link-name {
+        display: initial;
+        overflow: hidden;
+    }
+    
+    .nav-link-name p {
+        color: silver;
+        font-size: 22px;
+        transform: translateX(-200px);
+    }
+
+    /* Header */
     .header-wrapper{
         width: 40%;
         left: 150px;
@@ -20,6 +51,7 @@
         align-self: flex-end;
     }
 
+    /* About */
     .about-wrapper {
         flex-direction: row;
     }
@@ -42,19 +74,24 @@
         margin-bottom: 0;
     }
 
+    /* Scroll button */
+    #scroll-button {
+        height: 50px;
+    }
+
     #scroll-down-button {
         width: 100px;
     }
 }
 
-/* BIG TABLETS */
+/*** BIG TABLETS ***/
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
-    #scroll-down-button {
-        width: 100%;
+    .web-developer {
+
     }
 }
 
-/* TO PREVENT ISSUES ON IPHONES */
+/*** TO PREVENT ISSUES ON IPHONES ***/
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),

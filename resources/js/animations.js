@@ -2,8 +2,8 @@
  INITIALIZATION 
  **************/
 const hologramList = document.querySelectorAll(".hologram-image");
-let viewportMarkers = new Array(4);
-createViewportMarkers(viewportMarkers);
+/*let viewportMarkers = new Array(4);
+createViewportMarkers(viewportMarkers);*/
 
 
 /****************
@@ -40,6 +40,64 @@ let timer = setInterval(addLetter, 85);
 
 
 /********** ABOUT SECTION ROTATING FACE ANIMATION **********/
+document.addEventListener('scroll', () => {
+    if (isInViewport(hologram)){
+        let image;
+        let screenwidth = window.innerWidth;
+        let holoMiddle = (hologram.getBoundingClientRect().top + hologram.getBoundingClientRect().bottom)/2;
+        let holoReference = hologramRef.getBoundingClientRect().top;
+        let comparison = holoMiddle - holoReference;
+        console.log(`hologram: ${holoMiddle}\nreference: ${holoReference}\n ref-holo: ${comparison}`);
+        /* Wish I could use a switch statement below: */
+        /* Tablets and Smartphones: */
+        if(screenwidth < 1200) {
+            if(comparison > 450) {
+                image = 1;
+            }
+            else if (comparison > 200) {
+                image = 2;
+            }
+            else if (comparison > -250) {
+                image = 3;
+            }
+            else if (comparison > -400) {
+                image = 4;
+            }
+            else {
+                image = 5;
+            }
+        }
+        /* Desktop and Laptop: */
+        else {
+            if(comparison > 450) {
+                image = 1;
+            }
+            else if (comparison > 220) {
+                image = 2;
+            }
+            else if (comparison > -150) {
+                image = 3;
+            }
+            else if (comparison > -320) {
+                image = 4;
+            }
+            else {
+                image = 5;
+            }
+        }
+        for(let i = 0; i < hologramList.length; i++) {
+            if(hologramList[i].id == `hologram-image-${image}`){
+                hologramList[i].classList.remove("hologram-hidden");
+            }
+            else {
+                hologramList[i].classList.add("hologram-hidden");
+            }
+        }
+    }
+})
+
+
+/*
 window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
 
 document.addEventListener('scroll', () => {
@@ -112,7 +170,7 @@ function isInViewport(element) {
     );
 }
 
-/* Returns an array of 4 markers representing fractions of the viewport height */
+/* Returns an array of 4 markers representing fractions of the viewport height
 function createViewportMarkers(arr) {
     console.log("Creating new viewport markers...");
     for(let i = 0; i < 4; i ++) {
@@ -123,6 +181,7 @@ function createViewportMarkers(arr) {
     arr.push(window.innerHeight / 2);
     arr.push(window.innerHeight / 3);
 }
+*/
 
 /* Preloads hologram images */
 function loadHolograms() {
