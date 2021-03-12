@@ -291,7 +291,7 @@ header {
     height: auto;
     margin-bottom: 20px;
     opacity: 0.9;
-    transition: opacity 0.6s;
+    transition: opacity 1s;
 }
 
 .hologram-hidden {

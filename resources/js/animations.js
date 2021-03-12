@@ -69,6 +69,11 @@ document.addEventListener('scroll', () => {
     }
 })
 
+/*
+ * Make this run when hovering over the face as well.
+ * Put the hologram template in the front (invisible) and make it the reference.
+ * */
+
 
  /********
  FUNCTIONS
