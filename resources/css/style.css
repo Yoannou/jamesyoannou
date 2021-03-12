@@ -1,5 +1,6 @@
 /******************* GENERAL ********************/
 :root {
+    --dark: #181818;
     --white: #ddd;
     --orange: #f28500;
     --blue: #706fd3;
@@ -35,9 +36,8 @@ body {
 
 #global-wrapper-outer {
     background-color: black;
-    /*
     background-image: url(../img/jy_background_light.jpg);
-    /*background-image: /*linear-gradient(rgba(20, 20, 20, 0.4), rgba(250, 250, 250, 0.2)), url(../img/jy_background_light.jpg);*/
+    background-image: url(../img/jy_background_light.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -52,7 +52,7 @@ body {
 }
 
 .section {
-    height: 90vh;
+    min-height: 100vh;
     padding-bottom: 10vh;
     /* OR:
     margin-bottom: 200px;*/
@@ -104,9 +104,8 @@ span {
     display: none;
 }
 
-/******************* HOLOGRAM REFERENCE POINT (NOT IN USE) ********************/
+/******************* HOLOGRAM REFERENCE POINT  ********************/
 
-/*
 #hologram-reference {
     position: fixed;
     top: 50%;
@@ -115,7 +114,6 @@ span {
     height: 1px;
     background-color:red;
 }
-*/
 
 /******************* NAVIGATION ********************/
 nav {
@@ -166,6 +164,12 @@ nav button:hover, .sound-on {
 }
 
 /******************* HEADER ********************/
+#section-header {
+    background: var(--dark);
+    height: 100vh;
+    padding-bottom: 0px;
+}
+
 header {
     /*padding-top: 40px;*/
     height: 100vh;
@@ -245,7 +249,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: black;*/
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .about-heading {
@@ -280,6 +284,7 @@ header {
 .hologram-image-template {
     width: 100%;
     height: auto;
+    max-height: 600px;
     margin-bottom: 20px;
 }
 
@@ -321,6 +326,10 @@ header {
 
 
 /******************* SECTION: PORTFOLIO ********************/
+#section-portfolio {
+    background-color: var(--dark);
+    border: none, 1px solid grey;
+}
 
 .portfolio-heading {
     text-align: center;
@@ -356,8 +365,9 @@ header {
 
 /******************* SECTION: CONTACT ********************/
 #section-contact {
-    height: auto;
-    padding: 20px 0px;
+    height: 100vh;
+    padding-bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .contact-heading {

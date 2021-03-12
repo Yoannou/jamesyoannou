@@ -14,9 +14,13 @@ const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O"
 const webDeveloper = document.querySelector(".web-developer");
 
 const hologram = document.querySelector(".about-left");
-//const hologram = document.getElementById("hologram-image");
+const hologramRef = document.getElementById("hologram-reference");
 
 
+
+/**********
+ ANIMATIONS
+ **********/
 /********** HOME PAGE NAME ANIMATION **********/
 /* Add my name to the grid with 0 opacity */
 for(let i = 0; i < nameArray.length; i++) {
@@ -30,7 +34,6 @@ for(let i = 0; i < nameArray.length; i++) {
     newDiv.setAttribute("class", "name-letter-holder");
     nameWrapper.appendChild(newDiv);
 }
-
 /* Add a letter every 10th of a second */
 let count = 0;
 let timer = setInterval(addLetter, 85);
@@ -72,14 +75,15 @@ document.addEventListener('scroll', () => {
 /*
  * Make this run when hovering over the face as well.
  * Put the hologram template in the front (invisible) and make it the reference.
+ * Or make it grow and get staticy on hover
  * */
 
 
  /********
  FUNCTIONS
  *********/
-
  /* Animates name letters in one-by-one */
+ /* This function may be too specific */
 function addLetter() {
     if (count === nameArray.length) {
         clearInterval(timer);
