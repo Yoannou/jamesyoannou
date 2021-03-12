@@ -26,6 +26,7 @@
     }
 
     .about-left {
+        width: 70%;
         flex: 3;
     }
     
@@ -35,6 +36,10 @@
 
     .hologram-image {
         margin-bottom: 0;
+    }
+
+    #scroll-down-button {
+        width: 100px;
     }
 }
 

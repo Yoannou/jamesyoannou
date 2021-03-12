@@ -2,9 +2,10 @@
 $(function(){
     $.scrollify({
         section: ".section",
-        scrollSpeed: 1200,
+        scrollSpeed: 1700,
         scrollbars: false,
-        easing: "linear",
+        //easing: "linear",
+        easing: "swing",
     });
 });
 

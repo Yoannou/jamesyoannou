@@ -60,10 +60,10 @@ document.addEventListener('scroll', () => {
         }
         for(let i = 0; i < hologramList.length; i++) {
             if(hologramList[i].id == `hologram-image-${marker}`){
-                hologramList[i].classList.remove("hidden");
+                hologramList[i].classList.remove("hologram-hidden");
             }
             else {
-                hologramList[i].classList.add("hidden");
+                hologramList[i].classList.add("hologram-hidden");
             }
         }
     }
@@ -122,7 +122,7 @@ function loadHolograms() {
         hologramImageI.id = `hologram-image-${i}`;
         hologramImageI.classList.add("hologram-image");
         if(i != 1) {
-            hologramImageI.classList.add("hidden");
+            hologramImageI.classList.add("hologram-hidden");
         }
         hologramImageI.src = `resources/img/compressedpng/holo${i}-min.png`;
         document.querySelector(".about-left").appendChild(hologramImageI);
