@@ -12,6 +12,10 @@
     }
     */
 
+    nav {
+        padding: 60px 0px;
+    }
+
     .nav-link:hover a ion-icon {
         transition: all 0.2s;
         transform: translateX(-20px);

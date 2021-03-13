@@ -95,46 +95,24 @@ document.addEventListener('scroll', () => {
         }
     }
 })
-
-
-/*
-window.addEventListener('resize', () => { createViewportMarkers(viewportMarkers) });
-
-document.addEventListener('scroll', () => {
-    if (isInViewport(hologram)){
-        let marker;
-        let hologramPos = hologram.getBoundingClientRect();
-        if (hologramPos.top > viewportMarkers[0]) {
-            marker = 1;
-        }
-        else if (hologramPos.top > viewportMarkers[1]){
-            marker = 2;
-        }
-        else if (hologramPos.bottom < viewportMarkers[3]){
-            marker = 5;
-        }
-        else if (hologramPos.bottom < viewportMarkers[2]){
-            marker = 4;
-        }
-        else {
-            marker = 3;
-        }
-        for(let i = 0; i < hologramList.length; i++) {
-            if(hologramList[i].id == `hologram-image-${marker}`){
-                hologramList[i].classList.remove("hologram-hidden");
-            }
-            else {
-                hologramList[i].classList.add("hologram-hidden");
-            }
-        }
-    }
-})
-
 /*
  * Make this run when hovering over the face as well.
  * Put the hologram template in the front (invisible) and make it the reference.
  * Or make it grow and get staticy on hover
  * */
+
+
+/********** CANVAS ANIMATIONS **********/
+/* Definitely put these in functions later */
+let aboutC = document.getElementById("canvas-about");
+let aboutCtx = aboutC.getContext("2d");
+aboutCtx.fillStyle = "rgba(250, 100, 100, 0.5)";
+aboutCtx.fillRect(10, 10, 150, 100);
+
+let contactC = document.getElementById("canvas-contact");
+let contactCtx = contactC.getContext("2d");
+contactCtx.fillStyle ="rgba(100, 250, 100, 0.5)";
+contactCtx.fillRect(60, 30, 200, 100);
 
 
  /********
