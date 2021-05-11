@@ -1,13 +1,17 @@
 /******************* GENERAL ********************/
 :root {
-    --light_grey: #1d1d1d;
+    /*--light_grey: #494949;*/
+    --light_grey: #8a8a8a;
+    --grey: #1d1d1d;
     --dark_grey: #181818;
     --white: #ddd;
+    --light_orange: #faa700;
     --orange: #f28500;
     --dark_orange: #d06300;
     --blue: #706fd3;
     --green: #b7e117;
     --silver: #d2dae2;
+    --gold: rgba(230, 180, 100, 1);
     --transparent_background: rgba(0, 0, 0, 0.7);
     --transparent_button: rgba(255, 255, 240, 0.1);
 
@@ -36,16 +40,17 @@ body {
 
 }
 
+
 #global-wrapper-outer {
     background-color: black;
-    background-image: url(../img/jy_background_light.jpg);
+    /*
     background-image: url(../img/jy_background_light.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    */
     z-index: -5;
 }
-*/
 
 #global-wrapper-inner {
     /*background-image: url(../img/logo.png);*/
@@ -110,6 +115,16 @@ h3 {
     z-index: -1;
 }
 
+.btn {
+    cursor: pointer;
+    padding: 20px 20px;
+    background: var(--light_orange);
+    color: white;
+}
+.btn:hover {
+    background: var(--dark_orange);
+}
+
 span {
     display: block;
 }
@@ -129,7 +144,7 @@ span {
 
 /******************* NAVIGATION ********************/
 nav {
-    background-color: var(--dark_grey);
+    background-color: var(--light_grey);
     display: grid;
     align-items: center;
     grid-template: 100% / repeat(4, 1fr);
@@ -160,26 +175,31 @@ nav div:hover {
     display: none;
 }
 
-.nav-link a {
-    font-weight: bold;
-    text-decoration: none;
+.nav-link a img{
+    width: 48px;
 }
 
+/*
 .nav-link a:link,
 .nav-link a:visited{
     color: var(--white);
     font-style: none;
 }
+*/
 
-.nav-link a:hover {
+.nav-link:hover a img{
+    width: 64px;
+    /*
     font-size: 110%;
     color: var(--orange);
     /*text-shadow: 0px 2px rgba(50, 50, 50, 0.4);*/
 }
 
+/*
 .nav-link a:active {
     color: tomato;
 }
+*/
 
 nav button:hover, .sound-on {
     color: tomato;
@@ -189,7 +209,7 @@ nav button:hover, .sound-on {
 
 /******************* HEADER ********************/
 #section-header {
-    background: var(--light_grey);
+    background: var(--grey);
     height: 100vh;
     padding-bottom: 0px;
 }
@@ -231,7 +251,7 @@ header {
 }
 
 .web-developer {
-    font-size: 30px;
+    font-size: 24px;
     transition: all 1.5s ease;
     transform: translateX(700px);
 }
@@ -269,11 +289,12 @@ header {
 
 /******************* SECTION: ABOUT ********************/
 
+
 #section-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--transparent_background);
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../img/35mm/film3-min.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .about-heading {
@@ -284,6 +305,7 @@ header {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-bottom: 10vh;
     align-items: center;
     /* For centering with Scrollify: */
     /*
@@ -296,6 +318,10 @@ header {
 }
 
 .about-left {
+    font-family: neuropol-nova, sans-serif;
+    color: var(--orange);
+    /*font-size: 20px;*/
+    order: 1;
     position: relative;
     margin: 0px auto;
 }
@@ -305,8 +331,31 @@ header {
     padding-bottom: 20px;
 }
 
+.about-description {
+    color: white;
+    /*background-color: rgba(29, 29, 29, 0.7);*/
+}
+
+.about-options {
+    background: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 1));
+    /*background-color: var(--light_grey);*/
+    height: 800px;
+    display: flex;
+    margin-bottom: -10vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hologram-container {
+    position: relative;
+    order: -1;
+}
+
+/* Used to provide a space where the absolute-positioned images will appear */
 .hologram-image-template {
-    width: 100%;
+    position: relative;
+    width: 500px;
     height: auto;
     max-height: 600px;
     margin-bottom: 20px;
@@ -314,8 +363,8 @@ header {
 
 .hologram-image {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    bottom: -40px;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -364,7 +413,7 @@ header {
 
 /******************* SECTION: PORTFOLIO ********************/
 #section-portfolio {
-    background-color: var(--light_grey);
+    background-color: var(--grey);
     border: none, 1px solid grey;
 }
 
@@ -402,12 +451,20 @@ header {
 
 /******************* SECTION: CONTACT ********************/
 #section-contact {
+    background: var(--transparent_background);
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../img/35mm/film2-min.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     padding-bottom: 0px;
-    background: var(--transparent_background);
 }
 
-.contact-heading {
+.contact-form {
+    margin: 20px auto;
+    width: 60%;
+    height: 50vh;
+    background-color: var(--white);
 }
 
 

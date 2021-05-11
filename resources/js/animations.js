@@ -5,6 +5,7 @@ const hologramList = document.querySelectorAll(".hologram-image");
 /*let viewportMarkers = new Array(4);
 createViewportMarkers(viewportMarkers);*/
 
+//loadHolograms("hologram-container");
 
 /****************
  GLOBAL VARIABLES 
@@ -40,6 +41,12 @@ let timer = setInterval(addLetter, 85);
 
 
 /********** ABOUT SECTION ROTATING FACE ANIMATION **********/
+
+
+
+// OLD VERSION BELOW
+
+/*
 document.addEventListener('scroll', () => {
     if (isInViewport(hologram)){
         let image;
@@ -48,8 +55,8 @@ document.addEventListener('scroll', () => {
         let holoReference = hologramRef.getBoundingClientRect().top;
         let comparison = holoMiddle - holoReference;
         console.log(`hologram: ${holoMiddle}\nreference: ${holoReference}\n ref-holo: ${comparison}`);
-        /* Wish I could use a switch statement below: */
-        /* Tablets and Smartphones: */
+        /* Wish I could use a switch statement below: 
+        /* Tablets and Smartphones: 
         if(screenwidth < 1200) {
             if(comparison > 450) {
                 image = 1;
@@ -67,7 +74,7 @@ document.addEventListener('scroll', () => {
                 image = 5;
             }
         }
-        /* Desktop and Laptop: */
+        /* Desktop and Laptop: 
         else {
             if(comparison > 450) {
                 image = 1;
@@ -95,6 +102,10 @@ document.addEventListener('scroll', () => {
         }
     }
 })
+*/
+
+
+
 /*
  * Make this run when hovering over the face as well.
  * Put the hologram template in the front (invisible) and make it the reference.
@@ -162,15 +173,15 @@ function createViewportMarkers(arr) {
 */
 
 /* Preloads hologram images */
-function loadHolograms() {
+function loadHolograms(div) {
     for(let i=1; i<=5; i++) {
         let hologramImageI = document.createElement("img");
         hologramImageI.id = `hologram-image-${i}`;
         hologramImageI.classList.add("hologram-image");
-        if(i != 1) {
+        if(i != 3) {
             hologramImageI.classList.add("hologram-hidden");
         }
         hologramImageI.src = `resources/img/compressedpng/holo${i}-min.png`;
-        document.querySelector(".about-left").appendChild(hologramImageI);
+        document.querySelector(`.${div}`).appendChild(hologramImageI);
     }
 }

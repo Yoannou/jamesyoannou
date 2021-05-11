@@ -16,10 +16,9 @@
         padding: 60px 0px;
     }
 
-    .nav-link:hover a ion-icon {
+    .nav-link:hover a img {
         transition: all 0.2s;
         transform: translateX(-20px);
-        font-size: 40px;
     }
     .nav-link:hover a .nav-link-name p {
         font-weight: 300;
@@ -55,28 +54,11 @@
         align-self: flex-end;
     }
 
-    /* About */
-    .about-wrapper {
-        flex-direction: row;
+    /* Contact */
+    .contact-form {
+        width: 40%;
     }
 
-    .about-left {
-        width: 70%;
-        flex: 3;
-        /*
-        background-color: rgba(250, 200, 190, 0.1);
-        border-radius: 30%;
-        margin-left: 30px;
-        */
-    }
-    
-    .about-right {
-        flex: 4;
-    }
-
-    .hologram-image {
-        margin-bottom: 0;
-    }
 
     /* Scroll button */
     #scroll-button {
@@ -89,9 +71,45 @@
 }
 
 /*** BIG TABLETS ***/
-@media only screen and (min-width: 1023px) and (orientation: portrait) {
+@media only screen and (min-width: 1023px) {
     .web-developer {
 
+    }
+
+    /* About */
+    .about-wrapper {
+        flex-direction: row;
+    }
+
+    .about-left {
+        width: 70%;
+        flex: 3;
+        order: 0;
+        /*
+        background-color: rgba(250, 200, 190, 0.1);
+        border-radius: 30%;
+        margin-left: 30px;
+        */
+    }
+    
+    .about-right {
+        flex: 4;
+    }
+
+    .about-options {
+        height: auto;
+    }
+
+    .hologram-image {
+        margin-bottom: 0;
+    }
+
+    .about-options {
+        flex-direction: row;
+    }
+
+    .hologram-container {
+        order: 0;
     }
 }
 

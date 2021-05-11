@@ -28,18 +28,20 @@
                     <div class="nav-link">
                         <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
                             <ion-icon id="about-icon" name="person"></ion-icon>
+                            <!--<img id="about-icon" src="resources/img/pixel art/dumb-about-64.png">-->
                             <div class="nav-link-name"><p>About me</p></div>
                         </a>
                     </div>
                     <div class="nav-link">
                         <a id="portfolio-link" class="jq--scroll-to-portfolio" title="Portfolio" href="#">
-                            <ion-icon id="portfolio-icon" name="documents"></ion-icon>
+                            <img ig="portfolio-icon" src="resources/img/pixel art/computer-64.png">
                             <div class="nav-link-name"><p>My portfolio</p></div>
                         </a>
                     </div>
                     <div class="nav-link">
                         <a id="contact-link" class="jq--scroll-to-contact" title="Contact" href="#">
-                            <ion-icon id="contact-icon" name="call"></ion-icon>
+                            <img id="contact-icon" src="resources/img/pixel art/phone-64.png">
+                            <!--<ion-icon id="contact-icon" name="call"></ion-icon>-->
                             <div class="nav-link-name"><p>Contact me</p></div>
                         </a>
                     </div>
@@ -48,36 +50,55 @@
                 <header id="section-header" class="section jq--section-header" data-section-name="Header">
                     <div class="header-wrapper">
                         <div class="name-wrapper"></div>
-                        <h4 class="web-developer-wrapper"><span class="web-developer">/* web development&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;sound design */</span></h4>
+                        <!-- <h4 class="web-developer-wrapper"><span class="web-developer">/* web development&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;photography&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;sound design */</span></h4> -->
+                        <h4 class="web-developer-wrapper"><span class="web-developer">/* web development&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;photography */</span></h4>
                     </div>
                 </header>
                 <!-- ABOUT -->
                 <section id="section-about" class="section jq--section-about" data-section-name="About">
-                    <canvas id="canvas-about" class="canvas"></canvas>
+                    <!--<canvas id="canvas-about" class="canvas"></canvas>-->
                     <div class="about-wrapper">
                         <!--<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
                         <div class="about-left">
-                                <img id="hologram-image-template" class="hologram-image-template hologram-hidden" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
-                                <img id="hologram-image-1" class="hologram-image" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
-                                <img id="hologram-image-2" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo2-min.png" alt="James's face floating in space.">
-                                <img id="hologram-image-3" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo3-min.png" alt="James's face floating in space.">
-                                <img id="hologram-image-4" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo4-min.png" alt="James's face floating in space.">
-                                <img id="hologram-image-5" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo5-min.png" alt="James's face floating in space.">
+                            <p>name: james</p>
+                            <p>age: 26</p>
+                            <p>height: 5'11"</p>
+                            <p>weight: 170lbs</p>
                         </div>
                         <div class="about-right">
                             <div class="about-description">
                                 <h1 class="about-heading">About</h1>
-                                <p>I'm a front-end web developer based out of Toronto.<br><br>I will be a good employee for you. I like to code websites.
-                                    Am very nice. I'll do whatever I gotta do as long as I get payed cash.<br><br>
-                            I have so much passion and enthusiasm to bring to every project. I also have a synth. Hurray. <br></p>
-                                <button>Learn more >></button>
+                                <p>Hello! <br><br> 
+                                    I'm a fledgling front-end web developer looking to find employment in the Toronto area.<br><br>
+                                    With three years of coding experience under my belt in a variety of languages, 
+                                    you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
+                                    Beyond this, I am very interested in 35mm photography, music, and videogames.<br><br>
+                                    Click the links below to learn more about me or check out my introduction video!
+                                </p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="about-options">
+                        <div class="about-option intro-video-option">
+                            <a class="btn intro-video-button">Meet me!</a>
+                        </div>
+                        <div class="about-option hologram-container">
+                            <img id="hologram-image-template" class="hologram-image-template hologram-hidden" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
+                            <!-- Replacing following with loadImage("hologram-image") in JS may increase load speed -->
+                            <img id="hologram-image-1" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-2" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo2-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-3" class="hologram-image" src="resources/img/compressedpng/holo3-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-4" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo4-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-5" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo5-min.png" alt="James's face floating in space.">
+                        </div>
+                        <div class="about-option learn-more-option">
+                            <a class="btn learn-more-button">Learn more</a>
                         </div>
                     </div>
                 </section>
                 <!-- PORTFOLIO -->
                 <section id="section-portfolio" class="section jq--section-portfolio" data-section-name="Portfolio">
-                    <h1 class="portfolio-heading">Portfolio</h1>
+                    <h1 class="portfolio-heading">Developer Portfolio</h1>
                     <div class="portfolio-wrapper">
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis donec et odio pellentesque diam volutpat. Et tortor consequat id porta nibh venenatis. Nunc sed blandit libero volutpat sed cras ornare arcu dui. A lacus vestibulum sed arcu non odio. Et netus et malesuada fames ac turpis egestas maecenas. Facilisis gravida neque convallis a cras semper auctor. Aliquet risus feugiat in ante. Nibh mauris cursus mattis molestie a iaculis at. Sed elementum tempus egestas sed sed risus. At augue eget arcu dictum varius duis. Amet mauris commodo quis imperdiet massa. Ac turpis egestas maecenas pharetra convallis posuere. Fermentum et sollicitudin ac orci. Mattis enim ut tellus elementum sagittis vitae et leo. Diam maecenas sed enim ut sem viverra aliquet eget sit. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit.
@@ -91,7 +112,15 @@ Nibh sed pulvinar proin gravida hendrerit. Neque egestas congue quisque egestas 
                 <section id="section-contact" class="section jq--section-contact" data-section-name="Contact">
                     <canvas id="canvas-contact" class="canvas"></canvas>
                     <h1 class="contact-heading">Contact</h1>
-                    <div>Add contact form and info somewhere here...</div>
+                    <p>
+                        If you would like to contact me, please send me an email via the form below,
+                        drop me a call, or contact me on Instagram.
+                    </p>
+                    <form class="contact-form">
+
+                    </form>
+                    <img style="width: 40px;" src="resources/img/pixel art/Untitled - 1.png">
+                    <img src="resources/img/pixel art/Untitled - 2.png">
                 </section>
                 <div id="scroll-button">
                     <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>
