@@ -54,6 +54,11 @@
         align-self: flex-end;
     }
 
+    /* About */
+
+
+
+
     /* Contact */
     .contact-form {
         width: 40%;
@@ -72,6 +77,11 @@
 
 /*** BIG TABLETS ***/
 @media only screen and (min-width: 1023px) {
+
+    .btn {
+        padding: 40px 20px;
+    }
+
     .web-developer {
 
     }
@@ -97,6 +107,7 @@
     }
 
     .about-options {
+        margin-top: auto;
         height: auto;
     }
 

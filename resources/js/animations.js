@@ -1,15 +1,24 @@
 /**************
  INITIALIZATION 
  **************/
-const hologramList = document.querySelectorAll(".hologram-image");
-/*let viewportMarkers = new Array(4);
-createViewportMarkers(viewportMarkers);*/
 
-//loadHolograms("hologram-container");
+ window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+  });
+
+const hologramList = document.querySelectorAll(".hologram-image");
+
+let buttonLeft = document.getElementById("intro-video-button");
+let buttonRight = document.getElementById("learn-more-button")
+let aboutPanelLeft = document.querySelector(".intro-video-panel");
+let aboutPanelRight = document.querySelector(".learn-more-panel");
+let currentAboutPanel = "center";
+
 
 /****************
  GLOBAL VARIABLES 
  ****************/
+
 const nameWrapper = document.querySelector(".name-wrapper");
 const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];
 const webDeveloper = document.querySelector(".web-developer");
@@ -18,11 +27,11 @@ const hologram = document.querySelector(".about-left");
 const hologramRef = document.getElementById("hologram-reference");
 
 
-
 /**********
  ANIMATIONS
  **********/
-/********** HOME PAGE NAME ANIMATION **********/
+
+/********** HOME-PAGE NAME ANIMATION **********/
 /* Add my name to the grid with 0 opacity */
 for(let i = 0; i < nameArray.length; i++) {
     let nameLetter = document.createTextNode(nameArray[i]);
@@ -40,95 +49,43 @@ let count = 0;
 let timer = setInterval(addLetter, 85);
 
 
-/********** ABOUT SECTION ROTATING FACE ANIMATION **********/
+/********** ABOUT-SECTION ROTATING FACE **********/
+
+/* Handled with jQuery */
 
 
 
-// OLD VERSION BELOW
-
-/*
-document.addEventListener('scroll', () => {
-    if (isInViewport(hologram)){
-        let image;
-        let screenwidth = window.innerWidth;
-        let holoMiddle = (hologram.getBoundingClientRect().top + hologram.getBoundingClientRect().bottom)/2;
-        let holoReference = hologramRef.getBoundingClientRect().top;
-        let comparison = holoMiddle - holoReference;
-        console.log(`hologram: ${holoMiddle}\nreference: ${holoReference}\n ref-holo: ${comparison}`);
-        /* Wish I could use a switch statement below: 
-        /* Tablets and Smartphones: 
-        if(screenwidth < 1200) {
-            if(comparison > 450) {
-                image = 1;
-            }
-            else if (comparison > 200) {
-                image = 2;
-            }
-            else if (comparison > -250) {
-                image = 3;
-            }
-            else if (comparison > -400) {
-                image = 4;
-            }
-            else {
-                image = 5;
-            }
-        }
-        /* Desktop and Laptop: 
-        else {
-            if(comparison > 450) {
-                image = 1;
-            }
-            else if (comparison > 220) {
-                image = 2;
-            }
-            else if (comparison > -150) {
-                image = 3;
-            }
-            else if (comparison > -320) {
-                image = 4;
-            }
-            else {
-                image = 5;
-            }
-        }
-        for(let i = 0; i < hologramList.length; i++) {
-            if(hologramList[i].id == `hologram-image-${image}`){
-                hologramList[i].classList.remove("hologram-hidden");
-            }
-            else {
-                hologramList[i].classList.add("hologram-hidden");
-            }
-        }
+/********** ABOUT-SECTION CHANGING PANELS **********/
+buttonLeft.addEventListener("click", ()=>{
+    if (currentAboutPanel !== "left") {
+        currentAboutPanel = "left";
+        console.log(currentAboutPanel);
+        aboutPanelLeft.style.transform = "translateX(100%)";
     }
-})
-*/
+});
 
+buttonRight.addEventListener("click", ()=>{
+    if (currentAboutPanel !== "right") {
+        currentAboutPanel = "right";
+        aboutPanelRight.style.transform = "translateX(-100%)";
+    }
+});
 
-
-/*
- * Make this run when hovering over the face as well.
- * Put the hologram template in the front (invisible) and make it the reference.
- * Or make it grow and get staticy on hover
- * */
-
-
-/********** CANVAS ANIMATIONS **********/
-/* Definitely put these in functions later */
-let aboutC = document.getElementById("canvas-about");
-let aboutCtx = aboutC.getContext("2d");
-aboutCtx.fillStyle = "rgba(250, 100, 100, 0.5)";
-aboutCtx.fillRect(10, 10, 150, 100);
-
-let contactC = document.getElementById("canvas-contact");
-let contactCtx = contactC.getContext("2d");
-contactCtx.fillStyle ="rgba(100, 250, 100, 0.5)";
-contactCtx.fillRect(60, 30, 200, 100);
+document.querySelectorAll(".panel-exit").forEach(el => el.addEventListener("click", ()=> {
+    if (currentAboutPanel == "left") {
+        aboutPanelLeft.style.transform = "translateX(-100%)";
+    }
+    if (currentAboutPanel == "right") {
+        aboutPanelRight.style.transform = "translateX(100%)";
+    }
+    currentAboutPanel = "center";
+}));
 
 
  /********
  FUNCTIONS
  *********/
+
  /* Animates name letters in one-by-one */
  /* This function may be too specific */
 function addLetter() {
@@ -159,19 +116,6 @@ function isInViewport(element) {
     );
 }
 
-/* Returns an array of 4 markers representing fractions of the viewport height
-function createViewportMarkers(arr) {
-    console.log("Creating new viewport markers...");
-    for(let i = 0; i < 4; i ++) {
-        arr.pop();
-    }
-    arr.push(window.innerHeight - window.innerHeight / 4);
-    arr.push(window.innerHeight - window.innerHeight / 3);
-    arr.push(window.innerHeight / 2);
-    arr.push(window.innerHeight / 3);
-}
-*/
-
 /* Preloads hologram images */
 function loadHolograms(div) {
     for(let i=1; i<=5; i++) {
@@ -183,5 +127,17 @@ function loadHolograms(div) {
         }
         hologramImageI.src = `resources/img/compressedpng/holo${i}-min.png`;
         document.querySelector(`.${div}`).appendChild(hologramImageI);
+    }
+}
+
+function rotateFace(direction) {
+    if (direction == "left") {
+        console.log("left!");
+    }
+    else if (direction == "right") {
+        console.log("right!");
+    }
+    else {
+        console.loge("invalid face direction for function rotateFace");
     }
 }

@@ -42,7 +42,7 @@
                         <a id="contact-link" class="jq--scroll-to-contact" title="Contact" href="#">
                             <img id="contact-icon" src="resources/img/pixel art/phone-64.png">
                             <!--<ion-icon id="contact-icon" name="call"></ion-icon>-->
-                            <div class="nav-link-name"><p>Contact me</p></div>
+                            <div class="nav-link-name"><p>Contact</p></div>
                         </a>
                     </div>
                 </nav>
@@ -55,10 +55,9 @@
                     </div>
                 </header>
                 <!-- ABOUT -->
-                <section id="section-about" class="section jq--section-about" data-section-name="About">
+                <section id="section-about" class="section jq--section-about" data-section-name="About"> 
                     <!--<canvas id="canvas-about" class="canvas"></canvas>-->
                     <div class="about-wrapper">
-                        <!--<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZUxfJ9PvoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
                         <div class="about-left">
                             <p>name: james</p>
                             <p>age: 26</p>
@@ -80,19 +79,29 @@
                     </div>
                     <div class="about-options">
                         <div class="about-option intro-video-option">
-                            <a class="btn intro-video-button">Meet me!</a>
+                            <a id="intro-video-button" class="jq--scroll-to-about btn">Meet me!</a>
                         </div>
                         <div class="about-option hologram-container">
                             <img id="hologram-image-template" class="hologram-image-template hologram-hidden" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
                             <!-- Replacing following with loadImage("hologram-image") in JS may increase load speed -->
-                            <img id="hologram-image-1" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-2" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo2-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-1" class="hologram-image" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-2" class="hologram-image" src="resources/img/compressedpng/holo2-min.png" alt="James's face floating in space.">
                             <img id="hologram-image-3" class="hologram-image" src="resources/img/compressedpng/holo3-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-4" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo4-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-5" class="hologram-image hologram-hidden" src="resources/img/compressedpng/holo5-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-4" class="hologram-image" src="resources/img/compressedpng/holo4-min.png" alt="James's face floating in space.">
+                            <img id="hologram-image-5" class="hologram-image" src="resources/img/compressedpng/holo5-min.png" alt="James's face floating in space.">
                         </div>
                         <div class="about-option learn-more-option">
-                            <a class="btn learn-more-button">Learn more</a>
+                            <a id="learn-more-button" class="jq--scroll-to-about btn">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="intro-video-panel off-screen">
+                        <div class="exit-container">
+                            <a class="panel-exit jq--scroll-to-about btn"><strong>Back</strong></a>
+                        </div>
+                    </div>
+                    <div class="learn-more-panel off-screen">
+                        <div class="exit-container">
+                            <a class="panel-exit jq--scroll-to-about btn"><strong>Back</strong></a>
                         </div>
                     </div>
                 </section>
@@ -119,7 +128,7 @@ Nibh sed pulvinar proin gravida hendrerit. Neque egestas congue quisque egestas 
                     <form class="contact-form">
 
                     </form>
-                    <img style="width: 40px;" src="resources/img/pixel art/Untitled - 1.png">
+                    <img src="resources/img/pixel art/Untitled - 1.png">
                     <img src="resources/img/pixel art/Untitled - 2.png">
                 </section>
                 <div id="scroll-button">
@@ -129,10 +138,10 @@ Nibh sed pulvinar proin gravida hendrerit. Neque egestas congue quisque egestas 
                 </div>
             </div>
         </div>
+        <script src="resources/js/jquery.js"></script>
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         <script src="resources/js/audio.js"></script>
         <script src="resources/js/ion-icon-titles.js"></script>
         <script src="resources/js/animations.js"></script>
-        <script src="resources/js/jquery.js"></script>
     </body>
 </html>
