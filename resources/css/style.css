@@ -61,7 +61,6 @@ body {
 
 .section {
     position: relative;
-    min-height: 100vh;
     padding-bottom: 10vh;
     z-index: 5;
     /* OR:
@@ -345,7 +344,6 @@ header {
     /*background-color: var(--light_grey);*/
     height: 800px;
     display: flex;
-    margin-top: -160px;
     margin-bottom: -10vh;
     flex-direction: column;
     align-items: center;
