@@ -48,11 +48,13 @@ for(let i = 0; i < nameArray.length; i++) {
 let count = 0;
 let timer = setInterval(addLetter, 85);
 
+/********** HOME-PAGE CANVAS **********/
+
+
 
 /********** ABOUT-SECTION ROTATING FACE **********/
 
 /* Handled with jQuery */
-
 
 
 /********** ABOUT-SECTION CHANGING PANELS **********/

@@ -1,17 +1,6 @@
 /*** COMPUTER SCREENS ***/
 @media only screen and (min-width: 1200px) {
 
-    /* General */
-
-    /* Nav */
-
-    /*
-    nav div button,
-    nav div a ion-icon {
-        font-size: 22px;
-    }
-    */
-
     nav {
         padding: 60px 0px;
     }
@@ -121,6 +110,23 @@
 
     .hologram-container {
         order: 0;
+    }
+
+    /* Portfolio - must check iPad to see if this should be on a bigger screen */
+    .portfolio-grid {
+        display: grid;
+        justify-content: space-between;
+        grid-template: auto auto / 1fr 1fr;
+        gap: 20px 20px;
+    }
+
+    #education {
+        grid-row-start: 1;
+    }
+    
+    #projects {
+        grid-column: 2;
+        grid-row: 1 / span 2;
     }
 }
 

@@ -1,7 +1,6 @@
 /******************* GENERAL ********************/
 :root {
-    /*--light_grey: #494949;*/
-    --light_grey: #8a8a8a;
+    --light_grey: #2a2a2a;
     --grey: #1d1d1d;
     --dark_grey: #181818;
     --white: #ddd;
@@ -64,7 +63,7 @@ body {
     position: relative;
     min-height: 100vh;
     padding-bottom: 10vh;
-    z-index: 10;
+    z-index: 5;
     /* OR:
     margin-bottom: 200px;*/
 }
@@ -104,16 +103,6 @@ h2 {
 h3 {
     font-size: 150%;
     /*text-shadow: 0px 1px #555;*/
-}
-
-
-.canvas {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
 .btn {
@@ -223,6 +212,15 @@ header {
     font-style: normal;
 }
 
+.canvas-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
 .header-wrapper {
     position: absolute;
     height: 40%;
@@ -234,6 +232,7 @@ header {
     width: 70%;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .name-wrapper {
@@ -340,6 +339,7 @@ header {
     padding: 10px;
 }
 
+/* Remake this section using floats instead of flexbox so the two sides can be widely hovered */
 .about-options {
     background: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 1));
     /*background-color: var(--light_grey);*/
@@ -426,21 +426,104 @@ header {
     border: none, 1px solid grey;
 }
 
+#section-portfolio p,
+#section-portfolio a {
+    display: block;
+    padding: 10px 0px 10px 20px;
+    font-size: 18px;
+}
+
+#section-portfolio p,
+#section-portfolio a,
+#section-portfolio h3,
+#section-portfolio h4 {
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+
+#section-portfolio ul {
+    font-size: 16px;
+}
+
+#section-portfolio li {
+    padding-bottom: 10px;
+}
+
+.outer-li {
+    padding-bottom: 10px;
+}
+
+.outer-li ul {
+    text-align: start;
+    padding-left: 30px;
+}
+
 .portfolio-heading {
     text-align: center;
-    /*
-    margin-left: 15%;
-    margin-right: auto;
-    */
+    padding-bottom: 50px;
 }
 
 .portfolio-wrapper {
-    visibility: hidden;
-    /*display: flex;*/
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
+    padding: 10px 40px;
 }
+
+.portfolio-grid-item {
+    border: solid 2px teal;
+}
+
+.portfolio-item-heading {
+    text-align: start;
+    padding: 20px 20px;
+}
+
+.portfolio-item-content {
+    /*display: none;*/
+    padding: 10px 20px;
+    background-color: teal;
+}
+
+.skill-li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+
+.skill-li p {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.bar-outer {
+    width: 50%;
+    flex-grow: 4;
+    background-color: var(--light_grey);
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-inner {
+    position: relative;
+    background-color: var(--light_orange);
+    height: 100%;
+}
+
+/* PROGRESS BARS: Should automate this later in JS */
+#skill-html {width: 90%;}
+#skill-css {width: 86%;}
+#skill-javascript {width: 70%;}
+#skill-jquery {width: 42%;}
+#skill-ruby {width: 40%;}
+#skill-liquid {width: 82%;}
+#skill-git {width: 80%;} /* MAKE THIS ONE BETTER */
+#skill-unix {width: 92%;}
+#skill-c {width: 54%;}
+#skill-cpp {width: 62%;}
+#skill-java {width: 62%;}
 
 .portfolio-left {
     padding: 10px;
@@ -465,16 +548,31 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
-    padding-bottom: 0px;
+    padding: 20px;
 }
 
 .contact-form {
+    padding: 40px;
+    color: grey;
     margin: 20px auto;
     width: 60%;
-    height: 50vh;
+    /*height: 50vh;*/
+    height: 400px;
     background-color: var(--white);
 }
+
+/* This could be cleaned up a little bit */
+.contact-form h3 {
+    color: var(--grey);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
 
 
 /******************* SCROLL-BUTTON ********************/
