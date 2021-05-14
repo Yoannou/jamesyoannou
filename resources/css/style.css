@@ -61,7 +61,6 @@ body {
 
 .section {
     position: relative;
-    min-height: 100vh;
     padding-bottom: 10vh;
     z-index: 5;
     /* OR:
@@ -142,7 +141,7 @@ nav {
     top: 0px;
     width: 100%;
     height: 20px;
-    padding: 100px 0px;
+    padding: 50px 0px;
     font-size: 20px;
     z-index: 200;
 }
@@ -227,9 +226,6 @@ header {
     top: 40%;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -240,7 +236,7 @@ header {
     display: grid;
     grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     color: var(--orange);
-    font-size: 80px;
+    font-size: 50px;
     transition: 6ms;
 }
 
@@ -251,7 +247,7 @@ header {
 }
 
 .web-developer {
-    font-size: 24px;
+    font-size: 18px;
     transition: all 1.5s ease;
     transform: translateX(700px);
 }
@@ -341,7 +337,6 @@ header {
     /*background-color: var(--light_grey);*/
     height: 800px;
     display: flex;
-    margin-top: -160px;
     margin-bottom: -10vh;
     flex-direction: column;
     align-items: center;
@@ -459,10 +454,6 @@ header {
 .portfolio-heading {
     text-align: center;
     padding-bottom: 50px;
-}
-
-.portfolio-wrapper {
-    padding: 10px 40px;
 }
 
 .portfolio-grid-item {
