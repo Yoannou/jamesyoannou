@@ -35,7 +35,7 @@
     }
 
     .name-wrapper {
-        font-size: 50px;
+        /*font-size: 50px;*/
         font-weight: 400;
     }
 
@@ -71,8 +71,14 @@
         padding: 40px 20px;
     }
 
-    .web-developer {
+    .header-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
 
+    .web-developer{
+        font-size: 24px;
     }
 
     /* About */
@@ -113,6 +119,11 @@
     }
 
     /* Portfolio - must check iPad to see if this should be on a bigger screen */
+
+    .portfolio-wrapper {
+        padding: 10px 40px;
+    }
+    
     .portfolio-grid {
         display: grid;
         justify-content: space-between;
