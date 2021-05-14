@@ -58,6 +58,10 @@
         width: 40%;
     }
 
+    .contact-info {
+        flex-direction: row;
+    }
+
 
     /* Scroll button */
     #scroll-button {

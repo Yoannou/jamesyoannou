@@ -14,6 +14,7 @@
 
         <!-- <script src="vendors/js/zounds.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
     </head>
 
 
@@ -55,7 +56,7 @@
                     </div>
                 </header>
                 <!-- ABOUT -->
-                <section id="section-about" class="section jq--section-about" data-section-name="About"> 
+                <section id="section-about" class="section jq--section-about waypoint-about" data-section-name="About"> 
                     <div class="about-wrapper">
                         <div class="about-left">
                             <p>name: james</p>
@@ -105,7 +106,7 @@
                     </div>
                 </section>
                 <!-- PORTFOLIO -->
-                <section id="section-portfolio" class="section jq--section-portfolio" data-section-name="Portfolio">
+                <section id="section-portfolio" class="section jq--section-portfolio waypoint-portfolio" data-section-name="Portfolio">
                     <div class="portfolio-wrapper">
                         <h1 class="portfolio-heading">Developer Portfolio</h1>
                         <div class="portfolio-grid">
@@ -134,7 +135,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div id="skillset" class="portfolio-grid-item">
+                            <div id="skillset" class="portfolio-grid-item waypoint-skillset">
                                 <h2 class="portfolio-item-heading">Skillset</h2>
                                 <div class="portfolio-item-content">
                                     <ul>
@@ -253,21 +254,21 @@
                     </p>
                     <div class="contact-form">
                         <div id="my-email" class="contact-info">
-                            <h3>email</h3>
+                            <h3 class="contact-heading">email</h3>
                             <p>jamesyoannou@gmail.com</p>
                         </div>
                         <div id="my-number" class="contact-info">
-                            <h3>Telephone</h3>
+                            <h3 class="contact-heading">telephone</h3>
                             <p>(647)-998-5899</p>
                         </div>
                         <div id="my-insta" class="contact-info">
-                            <h3>instagram</h3>
+                            <h3 class="contact-heading">instagram</h3>
                             <p>@jamesyoannou</p>
                         </div>
 
                     </div>
                 </section>
-                <!--                <div id="scroll-button">
+                <div id="scroll-button" style="display: none;">
                     <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>
                     <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
                     <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>

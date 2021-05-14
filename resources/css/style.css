@@ -323,6 +323,8 @@ header {
 }
 
 .about-right{
+    transition: opacity 0.8s;
+    opacity: 0;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -337,6 +339,7 @@ header {
     /*background-color: var(--light_grey);*/
     height: 800px;
     display: flex;
+    margin-top: -170px;
     margin-bottom: -10vh;
     flex-direction: column;
     align-items: center;
@@ -494,23 +497,24 @@ header {
 }
 
 .bar-inner {
+    transition: all 1s;
     position: relative;
     background-color: var(--light_orange);
     height: 100%;
 }
 
 /* PROGRESS BARS: Should automate this later in JS */
-#skill-html {width: 90%;}
-#skill-css {width: 86%;}
-#skill-javascript {width: 70%;}
-#skill-jquery {width: 42%;}
-#skill-ruby {width: 40%;}
-#skill-liquid {width: 82%;}
-#skill-git {width: 80%;} /* MAKE THIS ONE BETTER */
-#skill-unix {width: 92%;}
-#skill-c {width: 54%;}
-#skill-cpp {width: 62%;}
-#skill-java {width: 62%;}
+#skill-html {width: 90%; right: 90%;}
+#skill-css {width: 86%; right: 86%;}
+#skill-javascript {width: 70%; right: 70%;}
+#skill-jquery {width: 42%; right: 42%;}
+#skill-ruby {width: 40%; right: 40%}
+#skill-liquid {width: 82%; right: 82%}
+#skill-git {width: 80%; right: 80%;} /* MAKE THIS ONE BETTER */
+#skill-unix {width: 92%; right: 92%;}
+#skill-c {width: 54%; right: 54%;}
+#skill-cpp {width: 62%; right: 62%;}
+#skill-java {width: 62%; right: 62%;}
 
 .portfolio-left {
     padding: 10px;
@@ -544,7 +548,7 @@ header {
     margin: 20px auto;
     width: 60%;
     /*height: 50vh;*/
-    height: 400px;
+    height: 300px;
     background-color: var(--white);
 }
 
@@ -555,8 +559,14 @@ header {
 
 .contact-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.contact-heading {
+    margin-bottom: 0px;
 }
 
 

@@ -2,12 +2,12 @@
  INITIALIZATION 
  **************/
 
- window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');
-  });
-
+ // Node lists
 const hologramList = document.querySelectorAll(".hologram-image");
+const portfolioItems = document.querySelectorAll(".portfolio-grid-item");
+const skillsetList = document.querySelectorAll(".bar-inner");
 
+// Nodes
 let buttonLeft = document.getElementById("intro-video-button");
 let buttonRight = document.getElementById("learn-more-button")
 let aboutPanelLeft = document.querySelector(".intro-video-panel");
@@ -84,12 +84,65 @@ document.querySelectorAll(".panel-exit").forEach(el => el.addEventListener("clic
 }));
 
 
+ /******************
+ WAYPOINT ANIMATIONS
+ *******************/
+
+ // Animations when reaching About section
+let waypointAbout = new Waypoint({
+    element: document.querySelector('.waypoint-about'),
+    handler: function() {
+        document.querySelector('.about-right').style.opacity = "100";
+    },
+    offset: 200
+})
+
+// Animations when reaching Portfolio section
+let waypointPortfolio = new Waypoint({
+    element: document.querySelector('.waypoint-portfolio'),
+    handler: ()=>{
+        let portfolioCount = 0;
+        let portfolioTimer = setInterval(()=>{
+            if(portfolioCount >= 3) {
+                clearInterval(portfolioTimer);
+            }
+            else {
+                console.log(portfolioCount);
+                portfolioCount++;
+            }
+        }, 300);
+    },
+    offset: 100
+})
+
+
+// Animations for progress bars in the Skillset section
+let waypointSkillset = new Waypoint({
+    element: document.querySelector('.waypoint-skillset'),
+    handler: ()=>{
+        let skillsetCount = 0;
+        let skillsetTimer = setInterval(()=>{
+            if(skillsetCount >= skillsetList.length){
+                clearInterval(skillsetTimer);
+            }
+            else {
+                let currentSkill = skillsetList[skillsetCount];
+                let width = currentSkill.clientWidth;
+                currentSkill.style.right = `0`;
+                skillsetCount++;
+            }
+        }, 200);
+    },
+    offset: 200
+})
+
+
  /********
  FUNCTIONS
  *********/
 
  /* Animates name letters in one-by-one */
- /* This function may be too specific */
+ /* This function is too specific, must be merged with waypointSkillset logic */
 function addLetter() {
     if (count === nameArray.length) {
         clearInterval(timer);
