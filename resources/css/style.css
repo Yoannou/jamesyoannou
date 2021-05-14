@@ -333,10 +333,6 @@ header {
 
 .about-description {
     color: white;
-    /*background-color: rgba(29, 29, 29, 0.7);*/
-    width: 90%;
-    margin: auto;
-    padding: 10px;
 }
 
 /* Remake this section using floats instead of flexbox so the two sides can be widely hovered */

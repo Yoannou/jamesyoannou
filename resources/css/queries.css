@@ -95,6 +95,12 @@
         flex: 4;
     }
 
+    .about-description {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
     .about-options {
         margin-top: auto;
         height: auto;
