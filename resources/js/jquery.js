@@ -6,7 +6,7 @@ $(document).ready(function() {
   /* SCROLLING TO SECTIONS */
 
   $('.jq--scroll-to-about').click(function() {
-      $('html, body').animate({scrollTop: $('.jq--section-about').offset().top}, 800);
+      $('html, body').animate({scrollTop: $('.jq--section-about').offset().top}, 1000);
   });
 
   $('.jq--scroll-to-portfolio').click(function() {

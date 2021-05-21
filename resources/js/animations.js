@@ -94,7 +94,7 @@ let waypointAbout = new Waypoint({
     handler: function() {
         document.querySelector('.about-right').style.opacity = "100";
     },
-    offset: 200
+    offset: 400
 })
 
 // Animations when reaching Portfolio section
@@ -107,7 +107,6 @@ let waypointPortfolio = new Waypoint({
                 clearInterval(portfolioTimer);
             }
             else {
-                console.log(portfolioCount);
                 portfolioCount++;
             }
         }, 300);
@@ -117,6 +116,7 @@ let waypointPortfolio = new Waypoint({
 
 
 // Animations for progress bars in the Skillset section
+// Slide-in
 let waypointSkillset = new Waypoint({
     element: document.querySelector('.waypoint-skillset'),
     handler: ()=>{
@@ -131,11 +131,19 @@ let waypointSkillset = new Waypoint({
                 currentSkill.style.right = `0`;
                 skillsetCount++;
             }
-        }, 200);
+        }, 100);
     },
     offset: 200
 })
+// Color-changes
 
+for (let i of skillsetList) {
+    console.log(i);
+    i.addEventListener('mouseout', ()=>{
+        i.style.backgroundColor = "pink";
+        setTimeout(()=>{i.style.backgroundColor = "#faa700";}, 800);
+    })
+}
 
  /********
  FUNCTIONS

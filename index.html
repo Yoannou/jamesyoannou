@@ -26,7 +26,7 @@
         <div id="global-wrapper-outer">
             <div id="global-wrapper-inner">
                 <nav>
-                    <div class="nav-link"><button title="Toggle volume" type="button"><img id="sound-toggle-button" src="resources/img/pixel art/website_music_v1.png"></button></div>
+                    <div class="nav-link"><button title="Chill vibes" type="button"><img id="sound-toggle-button" src="resources/img/pixel art/website_music_v1.png"></button></div>
                     <div class="nav-link">
                         <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
                             <img id="about-icon" src="resources/img/pixel art/website_face_v1.png">
@@ -95,6 +95,12 @@
                     </div>
                     <div class="intro-video-panel off-screen">
                         <div class="exit-container">
+                            <div class="video-container">
+                                <h1>Sorry!</h1>
+                                <img id="video-placeholder" src="resources/img/Coder James optimizilla.JPG">
+                                <p>Video introduction coming soon :)</p>
+                            </div>
+
                             <a class="panel-exit jq--scroll-to-about btn"><strong>Back</strong></a>
                         </div>
                     </div>
@@ -109,34 +115,52 @@
                     <div class="portfolio-wrapper">
                         <h1 class="portfolio-heading">Developer Portfolio</h1>
                         <div class="portfolio-grid">
-                            <div id="education" class="portfolio-grid-item">
-                                <h2 class="portfolio-item-heading">Education</h2>
+                            <div id="projects" class="portfolio-grid-item">
+                                <div class="portfolio-item-heading-container">
+                                    <h2 class="portfolio-item-heading">Projects</h2>
+                                    <div class="icon-box"></div>
+                                    <div class="expand-box">+</div>
+                                </div>
                                 <div class="portfolio-item-content">
+                                    <h4>Websites for clients:</h4>
                                     <ul>
                                         <li class="outer-li">
-                                            <p>University of Toronto</p>
+                                            <a href="https://muddycrops.com" target="_blank">Muddy Crops</a>
                                             <ul>
-                                                <li>&bull; BA for Linguistics</li>
+                                                <li>&bull; Enhanced the nav bar</li>
+                                                <li>&bull; Created and implemented a tabs section</li>
+                                                <li>&bull; Granted client more control over the website with schemas</li>
                                             </ul>
                                         </li>
                                         <li class="outer-li">
-                                            <p>Ryerson University Chang School</p>
-                                            <ul>
-                                                <li>&bull; Certificate in Computer Science</li>
-                                            </ul>
+                                            <p>Sarah Cressati</p>
                                         </li>
                                         <li class="outer-li">
-                                            <p>Lighthouse Labs</p>
-                                            <ul>
-                                                <li>&bull; Crash course web development bootcamp</li>
-                                            </ul>
+                                            <p>Pizza Shab</p>
+                                        </li>
+                                    </ul>
+                                    <h4>Side-projects</h4>
+                                    <ul>
+                                        <li class="outer-li">
+                                            <p>Online pixel art tool</p>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p>Shopify Tab system</p>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p>Shopify fade-in header</p>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div id="skillset" class="portfolio-grid-item waypoint-skillset">
-                                <h2 class="portfolio-item-heading">Skillset</h2>
+                                <div class="portfolio-item-heading-container">
+                                    <h2 class="portfolio-item-heading">Skillset</h2>
+                                    <div class="icon-box"></div>
+                                    <div class="expand-box">+</div>
+                                </div>
                                 <div class="portfolio-item-content">
+                                    <!--In the future, generate this whole UL out of a Javascript array of objects with a skill and percentage-->
                                     <ul>
                                         <li class="skill-li">
                                             <p>HTML</p>
@@ -207,36 +231,31 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div id="projects" class="portfolio-grid-item">
-                                <h2 class="portfolio-item-heading">Projects</h2>
+                            <div id="education" class="portfolio-grid-item">
+                                <div class="portfolio-item-heading-container">
+                                    <h2 class="portfolio-item-heading">Education</h2>
+                                    <div class="icon-box"></div>
+                                    <div class="expand-box">+</div>
+                                    </div>
                                 <div class="portfolio-item-content">
-                                    <h4>Websites for clients:</h4>
                                     <ul>
                                         <li class="outer-li">
-                                            <a href="https://muddycrops.com" target="_blank">Muddy Crops</a>
+                                            <p>University of Toronto</p>
                                             <ul>
-                                                <li>&bull; Enhanced the nav bar</li>
-                                                <li>&bull; Created and implemented a tabs section</li>
-                                                <li>&bull; Granted client more control over the website with schemas</li>
+                                                <li>&bull; BA for Linguistics</li>
                                             </ul>
                                         </li>
                                         <li class="outer-li">
-                                            <p>Sarah Cressati</p>
+                                            <p>Ryerson University Chang School</p>
+                                            <ul>
+                                                <li>&bull; Certificate in Computer Science</li>
+                                            </ul>
                                         </li>
                                         <li class="outer-li">
-                                            <p>Pizza Shab</p>
-                                        </li>
-                                    </ul>
-                                    <h4>Side-projects</h4>
-                                    <ul>
-                                        <li class="outer-li">
-                                            <p>Online pixel art tool</p>
-                                        </li>
-                                        <li class="outer-li">
-                                            <p>Shopify Tab system</p>
-                                        </li>
-                                        <li class="outer-li">
-                                            <p>Shopify fade-in header</p>
+                                            <p>Lighthouse Labs</p>
+                                            <ul>
+                                                <li>&bull; Crash course web development bootcamp</li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -275,9 +294,7 @@
             </div>
         </div>
         <script src="resources/js/jquery.js"></script>
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         <script src="resources/js/audio.js"></script>
-        <script src="resources/js/ion-icon-titles.js"></script>
         <script src="resources/js/animations.js"></script>
     </body>
 </html>
