@@ -296,10 +296,11 @@ header {
 
 #section-about {
     overflow: hidden;
-    background-image: linear-gradient(rgba(50, 50, 60, 0.6), rgba(50, 50, 60, 0.6)), url(../img/35mm/film3-min.jpg);
+    background-image: linear-gradient(rgba(50, 50, 60, 0.6), rgba(50, 50, 60, 0.6)), url(../img/city_streets.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: top;
 }
 
 .about-heading {
@@ -565,10 +566,11 @@ header {
 /******************* SECTION: CONTACT ********************/
 #section-contact {
     background: var(--transparent_background);
-    background-image: linear-gradient(rgba(50, 50, 60, 0.7), rgba(50, 50, 60, 0.7)), url(../img/35mm/film2-min.jpg);
+    background-image: linear-gradient(rgba(50, 50, 80, 0.3), rgba(50, 50, 80, 0.3)), url(../img/city_streets.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: bottom;
     padding: 20px;
     min-height: 80vh;
 }
