@@ -10,7 +10,7 @@
     }
 
     #nav-toggle-display {
-        display: none;
+        transform: translateX(300px);
     }
 
     .nav-hidden {
