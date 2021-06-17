@@ -2,12 +2,33 @@
 @media only screen and (min-width: 1200px) {
 
     nav {
+        align-items: center;
+        grid-template: 100% / repeat(4, 1fr);
+        height: 20px;
         padding: 60px 0px;
+        transform: translateY(0);
+    }
+
+    #nav-toggle-display {
+        display: none;
+    }
+
+    .nav-hidden {
+        transform: translateY(0);
+    }
+
+    nav div {
+        justify-self: center;
+    }
+
+    nav div:hover {
+        font-size: 40px;
     }
 
     .nav-link:hover a img {
         transition: all 0.2s;
         transform: translateX(-20px);
+        width: 64px;
     }
     .nav-link:hover a .nav-link-name p {
         font-weight: 300;
@@ -16,9 +37,19 @@
         transform: translateX(0px);
     }
 
+    .nav-link a {
+        width: auto;
+        justify-content: unset;
+    }
+
     .nav-link-name {
         display: initial;
         overflow: hidden;
+    }
+
+    /*Was formerly for all sizes*/
+    .nav-link-name p {
+        transform: translateX(-200px);
     }
 
     /* Header */

@@ -21,12 +21,17 @@
     <body>
         <div id="hologram-reference"></div>
         <audio id="background-music" preload="auto" loop>
-            <source src="vendors/audio/sumo_blanco_Atmosphere_cavern_of_lost_souls_05.mp3">
+            <source src="vendors/audio/Practice Arena.mp3">
         </audio>
         <div id="global-wrapper-outer">
             <div id="global-wrapper-inner">
-                <nav>
-                    <div class="nav-link"><button title="Chill vibes" type="button"><img id="sound-toggle-button" src="resources/img/pixel art/website_music_v1.png"></button></div>
+                <nav id="nav" class="nav-hidden">
+                    <div class="nav-link">
+                        <a id="sound-toggle-button" title="Chill vibes" href="#">
+                            <img src="resources/img/pixel art/website_music_v1.png">
+                            <div class="nav-link-name"><p style="color: lightblue;">chill vibes</p></div>
+                        </a>
+                    </div>
                     <div class="nav-link">
                         <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
                             <img id="about-icon" src="resources/img/pixel art/website_face_v1.png">
@@ -46,6 +51,11 @@
                         </a>
                     </div>
                 </nav>
+                <div id="nav-toggle-display" onclick="toggleNav(this)">
+                    <div class="burger-bar burger-top"></div>
+                    <div class="burger-bar burger-middle"></div>
+                    <div class="burger-bar burger-bottom"></div>
+                </div>
                 <!-- HEADER -->
                 <header id="section-header" class="section jq--section-header" data-section-name="Header">
                     <canvas class="canvas-header"></canvas>
@@ -98,7 +108,7 @@
                         <div class="exit-container">
                             <div class="video-container">
                                 <h1>Sorry!</h1>
-                                <img id="video-placeholder" src="resources/img/Coder James optimizilla.JPG">
+                                <img id="video-placeholder" src="resources/img/Coder James 2 optimizilla.JPG">
                                 <p>Video introduction coming soon :)</p>
                             </div>
 

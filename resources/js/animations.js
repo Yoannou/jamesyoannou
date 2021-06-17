@@ -31,6 +31,20 @@ const hologramRef = document.getElementById("hologram-reference");
  ANIMATIONS
  **********/
 
+/********** NAV DISPLAY TOGGLE HAMBURGER BUTTON **********/
+
+let nav = document.getElementById("nav");
+function toggleNav(burger) {
+    burger.classList.toggle('burger-x');
+    if (burger.classList.contains('burger-x')) {
+        nav.classList.remove('nav-hidden');
+    }
+    else {
+        nav.classList.add('nav-hidden');
+    }
+}
+
+
 /********** HOME-PAGE NAME ANIMATION **********/
 /* Add my name to the grid with 0 opacity */
 for(let i = 0; i < nameArray.length; i++) {
@@ -111,7 +125,6 @@ $(document).ready(function() {
 buttonLeft.addEventListener("click", ()=>{
     if (currentAboutPanel !== "left") {
         currentAboutPanel = "left";
-        console.log(currentAboutPanel);
         aboutPanelLeft.style.transform = "translateX(100%)";
     }
 });
@@ -188,7 +201,6 @@ let waypointSkillset = new Waypoint({
 // Color-changes
 
 for (let i of skillsetList) {
-    console.log(i);
     i.addEventListener('mouseout', ()=>{
         i.style.backgroundColor = "pink";
         setTimeout(()=>{i.style.backgroundColor = "#faa700";}, 800);

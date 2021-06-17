@@ -136,38 +136,69 @@ nav {
     background-color: var(--dark_grey);
     display: grid;
     align-items: center;
-    grid-template: 100% / repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     position: absolute;
     top: 0px;
     width: 100%;
-    height: 20px;
-    padding: 50px 0px;
+    padding: 14px 0px;
+    gap: 14px;
     font-size: 20px;
     z-index: 200;
+    transition: transform 0.5s ease;
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+.nav-show {
+    transform: translateY(0);
+}
+
+#nav-toggle-display {
+    z-index: 300;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+}
+
+.burger-bar {
+    width: 50px;
+    height: 5px;
+    margin: 10px 0;
+    background-color: var(--silver);
+    border-radius: 10px;
+    transition: .5s all ease-in;
+}
+
+/* Bars when hamburger is clicked and nav is displayed, toggled in HTML onclick */
+.burger-x .burger-top {
+    transform: translateY(15px) rotateZ(45deg);
+}
+.burger-x .burger-middle {
+    opacity: 0;
+}
+.burger-x .burger-bottom {
+    transform: translateY(-15px) rotateZ(-45deg);
 }
 
 nav div {
     font-size: 30px;
-    justify-self: center;
-}
-
-nav div:hover {
-    font-size: 40px;
 }
 
 .nav-link a {
     display: flex;
     align-items: center;
-}
-
-.nav-link-name {
-    display: none;
+    /*THE BELOW MUST BE REMOVED ON LARGE DISPLAYS*/
+    justify-content: space-evenly;
+    width: 400px;
 }
 
 .nav-link-name p {
     color: silver;
     font-size: 22px;
-    transform: translateX(-200px);
 }
 
 .nav-link a img,
@@ -182,15 +213,6 @@ nav div:hover {
     font-style: none;
 }
 */
-
-.nav-link:hover a img,
-.nav-link:hover button img{
-    width: 64px;
-    /*
-    font-size: 110%;
-    color: var(--orange);
-    /*text-shadow: 0px 2px rgba(50, 50, 50, 0.4);*/
-}
 
 /*
 .nav-link a:active {
@@ -341,6 +363,7 @@ header {
 
 .about-description {
     color: white;
+    padding: 0px 12px;
 }
 
 /* Remake this section using floats instead of flexbox so the two sides can be widely hovered */
@@ -542,10 +565,10 @@ header {
 #skill-ruby {width: 40%; right: 40%}
 #skill-liquid {width: 82%; right: 82%}
 #skill-git {width: 80%; right: 80%;} /* MAKE THIS ONE BETTER */
-#skill-unix {width: 92%; right: 92%;}
-#skill-c {width: 54%; right: 54%;}
-#skill-cpp {width: 62%; right: 62%;}
-#skill-java {width: 62%; right: 62%;}
+#skill-unix {width: 40%; right: 40%;}
+#skill-c {width: 45%; right: 45%;}
+#skill-cpp {width: 50%; right: 50%;}
+#skill-java {width: 56%; right: 56%;}
 
 .portfolio-left {
     padding: 10px;
