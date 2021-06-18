@@ -4,7 +4,6 @@
     nav {
         align-items: center;
         grid-template: 100% / repeat(4, 1fr);
-        height: 20px;
         padding: 60px 0px;
         transform: translateY(0);
     }
@@ -40,6 +39,10 @@
     .nav-link a {
         width: auto;
         justify-content: unset;
+    }
+
+    .nav-link a img{
+        padding: 0;
     }
 
     .nav-link-name {

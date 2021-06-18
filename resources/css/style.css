@@ -57,6 +57,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: contain;
+    position: relative;
 }
 
 .section {
@@ -193,7 +194,7 @@ nav div {
     display: flex;
     align-items: center;
     /*THE BELOW MUST BE REMOVED ON LARGE DISPLAYS*/
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 400px;
 }
 
@@ -202,9 +203,9 @@ nav div {
     font-size: 22px;
 }
 
-.nav-link a img,
-.nav-link button img{
+.nav-link a img{
     width: 48px;
+    padding: 0px 40px;
 }
 
 /*

@@ -34,7 +34,8 @@ const hologramRef = document.getElementById("hologram-reference");
 /********** NAV DISPLAY TOGGLE HAMBURGER BUTTON **********/
 
 let nav = document.getElementById("nav");
-function toggleNav(burger) {
+let burger = document.getElementById("nav-toggle-display")
+burger.addEventListener("click", ()=>{
     burger.classList.toggle('burger-x');
     if (burger.classList.contains('burger-x')) {
         nav.classList.remove('nav-hidden');
@@ -42,7 +43,7 @@ function toggleNav(burger) {
     else {
         nav.classList.add('nav-hidden');
     }
-}
+})
 
 
 /********** HOME-PAGE NAME ANIMATION **********/
