@@ -1,10 +1,12 @@
-/******************* GENERAL ********************/
+/**** GENERAL **************************************/
+/***************************************************/
 :root {
-    --bright-grey: #343434;
+    --bright_grey: #343434;
     --light_grey: #2a2a2a;
     --grey: #1d1d1d;
     --dark_grey: #181818;
-    --white: #ddd;
+    --white: #fff;
+    --dim_white: #ddd;
     --light_orange: #faa700;
     --orange: #f28500;
     --dark_orange: #d06300;
@@ -26,47 +28,26 @@ body {
     z-index: -1;
 }
 
-#preloadedImages
-/* Yet another preloading technique that doesn't work */
-{
-    width: 0px;
-    height: 0px;
-    display: inline;
-    background-image: url(../img/compressedpng/holo1-min.png);
-    background-image: url(../img/compressedpng/holo2-min.png);
-    background-image: url(../img/compressedpng/holo3-min.png);
-    background-image: url(../img/compressedpng/holo4-min.png);
-    background-image: url(../img/compressedpng/holo5-min.png);
-    background-image: url();
-
-}
-
-
-#global-wrapper-outer {
-    background-color: black;
-    /*
-    background-image: url(../img/jy_background_light.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    */
-    z-index: -5;
-}
-
-#global-wrapper-inner {
-    /*background-image: url(../img/logo.png);*/
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-size: contain;
+#global-wrapper {
     position: relative;
+    overflow: hidden;
 }
 
 .section {
     position: relative;
     padding-bottom: 10vh;
-    z-index: 5;
-    /* OR:
-    margin-bottom: 200px;*/
+    z-index: 0;
+}
+
+.background-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
 }
 
 p {
@@ -89,7 +70,6 @@ h1, h2, h3, h4 {
     font-family: neuropol-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 h1 {
@@ -105,7 +85,6 @@ h3 {
     font-size: 150%;
     /*text-shadow: 0px 1px #555;*/
 }
-
 .btn {
     cursor: pointer;
     padding: 10px 20px;
@@ -124,16 +103,10 @@ span {
     display: none;
 }
 
-/******************* HOLOGRAM REFERENCE POINT  ********************/
-#hologram-reference {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 1px;
-}
 
-/******************* NAVIGATION ********************/
+
+/**** NAVIGATION ***********************************/
+/***************************************************/
 nav {
     background-color: var(--dark_grey);
     display: grid;
@@ -194,7 +167,6 @@ nav div {
 .nav-link a {
     display: flex;
     align-items: center;
-    /*THE BELOW MUST BE REMOVED ON LARGE DISPLAYS*/
     justify-content: flex-start;
     width: 400px;
 }
@@ -209,27 +181,16 @@ nav div {
     padding: 0px 40px;
 }
 
-/*
-.nav-link a:link,
-.nav-link a:visited{
-    color: var(--white);
-    font-style: none;
-}
-*/
-
-/*
-.nav-link a:active {
-    color: tomato;
-}
-*/
-
 nav button:hover, .sound-on {
     color: tomato;
     font-size: 40px;
     cursor: pointer;
 }
 
-/******************* HEADER ********************/
+
+
+/**** HEADER ***************************************/
+/***************************************************/
 #section-header {
     background: var(--grey);
     height: 100vh;
@@ -316,17 +277,19 @@ header {
     transform: translateX(0);
 }
 
-/******************* SECTION: ABOUT ********************/
 
 
+/**** SECTION: ABOUT *******************************/
+/***************************************************/
 #section-about {
     overflow: hidden;
-    background-image: linear-gradient(rgba(50, 50, 60, 0.6), rgba(50, 50, 60, 0.6)), url(../img/city_streets.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
     min-height: 80vh;
+    background-color: black;
+    /*background-image: url(../../vendors/img/moertel-pixel.webp);*/
 }
 
 .about-heading {
@@ -337,16 +300,9 @@ header {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-bottom: 10vh;
+    padding: 100px 0px;
     align-items: center;
-    /* For centering with Scrollify: */
-    /*
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 50%;
-    */
+    z-index: 10;
 }
 
 .about-left {
@@ -398,26 +354,13 @@ header {
 
 .about-panel-right {
     top: 0;
-    background-color: var(--bright-grey);
+    background-color: var(--bright_grey);
 }
 
-/*
-.youtube-video {
-    position: relative;
-    width: 60%;
-    margin: 40px auto;
-    border: 4px solid black;
-}
 
-.youtube-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-*/
 
-/******************* SECTION: PORTFOLIO ********************/
+/**** SECTION: PORTFOLIO ***************************/
+/***************************************************/
 #section-portfolio {
     background-color: var(--grey);
     border: none, 1px solid grey;
@@ -547,45 +490,81 @@ header {
 }
 
 
-/******************* SECTION: CONTACT ********************/
+
+/**** SECTION: CONTACT *****************************/
+/***************************************************/
 #section-contact {
     background: var(--transparent_background);
-    background-image: linear-gradient(rgba(50, 50, 80, 0.3), rgba(50, 50, 80, 0.3)), url(../img/city_streets.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
-    padding: 20px;
-    min-height: 100vh;
+    min-height: 80vh;
+    background-color: black;
+    /*background-image: url(../../vendors/img/moertel-pixel.webp);*/
 }
 
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
     color: grey;
     margin: 20px auto;
-    width: 80%;
     /*height: 50vh;*/
-    background-color: var(--white);
+    background-color: rgba(200, 200, 200, 0.5);
 }
 
-/* This could be cleaned up a little bit */
-.contact-form h3 {
-    color: var(--grey);
+.contact-form label {
+    width: 80%;
+    margin-bottom:  20px;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 30px;
+.contact-form label input,
+.contact-form label textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 30px;
 }
 
-.contact-heading {
-    margin-bottom: 0px;
+.contact-form label textarea {
+    height: 200px;
 }
 
-/******************* SCROLL-BUTTON ********************/
+#email-submit-btn {
+    background-color: var(--orange);
+    padding: 20px 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 500px;
+}
+
+#email-submit-btn:hover {
+    background-color: #800000;
+    cursor: pointer;
+}
+
+
+
+/**** FOOTER ***************************************/
+/***************************************************/
+footer {
+    background-color: var(--dark_grey);
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: 50px;
+    padding: 20px 20px;
+    gap: 14px;
+    font-size: 20px;
+    z-index: 200;
+}
+
+
+
+/**** SCROLL BUTTON ********************************/
+/***************************************************/
 #scroll-button {
     position: fixed;
     display: flex;
