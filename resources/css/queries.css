@@ -2,6 +2,7 @@
 @media only screen and (min-width: 1200px) {
 
     nav {
+        height: 50px;
         align-items: center;
         grid-template: 100% / repeat(4, 1fr);
         padding: 60px 0px;
@@ -78,13 +79,12 @@
 
     /* About */
 
-
+    .my-face {
+        width: 80%;
+    }
 
 
     /* Contact */
-    .contact-form {
-        width: 40%;
-    }
 
     .contact-info {
         flex-direction: row;
@@ -139,23 +139,6 @@
         width: 90%;
         margin: auto;
         padding: 10px;
-    }
-
-    .about-options {
-        margin-top: auto;
-        height: auto;
-    }
-
-    .hologram-image {
-        margin-bottom: 0;
-    }
-
-    .about-options {
-        flex-direction: row;
-    }
-
-    .hologram-container {
-        order: 0;
     }
 
     /* Portfolio - must check iPad to see if this should be on a bigger screen */

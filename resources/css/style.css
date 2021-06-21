@@ -1,5 +1,6 @@
 /******************* GENERAL ********************/
 :root {
+    --bright-grey: #343434;
     --light_grey: #2a2a2a;
     --grey: #1d1d1d;
     --dark_grey: #181818;
@@ -172,18 +173,18 @@ nav {
     margin: 10px 0;
     background-color: var(--silver);
     border-radius: 10px;
-    transition: .5s all ease-in;
+    transition: .4s all ease-in;
 }
 
 /* Bars when hamburger is clicked and nav is displayed, toggled in HTML onclick */
 .burger-x .burger-top {
-    transform: translateY(15px) rotateZ(45deg);
+    transform: translateY(15px) rotateZ(-45deg);
 }
 .burger-x .burger-middle {
-    opacity: 0;
+    transform: translateX(200px);
 }
 .burger-x .burger-bottom {
-    transform: translateY(-15px) rotateZ(-45deg);
+    transform: translateY(-15px) rotateZ(45deg);
 }
 
 nav div {
@@ -325,6 +326,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
+    min-height: 80vh;
 }
 
 .about-heading {
@@ -368,49 +370,6 @@ header {
     padding: 0px 12px;
 }
 
-/* Remake this section using floats instead of flexbox so the two sides can be widely hovered */
-.about-options {
-    background: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 1));
-    /*background-color: var(--light_grey);*/
-    height: 800px;
-    display: flex;
-    margin-top: -170px;
-    margin-bottom: -10vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.hologram-container {
-    position: relative;
-    order: -1;
-}
-
-/* Used to provide a space where the absolute-positioned images will appear */
-.hologram-image-template {
-    position: relative;
-    width: 500px;
-    height: auto;
-    max-height: 600px;
-    margin-bottom: 20px;
-}
-
-.hologram-image {
-    display: none;
-    position: absolute;
-    left: 0;
-    bottom: -40px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    opacity: 0.9;
-    /*transition: opacity 0.8s; replaced by jQuery*/
-}
-
-.hologram-hidden {
-    opacity: 0;
-}
-
 .off-screen {
     box-sizing: border-box;
     padding: 40px 40px;
@@ -418,28 +377,28 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform 1.5s ease;
+    transition: transform 1.4s ease;
 }
 
-.intro-video-panel {
+.about-panel-left {
+    z-index: 30;
     top: 0;
-    right: 100%;
     background-color: var(--dark_grey);
 }
 
-.video-container {
-    padding-bottom: 60px;
+.face-container {
+    position: relative;
+    overflow: hidden;
 }
 
-#video-placeholder {
-    width: 60%;
-    margin: auto;
+.my-face {
+    width: 100%;
+    height: auto;
 }
 
-.learn-more-panel {
+.about-panel-right {
     top: 0;
-    left: 100%;
-    background-color: var(--dark_grey);
+    background-color: var(--bright-grey);
 }
 
 /*
@@ -597,16 +556,15 @@ header {
     background-size: cover;
     background-position: bottom;
     padding: 20px;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .contact-form {
     padding: 40px;
     color: grey;
     margin: 20px auto;
-    width: 60%;
+    width: 80%;
     /*height: 50vh;*/
-    height: 300px;
     background-color: var(--white);
 }
 

@@ -87,39 +87,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-options">
-                        <div class="about-option intro-video-option">
-                            <a id="intro-video-button" class="jq--scroll-to-about btn">Meet me!</a>
-                        </div>
-                        <div class="about-option hologram-container">
-                            <img id="hologram-image-template" class="hologram-image-template hologram-hidden" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
-                            <!-- Replacing following with loadImage("hologram-image") in JS may increase load speed -->
-                            <img id="hologram-image-1" class="hologram-image" src="resources/img/compressedpng/holo1-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-2" class="hologram-image" src="resources/img/compressedpng/holo2-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-3" class="hologram-image" src="resources/img/compressedpng/holo3-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-4" class="hologram-image" src="resources/img/compressedpng/holo4-min.png" alt="James's face floating in space.">
-                            <img id="hologram-image-5" class="hologram-image" src="resources/img/compressedpng/holo5-min.png" alt="James's face floating in space.">
-                        </div>
-                        <div class="about-option learn-more-option">
-                            <a id="learn-more-button" class="jq--scroll-to-about btn">Learn more</a>
+                    <div class="about-panel-left off-screen">
+                        <div class="face-container">
+                            <img class="my-face" src="resources/img/compressedpng/holo3-min.png">
                         </div>
                     </div>
-                    <div class="intro-video-panel off-screen">
-                        <div class="exit-container">
-                            <div class="video-container">
-                                <h1>Sorry!</h1>
-                                <img id="video-placeholder" src="resources/img/Coder James 2 optimizilla.JPG">
-                                <p>Video introduction coming soon :)</p>
-                            </div>
-
-                            <a class="panel-exit jq--scroll-to-about btn"><strong>Back</strong></a>
-                        </div>
-                    </div>
-                    <div class="learn-more-panel off-screen">
-                        <div class="exit-container">
-                            <a class="panel-exit jq--scroll-to-about btn"><strong>Back</strong></a>
-                        </div>
-                    </div>
+                    <div class="about-panel-right off-screen"></div>
                 </section>
                 <!-- PORTFOLIO -->
                 <section id="section-portfolio" class="section jq--section-portfolio waypoint-portfolio" data-section-name="Portfolio">
@@ -298,6 +271,17 @@
                             <h3 class="contact-heading">instagram</h3>
                             <p>@jamesyoannou</p>
                         </div>
+                    </div>
+                    <div class="actual-form">
+                        <h2>Send Email</h2>
+                        <form class="contact-form" action="contactform.php" method="post">
+                            <input type="text" name="name" placeholder="Full name">
+                            <input type="text" name="mail" placeholder="Your email">
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button type="submit" name="submit">SEND MAIL</button>
+                        </form>
+                        <?php echo phpinfo(); ?>
                     </div>
                 </section>
                 <div id="scroll-button" style="display: none;">

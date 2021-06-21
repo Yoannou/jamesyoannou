@@ -10,8 +10,8 @@ const skillsetList = document.querySelectorAll(".bar-inner");
 // Nodes
 let buttonLeft = document.getElementById("intro-video-button");
 let buttonRight = document.getElementById("learn-more-button")
-let aboutPanelLeft = document.querySelector(".intro-video-panel");
-let aboutPanelRight = document.querySelector(".learn-more-panel");
+let aboutPanelLeft = document.querySelector(".about-panel-left");
+let aboutPanelRight = document.querySelector(".about-panel-right");
 let currentAboutPanel = "center";
 
 
@@ -123,33 +123,28 @@ $(document).ready(function() {
 
 
 /********** ABOUT-SECTION CHANGING PANELS **********/
-buttonLeft.addEventListener("click", ()=>{
-    if (currentAboutPanel !== "left") {
-        currentAboutPanel = "left";
-        aboutPanelLeft.style.transform = "translateX(100%)";
-    }
-});
 
-buttonRight.addEventListener("click", ()=>{
-    if (currentAboutPanel !== "right") {
-        currentAboutPanel = "right";
-        aboutPanelRight.style.transform = "translateX(-100%)";
+let panelsOpen = false;
+function togglePanel(panel, direction) {
+    panel.style.transform = "translateX("+direction+"%)";
+}
+function toggleAboutPanels() {
+    let left=-100, right=100, center=0;
+    if(panelsOpen) {
+        togglePanel(aboutPanelLeft, center);
+        setTimeout(togglePanel, 200, aboutPanelRight, center);
+        panelsOpen = false;
     }
-});
-
-document.querySelectorAll(".panel-exit").forEach(el => el.addEventListener("click", ()=> {
-    if (currentAboutPanel == "left") {
-        aboutPanelLeft.style.transform = "translateX(-100%)";
+    else {
+        togglePanel(aboutPanelLeft, left);
+        setTimeout(togglePanel, 200, aboutPanelRight, right);
+        panelsOpen = true;
     }
-    if (currentAboutPanel == "right") {
-        aboutPanelRight.style.transform = "translateX(100%)";
-    }
-    currentAboutPanel = "center";
-}));
+}
 
 
  /******************
- WAYPOINT ANIMATIONS
+ ON-SCROLL WAYPOINT ANIMATIONS
  *******************/
 
  // Animations when reaching About section
@@ -157,8 +152,9 @@ let waypointAbout = new Waypoint({
     element: document.querySelector('.waypoint-about'),
     handler: function() {
         document.querySelector('.about-right').style.opacity = "100";
+        toggleAboutPanels();
     },
-    offset: 400
+    offset: 600
 })
 
 // Animations when reaching Portfolio section
@@ -174,6 +170,7 @@ let waypointPortfolio = new Waypoint({
                 portfolioCount++;
             }
         }, 300);
+        toggleAboutPanels();
     },
     offset: 100
 })
@@ -199,8 +196,8 @@ let waypointSkillset = new Waypoint({
     },
     offset: 200
 })
-// Color-changes
 
+// Color-changes
 for (let i of skillsetList) {
     i.addEventListener('mouseout', ()=>{
         i.style.backgroundColor = "pink";
