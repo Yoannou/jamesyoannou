@@ -14,5 +14,6 @@ else {
     $txt = "You have received an email from ".$name."\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.php?maisend");
+    header("Location: ../index.php?mailsend");
+    echo '<script>alert("Message sent.")</script>'; // Doesn't work
 }

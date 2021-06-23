@@ -14,8 +14,6 @@
     --green: #b7e117;
     --silver: #d2dae2;
     --gold: rgba(230, 180, 100, 1);
-    --light_gold: #e8cf8f;
-    --dark_teal: #233838;
     --transparent_background: rgba(0, 0, 0, 0.7);
     --transparent_button: rgba(255, 255, 240, 0.1);
 
@@ -25,9 +23,7 @@ body {
     background: #1d1d1d;
     font-size: 22px;
     color: var(--white);
-    font-family: anonymous-pro, monospace;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     z-index: -1;
 }
@@ -265,7 +261,12 @@ header {
     transform: translateY(-50px);
 }
 
-.james, .yoannou {
+.james {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.yoannou {
     opacity: 1;
     transform: translateY(0);
 }
@@ -381,26 +382,6 @@ header {
     padding-left: 20px;
 }
 
-#section-portfolio h4 {
-    margin: 0px;
-    color: white; /* Or oldlace, or bisque, slightly darker */
-    font-weight: bold;
-    /*font-family: 'Nunito', sans-serif;*/
-    font-family: natom-pro,sans-serif;
-    font-weight: 400;
-    font-style: normal;  
-}
-
-#section-portfolio a {
-    text-decoration: underline;
-    color: #e8cf8f;
-    font-weight: bold;
-}
-
-#section-portfolio a:hover {
-    color: var(--gold);
-}
-
 #section-portfolio ul {
     font-size: 16px;
 }
@@ -413,23 +394,9 @@ header {
     padding-bottom: 10px;
 }
 
-.outer-li p {
-    font-weight: bold;
-}
-
 .outer-li ul {
     text-align: start;
     padding-left: 30px;
-}
-
-.inner-li {
-    font-family: ff-tisa-sans-web-pro,sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.school {
-    color: var(--light_gold);
 }
 
 .portfolio-heading {
@@ -499,16 +466,13 @@ header {
 #skill-css {width: 86%; right: 86%;}
 #skill-javascript {width: 70%; right: 70%;}
 #skill-jquery {width: 42%; right: 42%;}
-#skill-react {width: 10%; right: 10%; background-color: #f56;}
-#skill-ruby {width: 30%; right: 30%}
-#skill-php {width: 40%; right: 40%}
-#skill-mysql {width: 10%; right: 10%}
+#skill-ruby {width: 40%; right: 40%}
 #skill-liquid {width: 82%; right: 82%}
 #skill-git {width: 80%; right: 80%;} /* MAKE THIS ONE BETTER */
 #skill-unix {width: 40%; right: 40%;}
 #skill-c {width: 45%; right: 45%;}
 #skill-cpp {width: 50%; right: 50%;}
-#skill-java {width: 40%; right: 40%;}
+#skill-java {width: 56%; right: 56%;}
 
 .portfolio-left {
     padding: 10px;
@@ -530,25 +494,15 @@ header {
 /**** SECTION: CONTACT *****************************/
 /***************************************************/
 #section-contact {
-    padding: 0px 10px;
     background: var(--transparent_background);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position-x: 0px;
     min-height: 80vh;
-    background-color: var(--bright_grey);
-    color: white;
-    /*
-    font-family: anonymous-pro, monospace;
-    font-weight: 400;
-    font-style: normal;
+    background-color: orange;
     /*background-image: url(../img/pixel\ art/bg-test.png);
     background-image: url(../../vendors/img/moertel-pixel.webp);*/
-}
-
-.contact-heading {
-    color: white;
 }
 
 .contact-form {
@@ -558,10 +512,7 @@ header {
     padding: 40px;
     color: grey;
     margin: 20px auto;
-}
-
-.contact-form h3, .contact-form p {
-    color: white;
+    background-color: rgba(200, 200, 200, 0.5);
 }
 
 .contact-form label {
@@ -571,11 +522,9 @@ header {
 
 .contact-form label input,
 .contact-form label textarea {
-    box-sizing: border-box;
     width: 100%;
     font-size: 20px;
     padding: 10px 30px;
-    font-family: anonymous-pro, monospace;
 }
 
 .contact-form label textarea {
@@ -583,21 +532,16 @@ header {
 }
 
 #email-submit-btn {
-    margin-top: 40px;
-    position: relative;
     background-color: var(--orange);
-    box-shadow: 7px 7px #262626, -7px 7px #262626;
     padding: 20px 20px;
     color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 500px;
-    font-weight: bold;
 }
 
 #email-submit-btn:hover {
-    background-color: #c50;
+    background-color: #800000;
     cursor: pointer;
-    transform: translateY(5px);
-    box-shadow: none;
 }
 
 
@@ -605,31 +549,16 @@ header {
 /**** FOOTER ***************************************/
 /***************************************************/
 footer {
-    color: grey;
     background-color: var(--dark_grey);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
     height: 50px;
     padding: 20px 20px;
     gap: 14px;
     font-size: 20px;
     z-index: 200;
-}
-
-.footer-tab {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.footer-tab img {
-    width: 48px;
-}
-
-.footer-tab img:hover {
-    width: 52px;
 }
 
 

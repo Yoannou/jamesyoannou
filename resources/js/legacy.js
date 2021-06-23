@@ -82,6 +82,82 @@ function createViewportMarkers(arr) {
     arr.push(window.innerHeight / 3);
 }
 
+/* Preloads hologram images */
+function loadHologramsOld(div) {
+    for(let i=1; i<=5; i++) {
+        let hologramImageI = document.createElement("img");
+        hologramImageI.id = `hologram-image-${i}`;
+        hologramImageI.classList.add("hologram-image");
+        if(i != 3) {
+            hologramImageI.classList.add("hologram-hidden");
+        }
+        hologramImageI.src = `resources/img/compressedpng/holo${i}-min.png`;
+        document.querySelector(`.${div}`).appendChild(hologramImageI);
+    }
+}
+
+/* Checks if element is in the viewport */
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom > 0
+    );
+}
+
+function rotateFace(direction) {
+    if (direction == "left") {
+        console.log("left!");
+    }
+    else if (direction == "right") {
+        console.log("right!");
+    }
+    else {
+        console.loge("invalid face direction for function rotateFace");
+    }
+}
+
+/********** ABOUT-SECTION ROTATING FACE **********/
+
+/* Handled with jQuery */
+
+$(document).ready(function() {
+
+    /* Initialize my face to make most sections invisible */
+    $( '#hologram-image-3' ).show();
+  
+
+  
+  
+
+  
+    $( '#intro-video-button' ).hover(jamesLookLeftIn, jamesLookLeftOut);
+    $( '#learn-more-button' ).hover(jamesLookRightIn, jamesLookRightOut);
+  
+    function jamesLookLeftIn(){
+        $( '.hologram-image' ).eq(2).fadeToggle(300);
+        $( '.hologram-image' ).eq(1).delay(100).fadeToggle(80).fadeToggle(100);
+        $( '.hologram-image' ).eq(0).delay(100).fadeToggle(240);
+    }
+  
+    function jamesLookLeftOut(){
+      $( '.hologram-image' ).eq(0).delay(300).fadeToggle(300);
+      $( '.hologram-image' ).eq(1).delay(400).fadeToggle(80).fadeToggle(100);
+      $( '.hologram-image' ).eq(2).delay(400).fadeToggle(240);
+    }
+  
+    function jamesLookRightIn(){
+      $( '.hologram-image' ).eq(2).fadeToggle(300);
+      $( '.hologram-image' ).eq(3).delay(100).fadeToggle(80).fadeToggle(100);
+      $( '.hologram-image' ).eq(4).delay(100).fadeToggle(240);
+    }
+    function jamesLookRightOut(){
+      $( '.hologram-image' ).eq(4).delay(300).fadeToggle(300);
+      $( '.hologram-image' ).eq(3).delay(400).fadeToggle(80).fadeToggle(100);
+      $( '.hologram-image' ).eq(2).delay(400).fadeToggle(240);
+    }
+  
+  });
 
 /********** CANVAS ANIMATIONS **********/
 /* Definitely put these in functions later */

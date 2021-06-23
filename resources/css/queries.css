@@ -149,15 +149,21 @@
 
     .portfolio-grid-item {
         width: 48%;
-        margin-bottom: 20px;
-    }
-
-    #education {
-        grid-row-start: 1;
+        margin-bottom: 40px;
     }
     
     #projects {
+        box-shadow: 12px 12px var(--dark_teal);
         float: right;
+    }
+
+    #skillset {
+        box-shadow: -12px 12px var(--dark_teal);
+    }
+
+    #education {
+        box-shadow: -12px 12px var(--dark_teal);
+        grid-row-start: 1;
     }
 }
 

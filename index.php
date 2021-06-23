@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
 
-        <!-- <script src="vendors/js/zounds.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
     </head>
@@ -69,7 +68,7 @@
 
 
             <!-- ABOUT -->
-            <section id="section-about" class="section jq--section-about waypoint-about" data-section-name="About">
+            <section name="about" id="section-about" class="section jq--section-about waypoint-about" data-section-name="About">
                 <div class="background-filter"></div>
                 <div class="about-wrapper">
                     <div class="about-left">
@@ -115,33 +114,36 @@
                                 <h4>Websites for clients:</h4>
                                 <ul>
                                     <li class="outer-li">
-                                        <a href="https://muddycrops.com" target="_blank">Muddy Crops</a>
+                                        <a href="https://muddycrops.com" target="_blank">Muddy Crops OFC Ltd.</a>
                                         <ul>
-                                            <li>&bull; Enhanced the nav bar</li>
-                                            <li>&bull; Created and implemented a tabs section</li>
-                                            <li>&bull; Granted client more control over the website with schemas</li>
+                                            <li class="inner-li">&bull; Lead shopify developer</li>
+                                            <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
+                                            <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4>Side-projects:</h4>
+                                <ul>
+                                    <li class="outer-li">
+                                        <a href="./projects/shopitabs/shopitabs.php">Shopitabs</a>
+                                        <ul>
+                                            <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
+                                            <li class="inner-li">&bull; Highly customizable and responsive</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
-                                        <p>Sarah Cressati</p>
+                                        <a href="#">Shopify fade-in navigation</a>
+                                        <ul>
+                                            <li class="inner-li">&bull; Applies changes to site nav on-hover</li>
+                                            <li class="inner-li">&bull; Can be toggled on and off via Theme Settings</li>
+                                            <li class="inner-li">&bull; Currently being optimized to add more custom features</li>
+                                        </ul>
                                     </li>
                                     <li class="outer-li">
-                                        <p>Pizza Shab</p>
-                                    </li>
-                                </ul>
-                                <h4>Side-projects</h4>
-                                <ul>
-                                    <li class="outer-li">
-                                        <p>Online pixel art tool</p>
-                                    </li>
-                                    <li>
-                                        <p>Section stretcher (slowly unfurl sections)</p>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p>Shopify Tab system</p>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p>Shopify fade-in header</p>
+                                        <a href="./arduino">Arduino projects, coded in C</a>
+                                        <ul>
+                                            <li class="inner-li">&bull; Includes a theremin!</li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -180,9 +182,27 @@
                                         </div>
                                     </li>
                                     <li class="skill-li">
+                                        <p>React (in progress)</p>
+                                        <div class="bar-outer">
+                                            <div id="skill-react" class="bar-inner"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill-li">
                                         <p>Ruby on Rails</p>
                                         <div class="bar-outer">
                                             <div id="skill-ruby" class="bar-inner"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p>PHP</p>
+                                        <div class="bar-outer">
+                                            <div id="skill-php" class="bar-inner"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p>MySQL</p>
+                                        <div class="bar-outer">
+                                            <div id="skill-mysql" class="bar-inner"></div>
                                         </div>
                                     </li>
                                     <li class="skill-li">
@@ -231,25 +251,51 @@
                                 <div class="expand-box">+</div>
                                 </div>
                             <div class="portfolio-item-content">
+                                <h4>Schooling:</h4>
                                 <ul>
                                     <li class="outer-li">
-                                        <p>University of Toronto</p>
+                                        <p class="school">University of Toronto</p>
                                         <ul>
-                                            <li>&bull; BA for Linguistics</li>
+                                            <li class="inner-li">&bull; BA for Linguistics</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
-                                        <p>Ryerson University Chang School</p>
+                                        <p class="school">Ryerson University Chang School</p>
                                         <ul>
-                                            <li>&bull; Certificate in Computer Science</li>
+                                            <li class="inner-li">&bull; Certificate in Computer Science</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
-                                        <p>Lighthouse Labs</p>
+                                        <p class="school">Lighthouse Labs</p>
                                         <ul>
-                                            <li>&bull; Crash course web development bootcamp</li>
+                                            <li class="inner-li">&bull; Crash course web development bootcamp</li>
                                         </ul>
                                     </li>
+                                </ul>
+                                <h4>Online Learning:</h4>
+                                <ul>
+                                    <li class="outer-li">
+                                        <p class="school">Build Responsive Real World Websites (Udemy)</p>
+                                        <ul>
+                                            <li class="inner-li">&bull; By Jonas Schmedtmann</li>
+                                            <li class="inner-li">&bull; Provides fundamental knowlege on front end principles</li>
+                                        </ul>
+                                    </li>                                    
+                                    <li class="outer-li">
+                                        <p class="school">Eloquent Javascript</p>
+                                        <ul>
+                                            <li class="inner-li">&bull; By Marijn Haverbeke</li>
+                                            <li class="inner-li">&bull; Provides a deep-dive into Vanilla Javascript essentials</li>
+                                        </ul>
+                                    </li>
+                                    <li class="outer-li">
+                                        <p class="school">React - The Complete Guide (Udemy) (in progress)</p>
+                                        <ul>
+                                            <li class="inner-li">&bull; By Academind</li>
+                                            <li class="inner-li">&bull; Provides hands-on learning with React, Hooks, Redux, etc.</li>
+                                        </ul>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -260,7 +306,7 @@
 
             <!-- CONTACT -->
             <section id="section-contact" class="section jq--section-contact" data-section-name="Contact">
-                <div class="background-filter"></div>
+            <!--<div class="background-filter"></div>-->
                 <h1 class="contact-heading">Contact</h1>
                 <p>
                     If you would like to contact me, please send me an email via the form below, or drop me a call.
@@ -284,9 +330,31 @@
                     </form>
                 </div>
             </section>
-            <footer>
+            
 
             <!-- FOOTER -->
+            <footer id="footer">
+                <div class="footer-tab">
+                    <a href="#" class="footer-link jq--scroll-to-header">
+                        <img src="resources/img/pixel art/website_face_v1.png">
+                    </a>
+                </div>
+                <div class="footer-tab">
+                    <p>me@jamesyoannou.com</p>
+                </div>
+                <div class="footer-tab">
+                    <p>(647)998-5899</p>
+                </div>
+                <div class="footer-tab">
+                    <a href="https://www.linkedin.com/in/james-yoannou-812b7b1a4/" target="_blank" class="footer-link">
+                        <img src="vendors/img/LIsimple.png">
+                    </a>
+                </div>
+                <div class="footer-tab">
+                    <a href="https://github.com/Yoannou" target="_blank" class="footer-link">
+                        <img src="vendors/img/GitHub-Mark-Light-64px.png">
+                    </a>
+                </div>
             </footer>
             <div id="scroll-button" style="display: none;">
                 <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>

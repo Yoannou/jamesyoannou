@@ -23,8 +23,8 @@ const nameWrapper = document.querySelector(".name-wrapper");
 const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];
 const webDeveloper = document.querySelector(".web-developer");
 
-const hologram = document.querySelector(".about-left");
-const hologramRef = document.getElementById("hologram-reference");
+//const hologram = document.querySelector(".about-left");
+//const hologramRef = document.getElementById("hologram-reference");
 
 
 /**********
@@ -45,6 +45,24 @@ burger.addEventListener("click", ()=>{
     }
 })
 
+/********** SCROLLING TO SECTIONS (SCROLLIFY) **********/
+
+$('.jq--scroll-to-header').click(function() {
+$('html, body').animate({scrollTop: $('.jq--section-header')});
+});
+
+$('.jq--scroll-to-about').click(function() {
+$('html, body').animate({scrollTop: $('.jq--section-about').offset().top}, 1000);
+});
+
+$('.jq--scroll-to-portfolio').click(function() {
+$('html, body').animate({scrollTop: $('.jq--section-portfolio').offset().top}, 1500);
+});
+
+$('.jq--scroll-to-contact').click(function() {
+$('html, body').animate({scrollTop: $('.jq--section-contact').offset().top}, 1500);
+});
+
 
 /********** HOME-PAGE NAME ANIMATION **********/
 /* Add my name to the grid with 0 opacity */
@@ -64,62 +82,6 @@ let count = 0;
 let timer = setInterval(addLetter, 85);
 
 /********** HOME-PAGE CANVAS **********/
-
-
-
-/********** ABOUT-SECTION ROTATING FACE **********/
-
-/* Handled with jQuery */
-
-$(document).ready(function() {
-
-    /* Initialize my face to make most sections invisible */
-    $( '#hologram-image-3' ).show();
-  
-    /* SCROLLING TO SECTIONS */
-  
-    $('.jq--scroll-to-about').click(function() {
-        $('html, body').animate({scrollTop: $('.jq--section-about').offset().top}, 1000);
-    });
-  
-    $('.jq--scroll-to-portfolio').click(function() {
-        $('html, body').animate({scrollTop: $('.jq--section-portfolio').offset().top}, 1500);
-    });
-  
-    $('.jq--scroll-to-contact').click(function() {
-        $('html, body').animate({scrollTop: $('.jq--section-contact').offset().top}, 1500);
-    });
-  
-  
-
-  
-    $( '#intro-video-button' ).hover(jamesLookLeftIn, jamesLookLeftOut);
-    $( '#learn-more-button' ).hover(jamesLookRightIn, jamesLookRightOut);
-  
-    function jamesLookLeftIn(){
-        $( '.hologram-image' ).eq(2).fadeToggle(300);
-        $( '.hologram-image' ).eq(1).delay(100).fadeToggle(80).fadeToggle(100);
-        $( '.hologram-image' ).eq(0).delay(100).fadeToggle(240);
-    }
-  
-    function jamesLookLeftOut(){
-      $( '.hologram-image' ).eq(0).delay(300).fadeToggle(300);
-      $( '.hologram-image' ).eq(1).delay(400).fadeToggle(80).fadeToggle(100);
-      $( '.hologram-image' ).eq(2).delay(400).fadeToggle(240);
-    }
-  
-    function jamesLookRightIn(){
-      $( '.hologram-image' ).eq(2).fadeToggle(300);
-      $( '.hologram-image' ).eq(3).delay(100).fadeToggle(80).fadeToggle(100);
-      $( '.hologram-image' ).eq(4).delay(100).fadeToggle(240);
-    }
-    function jamesLookRightOut(){
-      $( '.hologram-image' ).eq(4).delay(300).fadeToggle(300);
-      $( '.hologram-image' ).eq(3).delay(400).fadeToggle(80).fadeToggle(100);
-      $( '.hologram-image' ).eq(2).delay(400).fadeToggle(240);
-    }
-  
-  });
 
 
 /********** ABOUT-SECTION CHANGING PANELS **********/
@@ -227,40 +189,5 @@ function addLetter() {
             cell.firstChild.classList.add("yoannou");
         }
         count++;
-    }
-}
-
-/* Checks if element is in the viewport */
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom > 0
-    );
-}
-
-/* Preloads hologram images */
-function loadHologramsOld(div) {
-    for(let i=1; i<=5; i++) {
-        let hologramImageI = document.createElement("img");
-        hologramImageI.id = `hologram-image-${i}`;
-        hologramImageI.classList.add("hologram-image");
-        if(i != 3) {
-            hologramImageI.classList.add("hologram-hidden");
-        }
-        hologramImageI.src = `resources/img/compressedpng/holo${i}-min.png`;
-        document.querySelector(`.${div}`).appendChild(hologramImageI);
-    }
-}
-
-function rotateFace(direction) {
-    if (direction == "left") {
-        console.log("left!");
-    }
-    else if (direction == "right") {
-        console.log("right!");
-    }
-    else {
-        console.loge("invalid face direction for function rotateFace");
     }
 }

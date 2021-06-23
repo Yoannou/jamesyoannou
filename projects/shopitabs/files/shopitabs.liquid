@@ -1,0 +1,309 @@
+<!--
+Author: James Yoannou
+Feb 14, 2021
+
+A section where the merchant can create a list of labeled tabs.
+-->
+
+<div class="shopitabs-container" style="padding: {{section.settings.section_height}}px 0px; background-color: {{section.settings.background_color}};">
+  {% if section.settings.show_heading %}
+    <h3 class="shopitabs-title">{{section.settings.title}}</h3>
+  {% endif %}
+  <div class="shopitabs-list" style="width: {{ section.settings.section_width }}%;">
+    {% for block in section.blocks %}
+        <div class="shopitab-button">
+            <div class="shopitab-name"><h3>{{block.settings.title}}</h3></div>
+          {% if block.settings.image != blank %}
+            <div class="shopitab-image-container">
+              <img id="{{ img_id }}"
+                 class="shopitab-image"
+                 src="{{ block.settings.image | img_url: '700x700' }}"
+                 >
+            </div>
+          {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="shopitab-content-container">
+    {% for block in section.blocks %}
+      <div class="shopitab-content hidden" {% if block.settings.text == blank %}style="margin: 0px; padding: 0px;"{% endif %}>
+        <div class="shopitab-content-description">{{ block.settings.text }}</div>
+        {% if block.settings.inner_image != blank %}
+          <div class="shopitab-content-image-container">
+            <img id="{{ img_id }}"
+                 class="shopitab-content-image"
+                 src="{{ block.settings.inner_image | img_url: '700x700' }}"
+                 ></div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Tabs"
+  },
+  "class": "tabs-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "en": "Heading"
+      },
+      "default": {
+        "en": "Tabs"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_heading",
+      "label": "Show heading"
+    },
+    {
+      "type": "range",
+      "id": "section_width",
+      "label": "Width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "label": "Height",
+      "min": 20,
+      "max": 140,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default" : "#fff"
+
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": {
+        "en": "Tab"
+      },
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_image",
+          "label": {
+            "en": "Show image"
+          },
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "en": "Image"
+          }
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading"
+          },
+          "default": {
+            "en": "Add a title or tagline"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": {
+            "en": "Text"
+          },
+          "default": {
+            "en": "<p>The text content of this tab when opened.</p>"
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "inner_image",
+          "label": {
+            "en": "Inner Image"
+          }
+        }
+      ]
+    }
+  ],
+"presets": [
+    {
+      "name": "Tabs",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+.shopitabs-container {
+  padding: 10px 0px;
+}
+
+.shopitabs-title {
+  text-align: center;
+}
+
+.shopitabs-list {
+  margin: auto;
+  display: grid;
+  width: 90%;
+  gap: 10px;
+  /*align-items: center;*/
+}
+
+.shopitab-button {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shopitab-name {
+  color: #111;
+  font-weight: 900;
+  align-self: start;
+  /*
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  margin: 0 auto;
+  */
+  width: 100%;
+}
+
+.shopitab-name h3 {
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+.shopitab-image-container {
+  /*overflow: hidden;*/
+
+}
+
+.shopitab-image {
+  width: 100%;
+  height: auto;
+}
+
+.shopitab-content-container {
+  width: 100%
+}
+
+.shopitab-content {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  box-sizing: border-box;
+  /*border: 2px solid rgba(226, 77, 47, 0.2);
+  border-style: solid none;*/
+  margin: 10px auto;
+  padding: 20px 10px;
+  width: 90%;
+}
+
+.shopitab-content-image-container {
+  width: 80%;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.shopitab-content-image {
+  width: 100%;
+  /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+}
+
+.hidden {
+  display: none;
+}
+
+
+.shopitab-button:hover .shopitab-image, .clicked .shopitab-image {
+  /*filter: saturate(100%);*/
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+/*
+.shopitab-button:hover .shopitab-name, .clicked .shopitab-name {
+  color: #e24d2f;
+}
+*/
+
+
+@media only screen and (min-width: 750px) {
+  
+  /*
+  .shopitab-name {
+    overflow: hidden;
+  }
+  
+  .shopitab-name h3 {
+    position: relative;
+    top: 40px;
+  }
+  
+  .shopitab-button:hover .shopitab-name h3{
+    top: 0px;
+  }
+  */
+  .shopitab-name{
+    color: black;
+  }
+  
+  .shopitab-button:hover .shopitab-name {
+    display: block;
+  }
+  
+  .clicked .shopitab-name {
+    display: block;
+    color: #e24d2f;  
+  }
+  
+  .shopitabs-list {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  
+  .shopitab-content {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .shopitab-content-image-container {
+    padding-top: 0px;
+  }
+}
+{% endstylesheet %}
+
+<!-- tabs.js must be run only once, ideallly at bottom of theme.liquid -->
