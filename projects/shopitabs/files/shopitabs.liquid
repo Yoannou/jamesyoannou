@@ -26,7 +26,7 @@ A section where the merchant can create a list of labeled tabs.
   </div>
   <div class="shopitab-content-container">
     {% for block in section.blocks %}
-      <div class="shopitab-content hidden" {% if block.settings.text == blank %}style="margin: 0px; padding: 0px;"{% endif %}>
+      <div class="shopitab-content hidden" {% if block.settings.text == blank %}style="margin: 0px auto; padding: 20px;"{% endif %}>
         <div class="shopitab-content-description">{{ block.settings.text }}</div>
         {% if block.settings.inner_image != blank %}
           <div class="shopitab-content-image-container">

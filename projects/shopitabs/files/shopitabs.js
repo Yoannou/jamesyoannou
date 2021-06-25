@@ -18,7 +18,7 @@ class Shopitab {
       this.width = section.querySelector('.shopitabs-list');
       this.buttonList = section.querySelectorAll('.shopitab-button');
       this.contentList = section.querySelectorAll('.shopitab-content');
-      this.contentContainer = section.children[1];
+      this.contentContainer = section.querySelector('.shopitab-content-container');
       this.shopitabID = Math.floor(Math.random()*10000);
       this.init();
     }

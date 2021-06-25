@@ -6,10 +6,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="vendors/css/reset.css">
-        <link rel="stylesheet" href="resources/css/style.css">
-        <link rel="stylesheet" href="resources/css/queries.css">
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="resources1/css/general.css">
+        <link rel="stylesheet" href="resources1/css/style.css">
+        <link rel="stylesheet" href="resources1/css/queries.css">
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -27,25 +26,25 @@
             <nav id="nav" class="nav-hidden">
                 <div class="nav-link">
                     <a id="sound-toggle-button" title="Chill vibes" href="#">
-                        <img src="resources/img/pixel art/website_music_v1.png">
+                        <img src="resources1/img/pixel art/website_music_v1.png">
                         <div class="nav-link-name"><p style="color: lightblue;">chill vibes</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
-                        <img id="about-icon" src="resources/img/pixel art/website_face_v1.png">
+                        <img id="about-icon" src="resources1/img/pixel art/website_face_v1.png">
                         <div class="nav-link-name"><p>About me</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="portfolio-link" class="jq--scroll-to-portfolio" title="Portfolio" href="#">
-                        <img ig="portfolio-icon" src="resources/img/pixel art/website_portfolio_v1.png">
+                        <img ig="portfolio-icon" src="resources1/img/pixel art/website_portfolio_v1.png">
                         <div class="nav-link-name"><p>My portfolio</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="contact-link" class="jq--scroll-to-contact" title="Contact" href="#">
-                        <img id="contact-icon" src="resources/img/pixel art/website_contact_v1.png">
+                        <img id="contact-icon" src="resources1/img/pixel art/website_contact_v1.png">
                         <div class="nav-link-name"><p>Contact</p></div>
                     </a>
                 </div>
@@ -58,7 +57,7 @@
 
 
             <!-- HEADER -->
-            <header id="section-header" class="section jq--section-header" data-section-name="Header">
+            <header id="section-header" class="section jq--section-header waypoint-header" data-section-name="Header">
                 <canvas class="canvas-header"></canvas>
                 <div class="header-wrapper">
                     <div class="name-wrapper"></div>
@@ -72,10 +71,12 @@
                 <div class="background-filter"></div>
                 <div class="about-wrapper">
                     <div class="about-left">
+                        <!--
                         <p>name: james</p>
                         <p>age: 26</p>
                         <p>height: 5'11"</p>
                         <p>weight: 170lbs</p>
+                        -->
                     </div>
                     <div class="about-right">
                         <div class="about-description">
@@ -84,15 +85,14 @@
                                 I'm a fledgling front-end web developer looking to find employment in the Toronto area.<br><br>
                                 With three years of coding experience under my belt in a variety of languages, 
                                 you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
-                                Beyond this, I am very interested in 35mm photography, music, and videogames.<br><br>
-                                I hope you enjoy your stay on this little spaceship I threw together!
+                                Beyond this, I am very interested in 35mm photography, music, videogames, and proper red wine.<br><br>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="about-panel-left off-screen">
                     <div class="face-container">
-                        <img class="my-face" src="resources/img/compressedpng/holo3-min.png">
+                        <img class="my-face" src="resources1/img/compressedpng/holo3-min.png">
                     </div>
                 </div>
                 <div class="about-panel-right off-screen"></div>
@@ -131,6 +131,7 @@
                                             <li class="inner-li">&bull; Highly customizable and responsive</li>
                                         </ul>
                                     </li>
+                                    <!--
                                     <li class="outer-li">
                                         <a href="#">Shopify fade-in navigation</a>
                                         <ul>
@@ -139,9 +140,12 @@
                                             <li class="inner-li">&bull; Currently being optimized to add more custom features</li>
                                         </ul>
                                     </li>
+                                    -->
                                     <li class="outer-li">
-                                        <a href="./arduino">Arduino projects, coded in C</a>
+                                        <a href="./projects/arduino/arduino.php">Arduino microcontroller projects</a>
                                         <ul>
+                                            <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
+                                            <li class="inner-li">&bull; Coded in C</li>
                                             <li class="inner-li">&bull; Includes a theremin!</li>
                                         </ul>
                                     </li>
@@ -206,6 +210,12 @@
                                         </div>
                                     </li>
                                     <li class="skill-li">
+                                        <p>Jasmine</p>
+                                        <div class="bar-outer">
+                                            <div id="skill-jasmine" class="bar-inner"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skill-li">
                                         <p>Shopify Liquid</p>
                                         <div class="bar-outer">
                                             <div id="skill-liquid" class="bar-inner"></div>
@@ -256,13 +266,13 @@
                                     <li class="outer-li">
                                         <p class="school">University of Toronto</p>
                                         <ul>
-                                            <li class="inner-li">&bull; BA for Linguistics</li>
+                                            <li class="inner-li">&bull; BA for Linguistics (4 years) &#x1F62a;</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
                                         <p class="school">Ryerson University Chang School</p>
                                         <ul>
-                                            <li class="inner-li">&bull; Certificate in Computer Science</li>
+                                            <li class="inner-li">&bull; Certificate in Computer Science (2 years)</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
@@ -278,21 +288,28 @@
                                         <p class="school">Build Responsive Real World Websites (Udemy)</p>
                                         <ul>
                                             <li class="inner-li">&bull; By Jonas Schmedtmann</li>
-                                            <li class="inner-li">&bull; Provides fundamental knowlege on front end principles</li>
+                                            <li class="inner-li">&bull; Provides fundamental knowlege on front-end principles</li>
                                         </ul>
                                     </li>                                    
                                     <li class="outer-li">
                                         <p class="school">Eloquent Javascript</p>
                                         <ul>
                                             <li class="inner-li">&bull; By Marijn Haverbeke</li>
-                                            <li class="inner-li">&bull; Provides a deep-dive into Vanilla Javascript essentials</li>
+                                            <li class="inner-li">&bull; A deep-dive into Vanilla Javascript essentials</li>
+                                        </ul>
+                                    </li>
+                                    <li class="outer-li">
+                                        <p class="school">The Odin Project</p>
+                                        <ul>
+                                            <li class="inner-li">&bull; Open Source</li>
+                                            <li class="inner-li">&bull; A comprehensive guide to web development, particularly using Github to manage projects</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
                                         <p class="school">React - The Complete Guide (Udemy) (in progress)</p>
                                         <ul>
                                             <li class="inner-li">&bull; By Academind</li>
-                                            <li class="inner-li">&bull; Provides hands-on learning with React, Hooks, Redux, etc.</li>
+                                            <li class="inner-li">&bull; Hands-on learning with React, Hooks, Redux, etc.</li>
                                         </ul>
                                     </li>
 
@@ -302,6 +319,8 @@
                     </div>
                 </div>
             </section>
+
+            
 
 
             <!-- CONTACT -->
@@ -333,17 +352,17 @@
             
 
             <!-- FOOTER -->
-            <footer id="footer">
+            <footer id="section-footer">
                 <div class="footer-tab">
                     <a href="#" class="footer-link jq--scroll-to-header">
-                        <img src="resources/img/pixel art/website_face_v1.png">
+                        <img src="resources1/img/pixel art/website_face_v1.png">
                     </a>
                 </div>
                 <div class="footer-tab">
                     <p>me@jamesyoannou.com</p>
                 </div>
                 <div class="footer-tab">
-                    <p>(647)998-5899</p>
+                    <p>(647) 998-5899</p>
                 </div>
                 <div class="footer-tab">
                     <a href="https://www.linkedin.com/in/james-yoannou-812b7b1a4/" target="_blank" class="footer-link">
@@ -356,13 +375,13 @@
                     </a>
                 </div>
             </footer>
-            <div id="scroll-button" style="display: none;">
-                <div id="scroll-down-button"><ion-icon name="chevron-down-outline"></ion-icon></div>
+            <div id="scroll-button-area">
+                <div id="scroll-down">^</div>
                 <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
                 <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
             </div>
         </div>
-        <script src="resources/js/animations.js"></script>
-        <script src="resources/js/audio.js"></script>
+        <script src="resources1/js/animations.js"></script>
+        <script src="resources1/js/audio.js"></script>
     </body>
 </html>
