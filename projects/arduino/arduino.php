@@ -1,10 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html prefix="og: http://ogp.me/ns#">
 
 <html>
     <head>
 		<title>Microcontroller Zone</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta property="og:type" content="website">
+        <meta property='og:image' content='http://wwww.jamesyoannou.com/resources1/img/compressedpng/holo3-min.png'/>
+        <meta property='og:title' content='James Yoannou Arduino'/>
+        <meta property='og:url' content='//www.jamesyoannou.com/projects/arduino/arduino.php'/>
+
+
         <link rel="stylesheet" href="../../resources1/css/general.css">
         <link rel="stylesheet" href="./main1.css">
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
@@ -14,7 +21,7 @@
             <div class="video-container">
                 <div class="background-filter"></div>
                 <video id="header-video" width="100%" muted autoplay loop>
-                    <source src="media/headline-comp.mp4" type="video/mp4">
+                    <source src="media/headline720pCOMP.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> 
                 <div class="name-wrapper">
@@ -25,7 +32,7 @@
         <main>
             <div class="body-text overview">
                 <p>Robots are cool.</p>
-                <p>It's sad that I haven't yet built my own fully operational wine-serving robot. 
+                <p>Sadly I haven't built my own fully operational wine-serving robot yet. 
                     But that day will come.</p>
                 <p>Below are some C-based projects I put together for my DFRobot Romeo AOI Controller.
                 It's essentailly an Arduino UNO with a motor driver, and can run the same

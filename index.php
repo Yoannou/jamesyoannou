@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>James Yoannou</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:image" content="http://www.jamesyoannou.com/resources1/img/compressedpng/holo3-min.png">
+        <meta property="og:site_name" content="James Yoannou">
+        <meta property="og:url" content="http://jamesyoannou.com">
+        <meta property="og:title" content="James Yoannou">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Website and Shopify developer.">
+
         <link rel="stylesheet" href="vendors/css/reset.css">
         <link rel="stylesheet" href="resources1/css/general.css">
         <link rel="stylesheet" href="resources1/css/style.css">
@@ -82,10 +90,10 @@
                         <div class="about-description">
                             <h1 class="about-heading">About</h1>
                             <p>Hello! <br><br> 
-                                I'm a fledgling front-end web developer looking to find employment in the Toronto area.<br><br>
+                                I'm a freelance web developer based in Toronto.<br><br>
                                 With three years of coding experience under my belt in a variety of languages, 
                                 you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
-                                Beyond this, I am very interested in 35mm photography, music, videogames, and proper red wine.<br><br>
+                                Beyond this, I am very interested in 35mm photography, music, videogames, and red wine.<br><br>
                             </p>
                         </div>
                     </div>
@@ -353,7 +361,7 @@
 
             <!-- FOOTER -->
             <footer id="section-footer">
-                <div class="footer-tab">
+                <div class="footer-tab jq--back-to-top">
                     <a href="#" class="footer-link jq--scroll-to-header">
                         <img src="resources1/img/pixel art/website_face_v1.png">
                     </a>
@@ -375,12 +383,14 @@
                     </a>
                 </div>
             </footer>
+
             <div id="scroll-button-area">
-                <div id="scroll-down">^</div>
-                <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
-                <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
+                <div id="scroll-down" class="scroll-arrow-down"><img class="scroll-down-image" src="./resources1/img/pixel art/arrowDown3.png"></div>
+                    <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
+                    <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
+                </div>
             </div>
-        </div>
+
         <script src="resources1/js/animations.js"></script>
         <script src="resources1/js/audio.js"></script>
     </body>

@@ -42,20 +42,20 @@ burger.addEventListener("click", ()=>{
 
 /* NAV BUTTONS */
 $('.jq--scroll-to-header').click(function() {
-    $('html, body').animate({scrollTop: $('.jq--section-header')});
-    });
+    $('html, body').animate({scrollTop: $('.jq--section-header').offset().top}, 1000);
+});
     
-    $('.jq--scroll-to-about').click(function() {
+$('.jq--scroll-to-about').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-about').offset().top}, 1000);
-    });
+});
     
-    $('.jq--scroll-to-portfolio').click(function() {
+$('.jq--scroll-to-portfolio').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-portfolio').offset().top}, 1500);
-    });
+});
     
-    $('.jq--scroll-to-contact').click(function() {
+$('.jq--scroll-to-contact').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-contact').offset().top}, 1500);
-    });
+});
 
 /* SCROLL-DOWN BUTTON */
 const sectionsArray = [
@@ -66,25 +66,30 @@ const sectionsArray = [
     document.getElementById('section-footer')
 ]
 
-const scrollDown = document.getElementById('scroll-down');
+try {
+    const scrollDown = document.getElementById('scroll-down');
 
-scrollDown.addEventListener('click', ()=>{
-    // If we are at the bottom of the page (footer bottom distance from vp height = vp height), back to top:
-    if(sectionsArray[4].getBoundingClientRect().bottom < window.innerHeight + 10) {
-        $('html, body').animate({scrollTop: $('.jq--section-header').offset().top}, 1000);
-    }
-    // Check each section and if it is in correct range, scroll to next section:
-    else {
-        console.log('down one');
-        for(let i=0; i<sectionsArray.length; i++) {
-            let sectionToViewport = sectionsArray[i].getBoundingClientRect();
-            if( sectionToViewport.y < 200 && sectionToViewport.bottom > 200) {
-                $('html, body').animate({scrollTop: $(sectionsArray[i+1]).offset().top}, 1000);
+    scrollDown.addEventListener('click', ()=>{
+        // If we are at the bottom of the page (footer bottom distance from vp height = vp height), back to top:
+        if(sectionsArray[4].getBoundingClientRect().bottom < window.innerHeight + 10) {
+            $('html, body').animate({scrollTop: $('.jq--section-header').offset().top}, 1000);
+        }
+        // Check each section and if it is in correct range, scroll to next section:
+        else {
+            console.log('down one');
+            for(let i=0; i<sectionsArray.length; i++) {
+                let sectionToViewport = sectionsArray[i].getBoundingClientRect();
+                if( sectionToViewport.y < 200 && sectionToViewport.bottom > 200) {
+                    $('html, body').animate({scrollTop: $(sectionsArray[i+1]).offset().top}, 1000);
+                }
             }
         }
-    }
-})
-
+    })
+}
+catch(err) {
+    console.log("ERROR: Element of class scroll-down does not exist");
+    console.log(err.message);
+}
 
 /********** HOME-PAGE NAME ANIMATION **********/
 

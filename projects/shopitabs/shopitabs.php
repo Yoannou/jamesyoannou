@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html prefix="og: http://ogp.me/ns#">
 <html>
     <head>
         <title>Shopitabs</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:type" content="website">
+        <meta property='og:image' content='http://wwww.jamesyoannou.com/resources1/img/pixel art/bg-test-3.png'/>
+        <meta property='og:title' content='James Yoannou'/>
+        <meta property='og:url' content='//www.jamesyoannou.com'/>
+
         <link rel="stylesheet" href="../../vendors/css/reset.css">
         <link rel="stylesheet" href="../../resources1/css/general.css">
         <link rel="stylesheet" href="main1.css">
