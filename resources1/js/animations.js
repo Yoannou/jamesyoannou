@@ -1,11 +1,12 @@
 /**************
- INITIALIZATION 
+ INITIALIZATION
  **************/
 
  // Node lists
 const hologramList = document.querySelectorAll(".hologram-image");
 const portfolioItems = document.querySelectorAll(".portfolio-grid-item");
 const skillsetList = document.querySelectorAll(".bar-inner");
+
 
 // Nodes
 let aboutPanelLeft = document.querySelector(".about-panel-left");
@@ -14,7 +15,7 @@ let currentAboutPanel = "center";
 
 
 /****************
- GLOBAL VARIABLES 
+ GLOBAL VARIABLES
  ****************/
 
 
@@ -44,20 +45,24 @@ burger.addEventListener("click", ()=>{
 $('.jq--scroll-to-header').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-header').offset().top}, 1000);
 });
-    
+
 $('.jq--scroll-to-about').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-about').offset().top}, 1000);
 });
-    
+
 $('.jq--scroll-to-portfolio').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-portfolio').offset().top}, 1500);
 });
-    
+
 $('.jq--scroll-to-contact').click(function() {
     $('html, body').animate({scrollTop: $('.jq--section-contact').offset().top}, 1500);
 });
 
 /* SCROLL-DOWN BUTTON */
+const scrollButtonContainer = document.getElementById('scroll-button-container');
+
+setTimeout(()=>{scrollButtonContainer.style = "bottom: 0"}, 2500);
+
 const sectionsArray = [
     document.getElementById('section-header'),
     document.getElementById('section-about'),
@@ -66,10 +71,11 @@ const sectionsArray = [
     document.getElementById('section-footer')
 ]
 
-try {
-    const scrollDown = document.getElementById('scroll-down');
 
-    scrollDown.addEventListener('click', ()=>{
+const scrollButton = document.getElementById('scroll-button');
+const footer = document.getElementById('section-footer');
+try {
+    scrollButton.addEventListener('click', ()=>{
         // If we are at the bottom of the page (footer bottom distance from vp height = vp height), back to top:
         if(sectionsArray[4].getBoundingClientRect().bottom < window.innerHeight + 10) {
             $('html, body').animate({scrollTop: $('.jq--section-header').offset().top}, 1000);
@@ -85,13 +91,28 @@ try {
             }
         }
     })
+
 }
 catch(err) {
     console.log("ERROR: Element of class scroll-down does not exist");
     console.log(err.message);
 }
 
-/********** HOME-PAGE NAME ANIMATION **********/
+const scrollArrowDown = document.querySelector('.scroll-arrow-down');
+const scrollArrowUp = document.querySelector('.scroll-arrow-up');
+// Change arrow direction to up when user hits bottom of page:
+document.addEventListener('scroll', (e) => {
+  if (scrollButton.getBoundingClientRect().bottom >= footer.getBoundingClientRect().bottom - 1) {
+    console.log('Bottomed out');
+    scrollArrowUp.style.transform = "translateY(0px)";
+    scrollArrowDown.style.transform = "translateY(-120px)";
+  }
+  else {
+    scrollArrowUp.style.transform = "translateY(120px)";
+    scrollArrowDown.style.transform = "translateY(0px)";  }
+});
+
+/********** HOME-PAGE INITIAL ANIMATION **********/
 
 const nameWrapper = document.querySelector(".name-wrapper");
 const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];

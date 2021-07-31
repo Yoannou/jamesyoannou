@@ -284,7 +284,7 @@ header {
     /*font-family: 'Nunito', sans-serif;*/
     font-family: natom-pro,sans-serif;
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal;
 }
 
 #section-portfolio a {
@@ -349,7 +349,7 @@ header {
 }
 
 .icon-box {
-    
+
 }
 
 .expand-box {
@@ -513,17 +513,19 @@ footer {
 
 /**** SCROLL BUTTON ********************************/
 /***************************************************/
-#scroll-button-area {
+#scroll-button-container {
     position: fixed;
     display: flex;
     left: 0;
-    bottom: 0;
+    bottom: -50px;
     width: 100%;
-    height: 120px;
+    height: 50px;
     z-index: 10;
+    overflow-y: hidden;
+    transition: all 0.8s ease;
 }
 
-#scroll-down {
+.scroll-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -534,23 +536,24 @@ footer {
     padding: 0 20px;
 }
 
-#scroll-down:hover {
+.scroll-button:hover {
     color: tomato;
     font-size: 140%;
     font-weight: bold;
     background: rgba(100, 100, 100, 0.3);
 }
 
+/* @keyframes arrow-hover {
+  10% {transform: rotate(30deg); width: 40px;}
+  70% {transform: rotate(0deg);}
+  90% {width: initial;}
+} */
+
 .scroll-arrow {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    transition: all 0.8s ease;
 }
 
-.scroll-down-image {
-    position: absolute;
-}
-
-.scroll-arrow-down {
-
+.scroll-arrow-up {
+  transform: translateY(120px);
 }

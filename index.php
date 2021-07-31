@@ -89,9 +89,9 @@
                     <div class="about-right">
                         <div class="about-description">
                             <h1 class="about-heading">About</h1>
-                            <p>Hello! <br><br> 
+                            <p>Hello! <br><br>
                                 I'm a freelance web developer based in Toronto.<br><br>
-                                With three years of coding experience under my belt in a variety of languages, 
+                                With three years of coding experience under my belt in a variety of languages,
                                 you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
                                 Beyond this, I am very interested in 35mm photography, music, videogames, and red wine.<br><br>
                             </p>
@@ -298,7 +298,7 @@
                                             <li class="inner-li">&bull; By Jonas Schmedtmann</li>
                                             <li class="inner-li">&bull; Provides fundamental knowlege on front-end principles</li>
                                         </ul>
-                                    </li>                                    
+                                    </li>
                                     <li class="outer-li">
                                         <p class="school">Eloquent Javascript</p>
                                         <ul>
@@ -328,7 +328,7 @@
                 </div>
             </section>
 
-            
+
 
 
             <!-- CONTACT -->
@@ -357,7 +357,7 @@
                     </form>
                 </div>
             </section>
-            
+
 
             <!-- FOOTER -->
             <footer id="section-footer">
@@ -384,8 +384,11 @@
                 </div>
             </footer>
 
-            <div id="scroll-button-area">
-                <div id="scroll-down" class="scroll-arrow-down"><img class="scroll-down-image" src="./resources1/img/pixel art/arrowDown3.png"></div>
+            <div id="scroll-button-container">
+                <div id="scroll-button" class="scroll-button">
+                  <img class="scroll-arrow scroll-arrow-down" src="./resources1/img/pixel art/arrowDown1.png">
+                  <img class="scroll-arrow scroll-arrow-up" src="./resources1/img/pixel art/arrowUp1.png">
+                </div>
                     <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
                     <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
                 </div>

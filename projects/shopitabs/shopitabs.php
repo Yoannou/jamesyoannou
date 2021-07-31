@@ -73,10 +73,10 @@
                 </div>
                 <div class="description">
                     <p>Shopitabs is a shopify section that allows merchants to add toggleable tabs to their webpages.</p>
-                    <p>The tabs are evenly spaced depending on how many are created. 
+                    <p>The tabs are evenly spaced depending on how many are created.
                         On smaller displays, the tabs are reorganized vertically.
                     </p>
-                    <p>Shopitabs was designed to be extremely customizable. It was also designed to be simple to get up-and-running - 
+                    <p>Shopitabs was designed to be extremely customizable. It was also designed to be simple to get up-and-running -
                         just follow the instructions below to have some sweet tabs on your storefront today!
                     </p>
                     <p></p>
