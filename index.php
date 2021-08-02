@@ -66,7 +66,7 @@
 
             <!-- HEADER -->
             <header id="section-header" class="section jq--section-header waypoint-header" data-section-name="Header">
-                <canvas class="canvas-header"></canvas>
+                <canvas id="canvas-header"></canvas>
                 <div class="header-wrapper">
                     <div class="name-wrapper"></div>
                     <h4 class="web-developer-wrapper"><span class="web-developer">/* web development&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;photography */</span></h4>
@@ -194,7 +194,7 @@
                                         </div>
                                     </li>
                                     <li class="skill-li">
-                                        <p>React (in progress)</p>
+                                        <p>React</p>
                                         <div class="bar-outer">
                                             <div id="skill-react" class="bar-inner"></div>
                                         </div>
@@ -395,6 +395,7 @@
             </div>
 
         <script src="resources1/js/animations.js"></script>
+        <script src="resources1/js/canvas.js"></script>
         <script src="resources1/js/audio.js"></script>
     </body>
 </html>

@@ -390,12 +390,12 @@ header {
 #skill-css {width: 86%; right: 86%;}
 #skill-javascript {width: 70%; right: 70%;}
 #skill-jquery {width: 42%; right: 42%;}
-#skill-react {width: 10%; right: 10%; background-color: #f56;}
+#skill-react {width: 30%; right: 30%; background-color: green;}
 #skill-ruby {width: 30%; right: 30%}
 #skill-php {width: 40%; right: 40%}
 #skill-mysql {width: 10%; right: 10%}
 #skill-liquid {width: 82%; right: 82%}
-#skill-git {width: 80%; right: 80%;} /* MAKE THIS ONE BETTER */
+#skill-git {width: 80%; right: 80%;}
 #skill-unix {width: 40%; right: 40%;}
 #skill-c {width: 45%; right: 45%;}
 #skill-cpp {width: 50%; right: 50%;}
