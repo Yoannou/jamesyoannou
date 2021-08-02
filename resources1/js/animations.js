@@ -65,8 +65,8 @@ setTimeout(()=>{scrollButtonContainer.style = "bottom: 0"}, 2500);
 
 const sectionsArray = [
     document.getElementById('section-header'),
-    document.getElementById('section-about'),
     document.getElementById('section-portfolio'),
+    document.getElementById('section-about'),
     document.getElementById('section-contact'),
     document.getElementById('section-footer')
 ]
@@ -204,9 +204,17 @@ let waypointPortfolio = new Waypoint({
                 portfolioCount++;
             }
         }, 300);
+    },
+    offset: 0
+})
+
+// Animations when reaching Contact section
+let waypointContact = new Waypoint({
+    element: document.querySelector('.waypoint-contact'),
+    handler: ()=>{
         toggleAboutPanels();
     },
-    offset: 100
+    offset: 200
 })
 
 
@@ -228,7 +236,7 @@ let waypointSkillset = new Waypoint({
             }
         }, 100);
     },
-    offset: 200
+    offset: 300
 })
 
 // Color-changes

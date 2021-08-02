@@ -39,15 +39,15 @@
                     </a>
                 </div>
                 <div class="nav-link">
-                    <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
-                        <img id="about-icon" src="resources1/img/pixel art/website_face_v1.png">
-                        <div class="nav-link-name"><p>About me</p></div>
-                    </a>
-                </div>
-                <div class="nav-link">
                     <a id="portfolio-link" class="jq--scroll-to-portfolio" title="Portfolio" href="#">
                         <img ig="portfolio-icon" src="resources1/img/pixel art/website_portfolio_v1.png">
                         <div class="nav-link-name"><p>My portfolio</p></div>
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
+                        <img id="about-icon" src="resources1/img/pixel art/website_face_v1.png">
+                        <div class="nav-link-name"><p>About me</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
@@ -69,46 +69,13 @@
                 <canvas id="canvas-header"></canvas>
                 <div class="header-wrapper">
                     <div class="name-wrapper"></div>
-                    <h4 class="web-developer-wrapper"><span class="web-developer">/* web development&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;photography */</span></h4>
+                    <h4 class="web-developer-wrapper"><span class="web-developer">/* web development */</span></h4>
                 </div>
             </header>
 
 
-            <!-- ABOUT -->
-            <section name="about" id="section-about" class="section jq--section-about waypoint-about" data-section-name="About">
-                <div class="background-filter"></div>
-                <div class="about-wrapper">
-                    <div class="about-left">
-                        <!--
-                        <p>name: james</p>
-                        <p>age: 26</p>
-                        <p>height: 5'11"</p>
-                        <p>weight: 170lbs</p>
-                        -->
-                    </div>
-                    <div class="about-right">
-                        <div class="about-description">
-                            <h1 class="about-heading">About</h1>
-                            <p>Hello! <br><br>
-                                I'm a freelance web developer based in Toronto.<br><br>
-                                With three years of coding experience under my belt in a variety of languages,
-                                you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
-                                Beyond this, I am very interested in 35mm photography, music, videogames, and red wine.<br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-panel-left off-screen">
-                    <div class="face-container">
-                        <img class="my-face" src="resources1/img/compressedpng/holo3-min.png">
-                    </div>
-                </div>
-                <div class="about-panel-right off-screen"></div>
-            </section>
-
-
             <!-- PORTFOLIO -->
-            <section id="section-portfolio" class="section jq--section-portfolio waypoint-portfolio" data-section-name="Portfolio">
+            <section id="section-portfolio" class="section section-portfolio jq--section-portfolio waypoint-portfolio" data-section-name="Portfolio">
                 <div class="portfolio-wrapper">
                     <h1 class="portfolio-heading">Developer Portfolio</h1>
                     <div class="portfolio-grid">
@@ -119,6 +86,10 @@
                                 <div class="expand-box">+</div>
                             </div>
                             <div class="portfolio-item-content">
+                                <a id="github-button" href="https://github.com/Yoannou" target="blank">
+                                    <p>Github</p>
+                                    <img src="vendors/img/GitHub-Mark-Light-64px.png">
+                                </a>
                                 <h4>Websites for clients:</h4>
                                 <ul>
                                     <li class="outer-li">
@@ -329,10 +300,35 @@
             </section>
 
 
+            <!-- ABOUT -->
+            <section name="about" id="section-about" class="section jq--section-about waypoint-about" data-section-name="About">
+                <div class="background-filter"></div>
+                <div class="about-wrapper">
+                    <div class="about-left">
+                    </div>
+                    <div class="about-right">
+                        <div class="about-description">
+                            <h1 class="about-heading">About</h1>
+                            <p>Hello! <br><br>
+                                I'm James, a web developer based in Toronto.<br><br>
+                                With three years of coding experience under my belt in a variety of languages,
+                                you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
+                                Beyond this, I am very interested in 35mm photography, music, videogames, and red wine.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-panel-left off-screen">
+                    <div class="face-container">
+                        <img class="my-face" src="resources1/img/compressedpng/holo3-min.png">
+                    </div>
+                </div>
+                <div class="about-panel-right off-screen"></div>
+            </section>
 
 
             <!-- CONTACT -->
-            <section id="section-contact" class="section jq--section-contact" data-section-name="Contact">
+            <section id="section-contact" class="section jq--section-contact waypoint-contact" data-section-name="Contact">
             <!--<div class="background-filter"></div>-->
                 <h1 class="contact-heading">Contact</h1>
                 <p>

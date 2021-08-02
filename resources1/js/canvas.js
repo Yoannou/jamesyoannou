@@ -26,7 +26,6 @@ const colors = ['#001010', '#007070', '#00F0F0']
 addEventListener('mousemove', (event) => {
     mouse.x = event.clientX
     mouse.y = event.clientY
-    console.log(canvas.height / 2 - mouse.y);
 })
 
 addEventListener('resize', () => {

@@ -232,7 +232,7 @@ header {
 .about-panel-left {
     z-index: 30;
     top: 0;
-    background-color: var(--dark_grey);
+    background-color: var(--grey);
 }
 
 .face-container {
@@ -255,27 +255,27 @@ header {
 /**** SECTION: PORTFOLIO ***************************/
 /***************************************************/
 #section-portfolio {
-    background-color: var(--grey);
+    background-color: var(--dark_grey);
     border: none, 1px solid grey;
 }
 
-#section-portfolio p,
-#section-portfolio a {
+.section-portfolio p,
+.section-portfolio a {
     display: block;
     padding: 10px 0px 10px 20px;
     font-size: 18px;
 }
 
-#section-portfolio p,
-#section-portfolio a,
-#section-portfolio h3,
-#section-portfolio h4 {
+.section-portfolio p,
+.section-portfolio a,
+.section-portfolio h3,
+.section-portfolio h4 {
     text-align: start;
     padding-top: 10px;
     padding-left: 20px;
 }
 
-#section-portfolio h4 {
+.section-portfolio h4 {
     margin: 0px;
     color: white; /* Or oldlace, or bisque, slightly darker */
     font-weight: bold;
@@ -285,7 +285,7 @@ header {
     font-style: normal;
 }
 
-#section-portfolio a {
+.section-portfolio a {
     text-decoration: underline;
     color: #e8cf8f;
     font-weight: bold;
@@ -346,17 +346,29 @@ header {
     margin-bottom: 0px;
 }
 
-.icon-box {
-
-}
-
-.expand-box {
-}
-
 .portfolio-item-content {
     /*display: none;*/
     padding: 10px 20px;
     background-color: teal;
+}
+
+#github-button {
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 80px;
+    justify-content: space-evenly;
+    background-color: #005050;
+    width: 350px;
+}
+
+#github-button p {
+    font-size: 30px;
+}
+
+#github-button:hover {
+    background-color: #003030;
 }
 
 .skill-li {
