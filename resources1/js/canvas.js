@@ -44,7 +44,7 @@ class Particle {
       this.y = y
       this.rotation = Math.random();
       //this.radius = radius; //For circle or line, but must make dimensions work this way
-      this.dimensions = Math.floor(Math.random()*30 + 10);
+      this.dimensions = Math.floor(Math.random()*40 + 10);
       this.color = color
       this.radians = Math.random() * Math.PI * 2; // Circumference of circle
       this.baseVelocity = randomIntFromRange(1, 3) / 1000;
@@ -110,13 +110,14 @@ function init() {
 // ANIMATION LOOP
 function animate() {
     requestAnimationFrame(animate);
-    // Full clear:
-    //c.clearRect(0, 0, canvas.width, canvas.height);
+    // A) Full clear:
+    c.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Opacity change:
+    // B) Opacity change (for trailing look):
+    /*
     c.fillStyle = "rgba(29, 29, 29, 0.6";
     c.fillRect(0, 0, canvas.width, canvas.height)
-    
+    */
     particles.forEach(particle => {
         particle.update();
     })

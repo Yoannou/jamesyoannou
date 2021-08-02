@@ -386,8 +386,8 @@
 
             <div id="scroll-button-container">
                 <div id="scroll-button" class="scroll-button">
-                  <img class="scroll-arrow scroll-arrow-down" src="./resources1/img/pixel art/arrowDown1.png">
-                  <img class="scroll-arrow scroll-arrow-up" src="./resources1/img/pixel art/arrowUp1.png">
+                  <img class="scroll-arrow scroll-arrow-down" src="./resources1/img/pixel art/scroll_down.png">
+                  <img class="scroll-arrow scroll-arrow-up" src="./resources1/img/pixel art/scroll_up.png">
                 </div>
                     <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
                     <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
