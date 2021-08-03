@@ -1,0 +1,89 @@
+/* ARDUINO MAIN CSS */
+
+/* HEADER */
+body {
+    background-color: var(--dark);
+}
+
+h1, h2, h3, h4 {
+    color: white;
+}
+
+.background-filter {
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.video-container {
+    position: relative;
+}
+
+#header-video {
+    position: relative;
+    z-index: -10;
+}
+
+.name-wrapper {
+    top: 100px;
+    left: 50%;
+}
+
+.name-wrapper h1 {
+    font-size: 60px;
+}
+
+/* BODY */
+
+main {
+    padding: 30px 0px;
+    background-color: var(--dark);
+}
+
+.overview {
+    margin: auto;
+}
+
+h2 {
+    text-align: left;
+    padding: 20px;
+}
+
+.project-pair {
+    padding: 20px 0px;
+    background-color: var(--grey);
+}
+
+.project-text {
+    padding-top: 20px;
+}
+
+.project-video {
+    margin: auto;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1023px) {
+    .name-wrapper {
+        position: absolute;
+        transform: none;
+        top: 200px;
+        left: 100px;
+    }
+
+    main {
+        margin-top: -100px;
+    }
+
+    .overview {
+        width: 60%;
+    }
+
+    .project-video {
+        width: 50%;
+    }
+
+    .source-code-wrapper {
+        width: 80%;
+    }
+
+}

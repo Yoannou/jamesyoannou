@@ -56,6 +56,11 @@
                         <div class="nav-link-name"><p>Contact</p></div>
                     </a>
                 </div>
+                <div>
+                    <a id="light-switch-container" href="#">
+                        <img id="light-switch" src="resources2/img/pixel art/lightbulb_on.png">
+                    </a>
+                </div>
             </nav>
             <div id="nav-toggle-display">
                 <div class="burger-bar burger-top"></div>

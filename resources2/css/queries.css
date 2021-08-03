@@ -8,7 +8,7 @@
     nav {
         height: 50px;
         align-items: center;
-        grid-template: 100% / repeat(4, 1fr);
+        grid-template: 100% / repeat(4, 1fr) 100px;
         padding: 60px 0px;
         transform: translateY(0);
     }
@@ -58,6 +58,15 @@
     /*Was formerly for all sizes*/
     .nav-link-name p {
         transform: translateX(-200px);
+    }
+
+    #light-switch{
+        font-size: 30px;
+        width: 48px;
+    }
+
+    #light-switch-container:hover img {
+        width: 64px;;
     }
 
     /* Header */

@@ -25,6 +25,8 @@ let currentAboutPanel = "center";
 
  /********** DARK MODE **********/
 const r = document.querySelector(':root');
+const lightSwitchContainer = document.getElementById('light-switch-container');
+const lightSwitch = document.getElementById('light-switch');
 let darkMode = false;
 
 function swapColours(colourVars, values) {
@@ -36,13 +38,20 @@ function swapColours(colourVars, values) {
 function toggleColourMode() {
     if(!darkMode) {
         swapColours(['--text', '--header_bg', '--portfolio_bg', '--contact_bg'], ['#fff', '#1d1d1d', '#181818', '#343434']);
+        lightSwitch.src = "resources2/img/pixel art/lightbulb_off.png";
         darkMode = true;
     }
     else {
         swapColours(['--text', '--header_bg', '--portfolio_bg', '--contact_bg'], ['#111', '#eee', '#d1d6d6', '#d1d6d6']);
+        lightSwitch.src = "resources2/img/pixel art/lightbulb_on.png";
         darkMode = false;
     }
 }
+
+lightSwitch.addEventListener('click', ()=>{
+
+    toggleColourMode();
+})
 
 
 /********** NAV DISPLAY TOGGLE HAMBURGER BUTTON **********/
@@ -82,7 +91,7 @@ $('.jq--scroll-to-contact').click(function() {
 /* SCROLL-DOWN BUTTON */
 const scrollButtonContainer = document.getElementById('scroll-button-container');
 
-setTimeout(()=>{scrollButtonContainer.style = "bottom: 0"}, 2500);
+setTimeout(()=>{scrollButtonContainer.style = "bottom: 0"}, 1000);
 
 const sectionsArray = [
     document.getElementById('section-header'),

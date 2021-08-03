@@ -7,13 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<meta property="og:type" content="website">
-        <meta property='og:image' content='http://wwww.jamesyoannou.com/resources1/img/compressedpng/holo3-min.png'/>
+        <meta property='og:image' content='http://wwww.jamesyoannou.com/resources2/img/compressedpng/holo3-min.png'/>
         <meta property='og:title' content='James Yoannou Arduino'/>
         <meta property='og:url' content='//www.jamesyoannou.com/projects/arduino/arduino.php'/>
 
 
-        <link rel="stylesheet" href="../../resources1/css/general.css">
-        <link rel="stylesheet" href="./main1.css">
+        <link rel="stylesheet" href="../../resources2/css/general.css">
+        <link rel="stylesheet" href="./main2.css">
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
     </head>
     <body>
@@ -21,7 +21,7 @@
             <div class="video-container">
                 <div class="background-filter"></div>
                 <video id="header-video" width="100%" muted autoplay loop>
-                    <source src="media/headline720pCOMP.mp4" type="video/mp4">
+                    <source id="landing-vid" src="media/headline720pCOMP.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> 
                 <div class="name-wrapper">
@@ -32,11 +32,10 @@
         <main>
             <div class="body-text overview">
                 <p>Robots are cool.</p>
-                <p>Sadly I haven't built my own fully operational wine-serving robot yet. 
-                    But that day will come.</p>
                 <p>Below are some C-based projects I put together for my DFRobot Romeo AOI Controller.
                 It's essentailly an Arduino UNO with a motor driver, and can run the same
                 source code.</p>
+				<p>This is mostly preparation for my planned wine-serving robot.</p>
             </div>
             <div class="project-pair">
                 <div class="project-text binary-counter">
@@ -45,7 +44,7 @@
                     Can be used as a very niche 8-bit record-keeping device (for nerds only).</p>
                     <div class="project-video video-container">
                         <video width="100%" controls>
-                            <source src="media/binary-vid-comp.mp4" type="video/mp4">
+                            <source id="binary-vid" src="media/binary-vid-comp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>                     
                     </div>
@@ -178,7 +177,7 @@ void pause_ms(uint16_t ms)
                     As a musician, there was only one way for me: To make some noise.</p>
                     <div class="project-video video-container">
                         <video width="100%" controls>
-                            <source src="media/theremin-comp.mp4" type="video/mp4">
+                            <source id="theremin-vid" src="media/theremin-comp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -422,4 +421,5 @@ void transmitString(char* StringPtr) {
             </div>
         </footer>
     </body>
+	<script src="./content.js"></script>
 </html> 

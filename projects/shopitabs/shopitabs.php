@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta property="og:type" content="website">
-        <meta property='og:image' content='http://wwww.jamesyoannou.com/resources1/img/pixel art/bg-test-3.png'/>
+        <meta property='og:image' content='http://wwww.jamesyoannou.com/resources2/img/pixel art/bg-test-3.png'/>
         <meta property='og:title' content='James Yoannou'/>
         <meta property='og:url' content='//www.jamesyoannou.com'/>
 
         <link rel="stylesheet" href="../../vendors/css/reset.css">
-        <link rel="stylesheet" href="../../resources1/css/general.css">
-        <link rel="stylesheet" href="main1.css">
+        <link rel="stylesheet" href="../../resources2/css/general.css">
+        <link rel="stylesheet" href="main2.css">
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
     </head>
     <body>
@@ -29,25 +29,25 @@
                         <div class="shopitab-button">
                             <div class="shopitab-name"><h3>Click me</h3></div>
                             <div class="shopitab-image-container">
-                                <img class="shopitab-image" style="width: 64px;" src="../../resources1/img/pixel art/website_face_v1.png">
+                                <img class="shopitab-image" style="width: 64px;" src="../../resources2/img/pixel art/website_face_v1.png">
                             </div>
                         </div>
                         <div class="shopitab-button">
                             <div class="shopitab-name"><h3>Or me.</h3></div>
                             <div class="shopitab-image-container">
-                                <img class="shopitab-image" style="width: 64px;" src="../../resources1/img/pixel art/website_face_v1.png">
+                                <img class="shopitab-image" style="width: 64px;" src="../../resources2/img/pixel art/website_face_v1.png">
                             </div>
                         </div>
                         <div class="shopitab-button">
                             <div class="shopitab-name"><h3>Or me?</h3></div>
                             <div class="shopitab-image-container">
-                                <img class="shopitab-image" style="width: 64px;" src="../../resources1/img/pixel art/website_face_v1.png">
+                                <img class="shopitab-image" style="width: 64px;" src="../../resources2/img/pixel art/website_face_v1.png">
                             </div>
                         </div>
                         <div class="shopitab-button">
                             <div class="shopitab-name"><h3>Or me!</h3></div>
                             <div class="shopitab-image-container">
-                                <img class="shopitab-image" style="width: 64px;" src="../../resources1/img/pixel art/website_face_v1.png">
+                                <img class="shopitab-image" style="width: 64px;" src="../../resources2/img/pixel art/website_face_v1.png">
                             </div>
                         </div>
                     </div>

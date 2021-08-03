@@ -6,7 +6,7 @@ nav {
     background-color: var(--nav_footer);
     display: grid;
     align-items: center;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     position: absolute;
     top: 0px;
     width: 100%;
@@ -71,7 +71,7 @@ nav div {
     font-size: 22px;
 }
 
-.nav-link a img{
+.nav-link a img {
     width: 48px;
     padding: 0px 40px;
 }
@@ -539,7 +539,7 @@ I decided to put it in general.css
     margin: auto;
     width: 100%;
     height: 100%;
-    background: rgba(100, 100, 100, 0.4);
+    background: rgba(100, 100, 100, 0.2);
     padding: 0 20px;
 }
 
@@ -547,7 +547,7 @@ I decided to put it in general.css
     color: tomato;
     font-size: 140%;
     font-weight: bold;
-    background: rgba(100, 100, 100, 0.3);
+    background: rgba(100, 100, 100, 0.5);
 }
 
 /* @keyframes arrow-hover {
