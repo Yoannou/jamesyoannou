@@ -143,7 +143,7 @@
                 <p>(Going open-source soon)</p>
             </div>
             <div class="small bug-warning">
-                Warning: BUGS - if images are different sizes, the tab buttons will not be aligned.
+                Warning - if images are different sizes, the tab buttons may not be aligned.
                 I am working to fix this issue.
             </div>
         </main>

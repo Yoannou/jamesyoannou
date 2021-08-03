@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:image" content="http://www.jamesyoannou.com/resources1/img/compressedpng/holo3-min.png">
+        <meta property="og:image" content="http://www.jamesyoannou.com/resources2/img/compressedpng/holo3-min.png">
         <meta property="og:site_name" content="James Yoannou">
         <meta property="og:url" content="http://jamesyoannou.com">
         <meta property="og:title" content="James Yoannou">
@@ -14,9 +14,9 @@
         <meta property="og:description" content="Website and Shopify developer.">
 
         <link rel="stylesheet" href="vendors/css/reset.css">
-        <link rel="stylesheet" href="resources1/css/general.css">
-        <link rel="stylesheet" href="resources1/css/style.css">
-        <link rel="stylesheet" href="resources1/css/queries.css">
+        <link rel="stylesheet" href="resources2/css/general.css">
+        <link rel="stylesheet" href="resources2/css/style.css">
+        <link rel="stylesheet" href="resources2/css/queries.css">
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -34,25 +34,25 @@
             <nav id="nav" class="nav-hidden">
                 <div class="nav-link">
                     <a id="sound-toggle-button" title="Chill vibes" href="#">
-                        <img src="resources1/img/pixel art/website_music_v1.png">
+                        <img src="resources2/img/pixel art/website_music_v1.png">
                         <div class="nav-link-name"><p style="color: lightblue;">chill vibes</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="portfolio-link" class="jq--scroll-to-portfolio" title="Portfolio" href="#">
-                        <img ig="portfolio-icon" src="resources1/img/pixel art/website_portfolio_v1.png">
+                        <img ig="portfolio-icon" src="resources2/img/pixel art/website_portfolio_v1.png">
                         <div class="nav-link-name"><p>My portfolio</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
-                        <img id="about-icon" src="resources1/img/pixel art/website_face_v1.png">
+                        <img id="about-icon" src="resources2/img/pixel art/website_face_v1.png">
                         <div class="nav-link-name"><p>About me</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="contact-link" class="jq--scroll-to-contact" title="Contact" href="#">
-                        <img id="contact-icon" src="resources1/img/pixel art/website_contact_v1.png">
+                        <img id="contact-icon" src="resources2/img/pixel art/website_contact_v1.png">
                         <div class="nav-link-name"><p>Contact</p></div>
                     </a>
                 </div>
@@ -320,7 +320,7 @@
                 </div>
                 <div class="about-panel-left off-screen">
                     <div class="face-container">
-                        <img class="my-face" src="resources1/img/compressedpng/holo3-min.png">
+                        <img class="my-face" src="resources2/img/compressedpng/holo3-min.png">
                     </div>
                 </div>
                 <div class="about-panel-right off-screen"></div>
@@ -359,11 +359,11 @@
             <footer id="section-footer">
                 <div class="footer-tab jq--back-to-top">
                     <a href="#" class="footer-link jq--scroll-to-header">
-                        <img src="resources1/img/pixel art/website_face_v1.png">
+                        <img src="resources2/img/pixel art/website_face_v1.png">
                     </a>
                 </div>
                 <div class="footer-tab">
-                    <p>me@jamesyoannou.com</p>
+                    <a href="mailto:me@jamesyoannou.com">me@jamesyoannou.com</a>
                 </div>
                 <div class="footer-tab">
                     <p>(647) 998-5899</p>
@@ -382,16 +382,16 @@
 
             <div id="scroll-button-container">
                 <div id="scroll-button" class="scroll-button">
-                  <img class="scroll-arrow scroll-arrow-down" src="./resources1/img/pixel art/scroll_down.png">
-                  <img class="scroll-arrow scroll-arrow-up" src="./resources1/img/pixel art/scroll_up.png">
+                  <img class="scroll-arrow scroll-arrow-down" src="./resources2/img/pixel art/scroll_down.png">
+                  <img class="scroll-arrow scroll-arrow-up" src="./resources2/img/pixel art/scroll_up.png">
                 </div>
                     <audio id="scroll-hover" src="vendors/audio/zapsplat_office_electronic_typewriter_single_button_press_beep_brother_ax_450_33756.mp3"></audio>
                     <audio id="scroll-click" src="vendors/audio/tspt_message_notification_alert_02_053.mp3"></audio>
                 </div>
             </div>
 
-        <script src="resources1/js/animations.js"></script>
-        <script src="resources1/js/canvas.js"></script>
-        <script src="resources1/js/audio.js"></script>
+        <script src="resources2/js/animations.js"></script>
+        <script src="resources2/js/canvas.js"></script>
+        <script src="resources2/js/audio.js"></script>
     </body>
 </html>
