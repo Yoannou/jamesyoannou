@@ -1,5 +1,51 @@
 <!DOCTYPE html>
 
+<?php
+    // Initialization and validation:
+    $message_sent = false;
+    $errors = [];
+    if (isset($_POST['submit']) && !empty($_POST)) {
+
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $subject = $_POST["subject"];
+        $message = $_POST["message"];
+
+        if (empty($name)) {
+            $errors[] = 'Name is empty';
+        }
+        if (empty($email)) {
+            $errors[] = 'Email is empty';
+        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errors[] = 'Invalid email address';
+        }
+        if (empty($subject)) {
+            $errors[] = 'Subject is empty';
+        }
+        if (empty($message)) {
+            $errors[] = 'Message is empty';
+        }
+
+        // If there are errors, message_sent remains false and we notify user
+        if (!empty($errors)) {
+            $allErrors = join('. ', $errors);
+            echo '<script>alert(\'EMAIL NOT SENT: \n\n'.$allErrors.'\')</script>';
+            $message_sent = false;
+        }
+
+        // No errors, this page gets reloaded with message_sent flag true
+        else {
+            $message_sent = true;
+            $mailTo = "jamesyoannou@gmail.com";
+            $headers = "From: ".$email;
+            $txt = "You have received an email from ".$name."\n\n".$message;
+            mail($mailTo, $subject, $txt, $headers);
+
+            echo '<script>alert(\'Email sent. Thanks!\')</script>';
+        }
+    }
+?>
+
 <html lang="en">
     <head>
         <title>James Yoannou</title>
@@ -250,7 +296,7 @@
                                     <li class="outer-li">
                                         <p class="school">University of Toronto</p>
                                         <ul>
-                                            <li class="inner-li">&bull; BA for Linguistics (4 years) &#x1F62a;</li>
+                                            <li class="inner-li">&bull; BA for Linguistics (4 years)</li>
                                         </ul>
                                     </li>
                                     <li class="outer-li">
@@ -317,8 +363,8 @@
                             <p>Hello! <br><br>
                                 I'm James, a web developer based in Toronto.<br><br>
                                 With three years of coding experience under my belt in a variety of languages,
-                                you will find me to be passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
-                                Beyond this, I am very interested in 35mm photography, music, videogames, and red wine.<br><br>
+                                I am passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
+                                Beyond the code, I'm also into 35mm photography &#128247;, music &#127928;, videogames &#128126;, and red wine &#127863;<br><br>
                             </p>
                         </div>
                     </div>
@@ -340,13 +386,13 @@
                     If you would like to contact me, please send me an email via the form below, or drop me a call.
                 </p>
                 <div class="contact-container">
-                    <form class="contact-form" action="./php/contactform.php" method="post">
+                    <form id="contact-form" class="contact-form" action="./index.php?mailsent" method="post">
                         <h3>Shoot me an email!</h3>
                         <label for="name-in">
                             <input id="name-in" type="text" name="name" placeholder="Full name">
                         </label>
                         <label for="email-in">
-                            <input id="email-in" type="text" name="mail" placeholder="Your email">
+                            <input id="email-in" type="text" name="email" placeholder="Your email">
                         </label>
                         <label for="subject-in">
                             <input id="subject-in" type="text" name="subject" placeholder="Subject">
@@ -398,5 +444,49 @@
         <script src="resources2/js/animations.js"></script>
         <script src="resources2/js/canvas.js"></script>
         <script src="resources2/js/audio.js"></script>
+        
+        <!-- The JS library for client-side form validation (from a CDN) - may be better to download to server -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+        <!-- Implementation of that package: -->
+        <script>
+            const constraints = {
+                name: {
+                    presence: { allowEmpty: false }
+                },
+                email: {
+                    presence: { allowEmpty: false },
+                    email: true
+                },
+                subject: {
+                    presence: { allowEmpty: false },
+                },
+                message: {
+                    presence: { allowEmpty: false }
+                }
+            };
+
+            const form = document.getElementById('contact-form');
+
+            form.addEventListener('submit', function (event) {
+                const formValues = {
+                    name: form.elements.name.value,
+                    email: form.elements.email.value,
+                    subject: form.elements.subject.value,
+                    message: form.elements.message.value
+                };
+
+                const errors = validate(formValues, constraints);
+
+                if (errors) {
+                event.preventDefault();
+                const errorMessage = Object
+                    .values(errors)
+                    .map(function (fieldValues) { return fieldValues.join(', ')})
+                    .join("\n");
+
+                alert('Error: \n\n' + errorMessage);
+                }
+            }, false);
+        </script>
     </body>
 </html>

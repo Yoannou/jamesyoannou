@@ -132,8 +132,7 @@ const scrollArrowDown = document.querySelector('.scroll-arrow-down');
 const scrollArrowUp = document.querySelector('.scroll-arrow-up');
 // Change arrow direction to up when user hits bottom of page:
 document.addEventListener('scroll', (e) => {
-  if (scrollButton.getBoundingClientRect().bottom >= footer.getBoundingClientRect().bottom - 1) {
-    console.log('Bottomed out');
+  if (scrollButton.getBoundingClientRect().bottom >= footer.getBoundingClientRect().bottom - 10) {
     scrollArrowUp.style.transform = "translateY(0px)";
     scrollArrowDown.style.transform = "translateY(-120px)";
   }
