@@ -1,0 +1,21 @@
+File found. Replaced all instances of 'a' with 'b' in 'text1.txt'
+File found. Replaced all instances of 'a' with 'b' in 'text2.txt'
+File found. Replaced all instances of 'a' with 'b' in 'megatext.txt'
+File found. Replaced all instances of 'c' with 'CCC' in 'text1.txt'
+File found. Replaced all instances of 'c' with 'CCC' in 'text2.txt'
+File found. Replaced all instances of 'c' with 'CCC' in 'megatext.txt'
+\n\n
+File found. Replaced all instances of 'c' with 'CCC' in 'text1.txt'
+File found. Replaced all instances of 'c' with 'CCC' in 'text2.txt'
+File found. Replaced all instances of 'c' with 'CCC' in 'megatext.txt'
+
+
+File found. Replaced all instances of 'd' with 'DDD' in 'text1.txt'
+File found. Replaced all instances of 'd' with 'DDD' in 'text2.txt'
+File found. Replaced all instances of 'd' with 'DDD' in 'megatext.txt'
+
+
+File found. Replaced all instances of 'p' with 'PPPP' in 'text1.txt'
+File found. Replaced all instances of 'p' with 'PPPP' in 'text2.txt'
+File found. Replaced all instances of 'p' with 'PPPP' in 'megatext.txt'
+

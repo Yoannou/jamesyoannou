@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 
 <?php
+    /*
+    This needs to be moved into its own file to stop website from slowing down.
+    If I do that, I can't send the user confirmation that their email went through
+    because, when redirecting them from the other file back to this one with the header() function,
+    I lose the ability to alert them. Figure this out.
+    */
+
     // Initialization and validation:
     $message_sent = false;
     $errors = [];
@@ -36,7 +43,7 @@
         // No errors, this page gets reloaded with message_sent flag true
         else {
             $message_sent = true;
-            $mailTo = "jamesyoannou@gmail.com";
+            $mailTo = "me@jamesyoannou.com";
             $headers = "From: ".$email;
             $txt = "You have received an email from ".$name."\n\n".$message;
             mail($mailTo, $subject, $txt, $headers);
@@ -87,19 +94,19 @@
                 <div class="nav-link">
                     <a id="portfolio-link" class="jq--scroll-to-portfolio" title="Portfolio" href="#">
                         <img ig="portfolio-icon" src="resources2/img/pixel art/website_portfolio_v1.png">
-                        <div class="nav-link-name"><p>My portfolio</p></div>
+                        <div class="nav-link-name"><p>my portfolio</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="about-link" class="jq--scroll-to-about" title="About" href="#">
                         <img id="about-icon" src="resources2/img/pixel art/website_face_v1.png">
-                        <div class="nav-link-name"><p>About me</p></div>
+                        <div class="nav-link-name"><p>about me</p></div>
                     </a>
                 </div>
                 <div class="nav-link">
                     <a id="contact-link" class="jq--scroll-to-contact" title="Contact" href="#">
                         <img id="contact-icon" src="resources2/img/pixel art/website_contact_v1.png">
-                        <div class="nav-link-name"><p>Contact</p></div>
+                        <div class="nav-link-name"><p>contact</p></div>
                     </a>
                 </div>
                 <div>
