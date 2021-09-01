@@ -406,11 +406,11 @@ header {
 }
 
 /* PROGRESS BARS: Should automate this later in JS */
-#skill-html {width: 90%; right: 90%;}
-#skill-css {width: 86%; right: 86%;}
-#skill-javascript {width: 70%; right: 70%;}
+#skill-html {width: 95%; right: 95%;}
+#skill-css {width: 95%; right: 95%;}
+#skill-javascript {width: 90%; right: 90%;}
 #skill-jquery {width: 42%; right: 42%;}
-#skill-react {width: 30%; right: 30%;}
+#skill-react {width: 85%; right: 85%;}
 #skill-ruby {width: 30%; right: 30%}
 #skill-php {width: 40%; right: 40%}
 #skill-mysql {width: 10%; right: 10%}

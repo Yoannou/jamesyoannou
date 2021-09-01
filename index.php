@@ -265,7 +265,7 @@
                                         </div>
                                     </li>
                                     <li class="skill-li">
-                                        <p>Command Line (Unix)</p>
+                                        <p>Bash</p>
                                         <div class="bar-outer">
                                             <div id="skill-unix" class="bar-inner"></div>
                                         </div>

@@ -206,19 +206,9 @@ function toggleAboutPanels() {
 }
 
 
- /******************
- ON-SCROLL WAYPOINT ANIMATIONS
- *******************/
-
- // Animations when reaching About section
-let waypointAbout = new Waypoint({
-    element: document.querySelector('.waypoint-about'),
-    handler: function() {
-        document.querySelector('.about-right').style.opacity = "100";
-        toggleAboutPanels();
-    },
-    offset: 600
-})
+/******************
+ON-SCROLL WAYPOINT ANIMATIONS
+*******************/
 
 // Animations when reaching Portfolio section
 let waypointPortfolio = new Waypoint({
@@ -237,18 +227,7 @@ let waypointPortfolio = new Waypoint({
     offset: 0
 })
 
-// Animations when reaching Contact section
-let waypointContact = new Waypoint({
-    element: document.querySelector('.waypoint-contact'),
-    handler: ()=>{
-        toggleAboutPanels();
-    },
-    offset: 200
-})
-
-
-// Animations for progress bars in the Skillset section
-// Slide-in
+// Progress bars:
 let waypointSkillset = new Waypoint({
     element: document.querySelector('.waypoint-skillset'),
     handler: ()=>{
@@ -275,3 +254,23 @@ for (let i of skillsetList) {
         setTimeout(()=>{i.style.backgroundColor = "#faa700";}, 800);
     })
 }
+
+ // Animations when reaching About section
+ let waypointAbout = new Waypoint({
+    element: document.querySelector('.waypoint-about'),
+    handler: function() {
+        document.querySelector('.about-right').style.opacity = "100";
+        toggleAboutPanels();
+    },
+    offset: 600
+})
+
+// Animations when reaching Contact section
+let waypointContact = new Waypoint({
+    element: document.querySelector('.waypoint-contact'),
+    handler: ()=>{
+        toggleAboutPanels();
+    },
+    offset: 200
+})
+

@@ -4,6 +4,7 @@
 old=$1
 new=$2
 
+# Change this to include relevant files and maybe add the 'resources' string:
 function updateFiles {
 	replace.sh text1.txt $1 $2
 	replace.sh text2.txt $1 $2
