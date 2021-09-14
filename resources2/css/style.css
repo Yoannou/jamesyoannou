@@ -204,18 +204,8 @@ header {
     font-style: normal;
 }
 
-.section-portfolio a {
-    text-decoration: underline;
-    color: #e8cf8f;
-    font-weight: bold;
-}
-
-#section-portfolio a:hover {
-    color: var(--gold);
-}
-
 #section-portfolio ul {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #section-portfolio li {
@@ -245,9 +235,72 @@ header {
     color: var(--light_gold);
 }
 
+#education a {
+    text-decoration: underline;
+    color: #e8cf8f;
+    font-weight: bold;
+}
+
+#education a:hover {
+    color: var(--gold);
+}
+
 .portfolio-heading {
     text-align: center;
     padding-bottom: 50px;
+}
+
+.project-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    margin: 5px auto;
+}
+
+.project-box-inner {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.project-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    height: 300px;
+    opacity: 1;
+}
+
+.project-box-inner figcaption {
+    position: relative;
+    left: 16px;
+    top: -100%;
+    color: white;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+
+.project-box-inner figcaption h3 {
+    color: white;
+}
+
+.project-caption{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    width: 352px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project-caption h3 {
+    padding-left: 5px;
 }
 
 .portfolio-grid-item {
@@ -268,7 +321,6 @@ header {
 }
 
 .portfolio-item-content {
-    /*display: none;*/
     padding: 10px 20px;
     background-color: teal;
     color: white;
@@ -338,16 +390,6 @@ header {
 #skill-c {width: 45%; right: 45%;}
 #skill-cpp {width: 50%; right: 50%;}
 #skill-java {width: 40%; right: 40%;}
-
-.portfolio-left {
-    padding: 10px;
-    flex: 3;
-}
-
-.portfolio-right {
-    padding: 10px;
-    flex: 1;
-}
 
 .social-media-links {
     display: flex;

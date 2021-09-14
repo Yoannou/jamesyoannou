@@ -96,6 +96,40 @@
         align-self: flex-end;
     }
 
+    /* Portfolio */
+
+    #projects {
+        box-shadow: 12px 12px var(--dark_teal),
+        -12px 12px var(--dark_teal);
+
+    }
+
+    #skillset {
+        box-shadow: -12px 12px var(--dark_teal);
+    }
+
+    #education {
+        box-shadow: 12px 12px var(--dark_teal);
+    }
+
+    .project-box-inner figcaption {
+        transition: all 0.3s ease;
+    }
+
+    .project-box-inner:hover .project-image {
+        transition: all 0.5s ease;
+        transform: scale(1.1);
+        opacity: 0.1;
+    }
+    
+    .project-box-inner:hover figcaption {
+        top: 30px;
+    }
+
+    .project-caption {
+        display: none;
+    }
+
     /* About */
 
     .my-face {
@@ -137,6 +171,43 @@
         font-size: 24px;
     }
 
+
+
+    /* Portfolio */
+    .portfolio-wrapper {
+        padding: 10px 40px;
+    }
+
+    .portfolio-upper {
+        margin-bottom: 40px;
+    }
+
+    .portfolio-lower {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+    }
+
+    #skillset {
+        min-width: 500px;
+        margin-right: 10px;
+    }
+
+    #education {
+        min-width: 500px;
+        margin-left: 10px;
+    }
+
+    #github-button {
+        width: 350px;
+    }
+    
+    #github-button p {
+        font-size: 30px;
+    }
+
+
+
     /* About */
     #section-about {
         background-attachment: fixed;
@@ -165,38 +236,6 @@
         width: 90%;
         margin: auto;
         padding: 10px;
-    }
-
-    /* Portfolio - must check iPad to see if this should be on a bigger screen */
-    .portfolio-wrapper {
-        padding: 10px 40px;
-    }
-
-    .portfolio-grid-item {
-        width: 48%;
-        margin-bottom: 40px;
-    }
-
-    #projects {
-        box-shadow: 12px 12px var(--dark_teal);
-        float: right;
-    }
-
-    #github-button {
-        width: 350px;
-    }
-    
-    #github-button p {
-        font-size: 30px;
-    }
-
-    #skillset {
-        box-shadow: -12px 12px var(--dark_teal);
-    }
-
-    #education {
-        box-shadow: -12px 12px var(--dark_teal);
-        grid-row-start: 1;
     }
 
     /* Footer */

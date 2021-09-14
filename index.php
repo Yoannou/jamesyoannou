@@ -136,18 +136,96 @@
             <section id="section-portfolio" class="section section-portfolio jq--section-portfolio waypoint-portfolio" data-section-name="Portfolio">
                 <div class="portfolio-wrapper">
                     <h1 class="portfolio-heading">Developer Portfolio</h1>
-                    <div class="portfolio-grid">
+                    <div class="portfolio-upper">
                         <div id="projects" class="portfolio-grid-item">
                             <div class="portfolio-item-heading-container">
                                 <h2 class="portfolio-item-heading">Projects</h2>
                                 <div class="icon-box"></div>
-                                <div class="expand-box">+</div>
                             </div>
-                            <div class="portfolio-item-content">
-                                <a id="github-button" href="https://github.com/Yoannou" target="blank">
-                                    <p>Github</p>
-                                    <img src="vendors/img/GitHub-Mark-Light-64px.png">
+                            <div class="portfolio-item-content project-boxes">
+                                <a href="https://www.muddycrops.com" target="_blank" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/muddy-crops-landing.png" alt="Muddy Crops landing page">
+                                        <figcaption>
+                                            <h3>Muddy Crops</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Lead shopify developer</li>
+                                                <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
+                                                <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                            <h3>Muddy Crops</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Lead shopify developer</li>
+                                                <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
+                                                <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
+                                            </ul>
+                                    </div>
                                 </a>
+                                <a href="./projects/arduino/arduino.php" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/micro-prog-3.png" alt="Microcontroller projects">
+                                        <figcaption>
+                                            <h3>Microcontroller Projects</h3>
+                                            <ul>
+                                            <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
+                                            <li class="inner-li">&bull; Coded in C</li>
+                                            <li class="inner-li">&bull; Includes a theremin!</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                            <h3>Microcontroller Projects</h3>
+                                            <ul>
+                                            <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
+                                            <li class="inner-li">&bull; Coded in C</li>
+                                            <li class="inner-li">&bull; Includes a theremin!</li>
+                                            </ul>
+                                    </div>
+                                </a>
+                                <a href="./projects/shopitabs/shopitabs.php" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/shopitabs-mc.png" alt="Shopitabs project">
+                                        <figcaption>
+                                            <h3>Shopitabs</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
+                                                <li class="inner-li">&bull; Highly customizable and responsive</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                            <h3>Shopitabs</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
+                                                <li class="inner-li">&bull; Highly customizable and responsive</li>
+                                            </ul>
+                                        </div>
+                                </a>
+                                <a href="http://www.metricalories.com" target="_blank" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/metrics-proj.png" alt="Metrics project">
+                                        <figcaption>
+                                            <h3>Metric Converter</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
+                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-intake tracking application</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                            <h3>Metric Converter</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
+                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-intake application</li>
+                                            </ul>
+                                    </div>
+                                </a>
+                                <!--
                                 <h4>Websites for clients:</h4>
                                 <ul>
                                     <li class="outer-li">
@@ -168,7 +246,7 @@
                                             <li class="inner-li">&bull; Highly customizable and responsive</li>
                                         </ul>
                                     </li>
-                                    <!--
+                                    <!-
                                     <li class="outer-li">
                                         <a href="#">Shopify fade-in navigation</a>
                                         <ul>
@@ -177,7 +255,7 @@
                                             <li class="inner-li">&bull; Currently being optimized to add more custom features</li>
                                         </ul>
                                     </li>
-                                    -->
+                                    ->
                                     <li class="outer-li">
                                         <a href="./projects/arduino/arduino.php">Arduino microcontroller projects</a>
                                         <ul>
@@ -187,170 +265,178 @@
                                         </ul>
                                     </li>
                                 </ul>
+                                -->
                             </div>
                         </div>
-                        <div id="skillset" class="portfolio-grid-item waypoint-skillset">
-                            <div class="portfolio-item-heading-container">
-                                <h2 class="portfolio-item-heading">Skillset</h2>
-                                <div class="icon-box"></div>
-                                <div class="expand-box">+</div>
-                            </div>
-                            <div class="portfolio-item-content">
-                                <!--In the future, generate this whole UL out of a Javascript array of objects with a skill and percentage-->
-                                <ul>
-                                    <li class="skill-li">
-                                        <p>HTML</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-html" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>CSS</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-css" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Javascript</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-javascript" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>JQuery</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-jquery" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>React</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-react" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Ruby on Rails</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-ruby" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>PHP</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-php" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>MySQL</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-mysql" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Jasmine</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-jasmine" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Shopify Liquid</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-liquid" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Git</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-git" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Bash</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-unix" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>C</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-c" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>C++</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-cpp" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                    <li class="skill-li">
-                                        <p>Java</p>
-                                        <div class="bar-outer">
-                                            <div id="skill-java" class="bar-inner"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="education" class="portfolio-grid-item">
-                            <div class="portfolio-item-heading-container">
-                                <h2 class="portfolio-item-heading">Education</h2>
-                                <div class="icon-box"></div>
-                                <div class="expand-box">+</div>
+                    </div>
+                    <div class="portfolio-lower">
+                        <div>
+                            <div id="skillset" class="portfolio-grid-item waypoint-skillset">
+                                <div class="portfolio-item-heading-container">
+                                    <h2 class="portfolio-item-heading">Skillset</h2>
+                                    <div class="icon-box"></div>
                                 </div>
-                            <div class="portfolio-item-content">
-                                <h4>Schooling:</h4>
-                                <ul>
-                                    <li class="outer-li">
-                                        <p class="school">University of Toronto</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; BA for Linguistics (4 years)</li>
-                                        </ul>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p class="school">Ryerson University Chang School</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; Certificate in Computer Science (2 years)</li>
-                                        </ul>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p class="school">Lighthouse Labs</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; Crash course web development bootcamp</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <h4>Online Learning:</h4>
-                                <ul>
-                                    <li class="outer-li">
-                                        <p class="school">Build Responsive Real World Websites (Udemy)</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; By Jonas Schmedtmann</li>
-                                            <li class="inner-li">&bull; Provides fundamental knowlege on front-end principles</li>
-                                        </ul>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p class="school">Eloquent Javascript</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; By Marijn Haverbeke</li>
-                                            <li class="inner-li">&bull; A deep-dive into Vanilla Javascript essentials</li>
-                                        </ul>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p class="school">The Odin Project</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; Open Source</li>
-                                            <li class="inner-li">&bull; A comprehensive guide to web development, particularly using Github to manage projects</li>
-                                        </ul>
-                                    </li>
-                                    <li class="outer-li">
-                                        <p class="school">React - The Complete Guide (Udemy) (in progress)</p>
-                                        <ul>
-                                            <li class="inner-li">&bull; By Academind</li>
-                                            <li class="inner-li">&bull; Hands-on learning with React, Hooks, Redux, etc.</li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
+                                <div class="portfolio-item-content">
+                                    <!--In the future, generate this whole UL out of a Javascript array of objects with a skill and percentage-->
+                                    <ul>
+                                        <li class="skill-li">
+                                            <p>HTML</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-html" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>CSS</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-css" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Javascript</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-javascript" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>JQuery</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-jquery" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>React</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-react" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Ruby on Rails</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-ruby" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>PHP</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-php" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>MySQL</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-mysql" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Jasmine</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-jasmine" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Shopify Liquid</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-liquid" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Git</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-git" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Bash</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-unix" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>C</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-c" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>C++</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-cpp" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                        <li class="skill-li">
+                                            <p>Java</p>
+                                            <div class="bar-outer">
+                                                <div id="skill-java" class="bar-inner"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a id="github-button" href="https://github.com/Yoannou" target="blank">
+                                    <p>Github</p>
+                                    <img src="vendors/img/GitHub-Mark-Light-64px.png">
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="education" class="portfolio-grid-item">
+                                <div class="portfolio-item-heading-container">
+                                    <h2 class="portfolio-item-heading">Education</h2>
+                                    <div class="icon-box"></div>
+                                    </div>
+                                <div class="portfolio-item-content">
+                                    <h4>Schooling:</h4>
+                                    <ul>
+                                        <li class="outer-li">
+                                            <p class="school">University of Toronto</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; BA for Linguistics (4 years)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p class="school">Ryerson University Chang School</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; Certificate in Computer Science (2 years)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p class="school">Lighthouse Labs</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; Crash course web development bootcamp</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <h4>Online Learning:</h4>
+                                    <ul>
+                                        <li class="outer-li">
+                                            <p class="school">Build Responsive Real World Websites (Udemy)</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; By Jonas Schmedtmann</li>
+                                                <li class="inner-li">&bull; Provides fundamental knowlege on front-end principles</li>
+                                            </ul>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p class="school">Eloquent Javascript</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; By Marijn Haverbeke</li>
+                                                <li class="inner-li">&bull; A deep-dive into Vanilla Javascript essentials</li>
+                                            </ul>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p class="school">The Odin Project</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; Open Source</li>
+                                                <li class="inner-li">&bull; A comprehensive guide to web development, particularly using Github to manage projects</li>
+                                            </ul>
+                                        </li>
+                                        <li class="outer-li">
+                                            <p class="school">React - The Complete Guide (Udemy) (in progress)</p>
+                                            <ul>
+                                                <li class="inner-li">&bull; By Academind</li>
+                                                <li class="inner-li">&bull; Hands-on learning with React, Hooks, Redux, etc.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
