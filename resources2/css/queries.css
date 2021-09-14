@@ -53,6 +53,8 @@
     .nav-link-name {
         display: initial;
         overflow: hidden;
+        /*For visible version (unfinished):
+        padding-right: 40px; */
     }
 
     /*Was formerly for all sizes*/

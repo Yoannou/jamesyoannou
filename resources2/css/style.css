@@ -170,89 +170,6 @@ header {
 }
 
 
-/**** SECTION: ABOUT *******************************/
-/***************************************************/
-#section-about {
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    /*
-    background-attachment: scroll;
-    background-position-x: 0px;
-    background-size: cover;
-    */
-    min-height: 80vh;
-    background-color: black;
-    background-image: url(../img/pixel\ art/bg-test-3.png);
-}
-
-.about-heading {
-    color: #fff;
-    text-align: center;
-}
-
-.about-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 100px 0px;
-    align-items: center;
-    z-index: 10;
-}
-
-.about-left {
-    font-family: neuropol-nova, sans-serif;
-    color: var(--orange);
-    /*font-size: 20px;*/
-    order: 1;
-    position: relative;
-    margin: 0px auto;
-}
-
-.about-right{
-    transition: opacity 0.8s;
-    opacity: 0;
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-.about-description {
-    color: white;
-    padding: 0px 12px;
-}
-
-.off-screen {
-    box-sizing: border-box;
-    padding: 40px 40px;
-    z-index: 20;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 1.4s ease;
-}
-
-.about-panel-left {
-    z-index: 30;
-    top: 0;
-    background-color: var(--grey);
-}
-
-.face-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.my-face {
-    width: 100%;
-    height: auto;
-}
-
-.about-panel-right {
-    top: 0;
-    background-color: var(--dark);
-}
-
-
 
 /**** SECTION: PORTFOLIO ***************************/
 /***************************************************/
@@ -435,6 +352,90 @@ header {
 .social-media-links {
     display: flex;
     flex-direction: column;
+}
+
+
+
+/**** SECTION: ABOUT *******************************/
+/***************************************************/
+#section-about {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    /*
+    background-attachment: scroll;
+    background-position-x: 0px;
+    background-size: cover;
+    */
+    min-height: 80vh;
+    background-color: black;
+    background-image: url(../img/pixel\ art/bg-test-3.png);
+}
+
+.about-heading {
+    color: #fff;
+    text-align: center;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 100px 0px;
+    align-items: center;
+    z-index: 10;
+}
+
+.about-left {
+    font-family: neuropol-nova, sans-serif;
+    color: var(--orange);
+    /*font-size: 20px;*/
+    order: 1;
+    position: relative;
+    margin: 0px auto;
+}
+
+.about-right{
+    transition: opacity 0.8s;
+    opacity: 0;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.about-description {
+    color: white;
+    padding: 0px 12px;
+}
+
+.off-screen {
+    box-sizing: border-box;
+    padding: 40px 40px;
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.4s ease;
+}
+
+.about-panel-left {
+    z-index: 30;
+    top: 0;
+    background-color: var(--grey);
+}
+
+.face-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.my-face {
+    width: 100%;
+    height: auto;
+}
+
+.about-panel-right {
+    top: 0;
+    background-color: var(--dark);
 }
 
 
