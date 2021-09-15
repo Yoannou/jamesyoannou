@@ -182,7 +182,6 @@ header {
 .section-portfolio a {
     display: block;
     padding: 10px 0px 10px 20px;
-    font-size: 18px;
 }
 
 .section-portfolio p,
@@ -253,6 +252,7 @@ header {
 .project-boxes {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .project-box {
@@ -265,7 +265,7 @@ header {
     position: relative;
     overflow: hidden;
     background-color: black;
-    border: 1px solid white;
+    border: 1px solid var(--bright_silver);
 }
 
 .project-image {
@@ -275,6 +275,12 @@ header {
     width: 350px;
     height: 300px;
     opacity: 1;
+}
+
+.project-box-inner:hover .project-image {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    opacity: 0.7;
 }
 
 .project-box-inner figcaption {
@@ -291,16 +297,20 @@ header {
 }
 
 .project-caption{
-    background-color: white;
-    border: 1px solid white;
+    background-color: var(--bright_silver);
+    border: 1px solid var(--bright_silver);
     color: black;
     width: 352px;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.project-caption h3 {
-    padding-left: 5px;
+.project-caption-header {
+    font-family: natom-pro, sans-serif;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    margin-left: 5px;
 }
 
 .portfolio-grid-item {

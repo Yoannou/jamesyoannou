@@ -117,8 +117,6 @@
     }
 
     .project-box-inner:hover .project-image {
-        transition: all 0.5s ease;
-        transform: scale(1.1);
         opacity: 0.1;
     }
     
@@ -180,6 +178,10 @@
 
     .portfolio-upper {
         margin-bottom: 40px;
+    }
+
+    .project-boxes {
+        flex-direction: row;
     }
 
     .portfolio-lower {

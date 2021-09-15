@@ -43,7 +43,7 @@
                     <p>This program translates a binary value into a sequence of illuminated LEDs.<br>
                     Can be used as a very niche 8-bit record-keeping device (for nerds only).</p>
                     <div class="project-video video-container">
-                        <video width="100%" controls>
+                        <video width="100%" controls preload="none" poster="./media/binary-comp.png">
                             <source id="binary-vid" src="media/binary-vid-comp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>                     
@@ -176,7 +176,7 @@ void pause_ms(uint16_t ms)
                     <p>Input values from a ranged sensor can be used in all sorts of creative ways.<br>
                     As a musician, there was only one way for me: To make some noise.</p>
                     <div class="project-video video-container">
-                        <video width="100%" controls>
+                        <video width="100%" controls preload="none" poster="./media/theremin-comp.png">
                             <source id="theremin-vid" src="media/theremin-comp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>

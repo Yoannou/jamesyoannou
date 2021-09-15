@@ -145,7 +145,7 @@
                             <div class="portfolio-item-content project-boxes">
                                 <a href="https://www.muddycrops.com" target="_blank" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/muddy-crops-landing.png" alt="Muddy Crops landing page">
+                                        <img class="project-image" src="./resources2/img/project images/muddycrops-comp.png" alt="Muddy Crops landing page">
                                         <figcaption>
                                             <h3>Muddy Crops</h3>
                                             <ul>
@@ -156,7 +156,7 @@
                                         </figcaption>
                                     </figure>
                                     <div class="project-caption">
-                                            <h3>Muddy Crops</h3>
+                                            <span class="project-caption-header">Muddy Crops</span>
                                             <ul>
                                                 <li class="inner-li">&bull; Lead shopify developer</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
@@ -164,9 +164,30 @@
                                             </ul>
                                     </div>
                                 </a>
+                                <a href="http://www.metricalories.com" target="_blank" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/metrics-comp.png" alt="Metrics project">
+                                        <figcaption>
+                                            <h3>Cook Assistant</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
+                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                        <span class="project-caption-header">Cook Assistant</span>
+                                            <ul>
+                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
+                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
+                                            </ul>
+                                    </div>
+                                </a>
                                 <a href="./projects/arduino/arduino.php" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/micro-prog-3.png" alt="Microcontroller projects">
+                                        <img class="project-image" src="./resources2/img/project images/micro-comp.png" alt="Microcontroller projects">
                                         <figcaption>
                                             <h3>Microcontroller Projects</h3>
                                             <ul>
@@ -177,7 +198,7 @@
                                         </figcaption>
                                     </figure>
                                     <div class="project-caption">
-                                            <h3>Microcontroller Projects</h3>
+                                            <span class="project-caption-header">Microcontroller Projects</span>
                                             <ul>
                                             <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
                                             <li class="inner-li">&bull; Coded in C</li>
@@ -187,7 +208,7 @@
                                 </a>
                                 <a href="./projects/shopitabs/shopitabs.php" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/shopitabs-mc.png" alt="Shopitabs project">
+                                        <img class="project-image" src="./resources2/img/project images/shopitabs-comp.png" alt="Shopitabs project">
                                         <figcaption>
                                             <h3>Shopitabs</h3>
                                             <ul>
@@ -197,34 +218,14 @@
                                         </figcaption>
                                     </figure>
                                     <div class="project-caption">
-                                            <h3>Shopitabs</h3>
+                                            <span class="project-caption-header">Shopitabs</span>
                                             <ul>
                                                 <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
                                                 <li class="inner-li">&bull; Highly customizable and responsive</li>
                                             </ul>
                                         </div>
                                 </a>
-                                <a href="http://www.metricalories.com" target="_blank" class="project-box">
-                                    <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/metrics-proj.png" alt="Metrics project">
-                                        <figcaption>
-                                            <h3>Metric Converter</h3>
-                                            <ul>
-                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
-                                                <li class="inner-li">&bull; Programmed in React!</li>
-                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-intake tracking application</li>
-                                            </ul>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="project-caption">
-                                            <h3>Metric Converter</h3>
-                                            <ul>
-                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
-                                                <li class="inner-li">&bull; Programmed in React!</li>
-                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-intake application</li>
-                                            </ul>
-                                    </div>
-                                </a>
+
                                 <!--
                                 <h4>Websites for clients:</h4>
                                 <ul>
