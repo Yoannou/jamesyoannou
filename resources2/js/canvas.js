@@ -134,5 +134,9 @@ function animate() {
     })
 }
 
-init();
-animate();
+// Stop it from interfering with the rest of the DOM content, although it will load last.
+window.addEventListener('DOMContentLoaded', (event) => {
+    init();
+    animate();
+});
+

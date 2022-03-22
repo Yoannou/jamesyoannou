@@ -49,7 +49,6 @@ function toggleColourMode() {
 }
 
 lightSwitch.addEventListener('click', ()=>{
-
     toggleColourMode();
 })
 

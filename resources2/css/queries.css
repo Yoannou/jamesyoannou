@@ -121,7 +121,7 @@
     }
     
     .project-box-inner:hover figcaption {
-        top: 30px;
+        top: 10px;
     }
 
     .project-caption {
@@ -188,6 +188,14 @@
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 40px;
+    }
+
+    .portfolio-item-content {
+        padding: 10px 20px;
+    }
+
+    .project-boxes {
+        padding: 40px 20px;
     }
 
     #skillset {

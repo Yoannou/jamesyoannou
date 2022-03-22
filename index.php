@@ -145,11 +145,11 @@
                             <div class="portfolio-item-content project-boxes">
                                 <a href="https://www.muddycrops.com" target="_blank" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/muddycrops-comp.png" alt="Muddy Crops landing page">
+                                        <img class="project-image" src="./resources2/img/project images/farmer-sticker.png" alt="Muddy Crops landing page">
                                         <figcaption>
                                             <h3>Muddy Crops</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; Lead shopify developer</li>
+                                                <li class="inner-li">&bull; Lead shopify developer for local business website</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
                                                 <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
                                             </ul>
@@ -158,7 +158,7 @@
                                     <div class="project-caption">
                                             <span class="project-caption-header">Muddy Crops</span>
                                             <ul>
-                                                <li class="inner-li">&bull; Lead shopify developer</li>
+                                                <li class="inner-li">&bull; Lead shopify developer for local business website</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
                                                 <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
                                             </ul>
@@ -166,7 +166,7 @@
                                 </a>
                                 <a href="http://www.metricalories.com" target="_blank" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/metrics-comp.png" alt="Metrics project">
+                                        <img class="project-image" src="./resources2/img/project images/metrics2.png" alt="Metrics project">
                                         <figcaption>
                                             <h3>Cook Assistant</h3>
                                             <ul>
@@ -187,7 +187,7 @@
                                 </a>
                                 <a href="./projects/arduino/arduino.php" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/micro-comp.png" alt="Microcontroller projects">
+                                        <img class="project-image" src="./resources2/img/project images/romeo.jpg" alt="Microcontroller projects">
                                         <figcaption>
                                             <h3>Microcontroller Projects</h3>
                                             <ul>
@@ -208,7 +208,7 @@
                                 </a>
                                 <a href="./projects/shopitabs/shopitabs.php" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/shopitabs-comp.png" alt="Shopitabs project">
+                                        <img class="project-image" src="./resources2/img/project images/shopitabs1.png" alt="Shopitabs project">
                                         <figcaption>
                                             <h3>Shopitabs</h3>
                                             <ul>
@@ -218,55 +218,34 @@
                                         </figcaption>
                                     </figure>
                                     <div class="project-caption">
-                                            <span class="project-caption-header">Shopitabs</span>
-                                            <ul>
-                                                <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
-                                                <li class="inner-li">&bull; Highly customizable and responsive</li>
-                                            </ul>
-                                        </div>
-                                </a>
-
-                                <!--
-                                <h4>Websites for clients:</h4>
-                                <ul>
-                                    <li class="outer-li">
-                                        <a href="https://muddycrops.com" target="_blank">Muddy Crops OFC Ltd.</a>
-                                        <ul>
-                                            <li class="inner-li">&bull; Lead shopify developer</li>
-                                            <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
-                                            <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <h4>Side-projects:</h4>
-                                <ul>
-                                    <li class="outer-li">
-                                        <a href="./projects/shopitabs/shopitabs.php">Shopitabs</a>
+                                        <span class="project-caption-header">Shopitabs</span>
                                         <ul>
                                             <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
                                             <li class="inner-li">&bull; Highly customizable and responsive</li>
                                         </ul>
-                                    </li>
-                                    <!-
-                                    <li class="outer-li">
-                                        <a href="#">Shopify fade-in navigation</a>
+                                    </div>
+                                </a>
+                                <a href="https://yoannou.github.io" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/mars.png" alt="Shopitabs project">
+                                        <figcaption>
+                                            <h3>Spacetagram</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; React project that pulls data from NASA rovers</li>
+                                                <li class="inner-li">&bull; Allows users to scroll through the "feed" of Earth and Mars</li>
+                                                <li class="inner-li">&bull; Made for an internship application challenge</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                        <span class="project-caption-header">Spacetagram</span>
                                         <ul>
-                                            <li class="inner-li">&bull; Applies changes to site nav on-hover</li>
-                                            <li class="inner-li">&bull; Can be toggled on and off via Theme Settings</li>
-                                            <li class="inner-li">&bull; Currently being optimized to add more custom features</li>
+                                          <li class="inner-li">&bull; React project that pulls data from NASA rovers</li>
+                                          <li class="inner-li">&bull; Allows users to scroll through the "feed" of Earth and Mars</li>
+                                          <li class="inner-li">&bull; Made for an internship application challenge</li>
                                         </ul>
-                                    </li>
-                                    ->
-                                    <li class="outer-li">
-                                        <a href="./projects/arduino/arduino.php">Arduino microcontroller projects</a>
-                                        <ul>
-                                            <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
-                                            <li class="inner-li">&bull; Coded in C</li>
-                                            <li class="inner-li">&bull; Includes a theremin!</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                -->
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -455,9 +434,12 @@
                         <div class="about-description">
                             <h1 class="about-heading">About</h1>
                             <p>Hello! <br><br>
-                                I'm James, a web developer based in Toronto.<br><br>
-                                With three years of coding experience under my belt in a variety of languages,
+                                I'm James, an aspiring web developer based in Toronto.<br><br>
+                                With four years of coding experience under my belt in a variety of languages,
                                 I am passionate, curious, highly social, and always striving to learn new technologies and better my skillset.<br><br>
+                                I seek a career in front-end web development and programming applications. I believe that between my knowledge,
+                                optimistic attitude, work ethic, teamwork-driven personality, and constant desire to learn and improve, 
+                                I would be a valuable asset to any company or project.<br><br>
                                 Beyond the code, I'm also into 35mm photography &#128247;, music &#127928;, videogames &#128126;, and red wine &#127863;<br><br>
                             </p>
                         </div>

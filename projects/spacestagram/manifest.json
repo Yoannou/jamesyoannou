@@ -1,0 +1,8 @@
+{
+  "short_name": "Spacestagram",
+  "name": "Spacestagram Shopify Intern App",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

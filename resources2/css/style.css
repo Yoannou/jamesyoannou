@@ -178,21 +178,6 @@ header {
     border: none, 1px solid grey;
 }
 
-.section-portfolio p,
-.section-portfolio a {
-    display: block;
-    padding: 10px 0px 10px 20px;
-}
-
-.section-portfolio p,
-.section-portfolio a,
-.section-portfolio h3,
-.section-portfolio h4 {
-    text-align: start;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
 .section-portfolio h4 {
     margin: 0px;
     color: white; /* Or oldlace, or bisque, slightly darker */
@@ -240,6 +225,22 @@ header {
     font-weight: bold;
 }
 
+
+#education p,
+#education a {
+    display: block;
+    padding: 10px 0px 10px 20px;
+}
+
+#education p,
+#education a,
+#education h3,
+#education h4 {
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
 #education a:hover {
     color: var(--gold);
 }
@@ -249,19 +250,15 @@ header {
     padding-bottom: 50px;
 }
 
-.project-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
 .project-box {
-    margin: 5px auto;
+    margin: 20px auto;
+    text-align: left;
 }
 
+/* 318 + border = 320, width of a smartphone display */
 .project-box-inner {
-    width: 350px;
-    height: 300px;
+    width: 318px;
+    height: 280px;
     position: relative;
     overflow: hidden;
     background-color: black;
@@ -272,8 +269,8 @@ header {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 350px;
-    height: 300px;
+    width: 318px;
+    height: 280px;
     opacity: 1;
 }
 
@@ -300,7 +297,7 @@ header {
     background-color: var(--bright_silver);
     border: 1px solid var(--bright_silver);
     color: black;
-    width: 352px;
+    width: 320px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -331,12 +328,23 @@ header {
 }
 
 .portfolio-item-content {
-    padding: 10px 20px;
     background-color: teal;
     color: white;
 }
 
+.project-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+#skillset .portfolio-item-content {
+    padding: 10px 20px;
+}
+
 #github-button {
+    margin: 20px auto;
     display: flex;
     color: white;
     border-radius: 10px;
@@ -345,6 +353,9 @@ header {
     justify-content: space-evenly;
     background-color: #005050;
     width: 250px;
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 #github-button p {
