@@ -209,51 +209,6 @@ function toggleAboutPanels() {
 ON-SCROLL WAYPOINT ANIMATIONS
 *******************/
 
-// Animations when reaching Portfolio section
-let waypointPortfolio = new Waypoint({
-    element: document.querySelector('.waypoint-portfolio'),
-    handler: ()=>{
-        let portfolioCount = 0;
-        let portfolioTimer = setInterval(()=>{
-            if(portfolioCount >= 3) {
-                clearInterval(portfolioTimer);
-            }
-            else {
-                portfolioCount++;
-            }
-        }, 300);
-    },
-    offset: 0
-})
-
-// Progress bars:
-let waypointSkillset = new Waypoint({
-    element: document.querySelector('.waypoint-skillset'),
-    handler: ()=>{
-        let skillsetCount = 0;
-        let skillsetTimer = setInterval(()=>{
-            if(skillsetCount >= skillsetList.length){
-                clearInterval(skillsetTimer);
-            }
-            else {
-                let currentSkill = skillsetList[skillsetCount];
-                let width = currentSkill.clientWidth;
-                currentSkill.style.right = `0`;
-                skillsetCount++;
-            }
-        }, 100);
-    },
-    offset: 300
-})
-
-// Color-changes
-for (let i of skillsetList) {
-    i.addEventListener('mouseout', ()=>{
-        i.style.backgroundColor = "pink";
-        setTimeout(()=>{i.style.backgroundColor = "#faa700";}, 800);
-    })
-}
-
  // Animations when reaching About section
  let waypointAbout = new Waypoint({
     element: document.querySelector('.waypoint-about'),

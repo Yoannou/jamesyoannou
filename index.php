@@ -149,39 +149,18 @@
                                         <figcaption>
                                             <h3>Muddy Crops</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; Lead shopify developer for local business website</li>
+                                                <li class="inner-li">&bull; Lead Liquid developer for local e-commerce website</li>
+                                                <li class="inner-li">&bull; Created custom JSON schemas to grant client control over their storefront</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
-                                                <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
                                             </ul>
                                         </figcaption>
                                     </figure>
                                     <div class="project-caption">
                                             <span class="project-caption-header">Muddy Crops</span>
                                             <ul>
-                                                <li class="inner-li">&bull; Lead shopify developer for local business website</li>
+                                                <li class="inner-li">&bull; Lead Liquid developer for local e-commerce website</li>
+                                                <li class="inner-li">&bull; Created custom JSON schemas to grant client control over their storefront</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
-                                                <li class="inner-li">&bull; Created custom schemas to grant client control over their storefront</li>
-                                            </ul>
-                                    </div>
-                                </a>
-                                <a href="http://www.metricalories.com" target="_blank" class="project-box">
-                                    <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/metrics2.png" alt="Metrics project">
-                                        <figcaption>
-                                            <h3>Cook Assistant</h3>
-                                            <ul>
-                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
-                                                <li class="inner-li">&bull; Programmed in React!</li>
-                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
-                                            </ul>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="project-caption">
-                                        <span class="project-caption-header">Cook Assistant</span>
-                                            <ul>
-                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
-                                                <li class="inner-li">&bull; Programmed in React!</li>
-                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
                                             </ul>
                                     </div>
                                 </a>
@@ -206,26 +185,28 @@
                                             </ul>
                                     </div>
                                 </a>
-                                <a href="./projects/shopitabs/shopitabs.php" class="project-box">
+                                <a href="https://net-zero-now.ca" target="_blank" class="project-box">
                                     <figure class="project-box-inner">
-                                        <img class="project-image" src="./resources2/img/project images/shopitabs1.png" alt="Shopitabs project">
+                                        <img class="project-image" style="background-color: #fafafa;" src="./resources2/img/project images/net-zero-now.png" alt="Shopitabs project">
                                         <figcaption>
-                                            <h3>Shopitabs</h3>
+                                            <h3>Net Zero Now</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
-                                                <li class="inner-li">&bull; Highly customizable and responsive</li>
+                                                <li class="inner-li">&bull; Freelance Wordpress work for Canadian clean energy startup</li>
+                                                <li class="inner-li">&bull; Used additonal PHP and CSS to go beyond the standard theme presets</li>
+                                                <li class="inner-li">&bull; Implemented advanced plug-ins and best practice web development strategies</li>
                                             </ul>
                                         </figcaption>
                                     </figure>
                                     <div class="project-caption">
-                                        <span class="project-caption-header">Shopitabs</span>
+                                        <span class="project-caption-header">Net Zero Now</span>
                                         <ul>
-                                            <li class="inner-li">&bull; Shopify section that allows merchant to create tabs</li>
-                                            <li class="inner-li">&bull; Highly customizable and responsive</li>
+                                          <li class="inner-li">&bull; Freelance Wordpress work for Canadian clean energy startup</li>
+                                          <li class="inner-li">&bull; Used additonal PHP and CSS to go beyond the standard theme presets</li>
+                                          <li class="inner-li">&bull; Implemented advanced plug-ins and best practice web development strategies</li>
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="https://yoannou.github.io" class="project-box">
+                                <a href="https://yoannou.github.io" target="_blank" class="project-box">
                                     <figure class="project-box-inner">
                                         <img class="project-image" src="./resources2/img/project images/mars.png" alt="Shopitabs project">
                                         <figcaption>
@@ -246,115 +227,122 @@
                                         </ul>
                                     </div>
                                 </a>
+                                <a href="http://www.metricalories.com" target="_blank" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/metrics2.png" alt="Metrics project">
+                                        <figcaption>
+                                            <h3>Cook Assistant</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
+                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                        <span class="project-caption-header">Cook Assistant</span>
+                                            <ul>
+                                                <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
+                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
+                                            </ul>
+                                    </div>
+                                </a>
+                                <a href="./projects/shopitabs/shopitabs.php" class="project-box">
+                                    <figure class="project-box-inner">
+                                        <img class="project-image" src="./resources2/img/project images/shopitabs1.png" alt="Shopitabs project">
+                                        <figcaption>
+                                            <h3>Shopitabs</h3>
+                                            <ul>
+                                                <li class="inner-li">&bull; Javascript-heavy Shopify section that allows merchant to create tabs</li>
+                                                <li class="inner-li">&bull; Includes a JSON schema so that users can customize it in the dashboard</li>
+                                                <li class="inner-li">&bull; Highly customizable and responsive</li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="project-caption">
+                                        <span class="project-caption-header">Shopitabs</span>
+                                        <ul>
+                                            <li class="inner-li">&bull; Javascript-heavy Shopify section that allows merchants to create tabs</li>
+                                            <li class="inner-li">&bull; Includes a JSON schema so that users can customize it in the dashboard</li>
+                                            <li class="inner-li">&bull; Highly customizable and responsive</li>
+                                        </ul>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-lower">
                         <div>
                             <div id="skillset" class="portfolio-grid-item waypoint-skillset">
-                                <div class="portfolio-item-heading-container">
-                                    <h2 class="portfolio-item-heading">Skillset</h2>
-                                    <div class="icon-box"></div>
+                              <div class="portfolio-item-heading-container">
+                                <h2 class="portfolio-item-heading">Skillset</h2>
+                                <div class="icon-box"></div>
+                              </div>
+                              <div class="portfolio-item-content">
+                                <div class="tech-logo-grid">
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" style="max-width: 90px" src="./resources2/img/tech/html5.svg">
+                                    <p>HTML</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/css3.svg">
+                                    <p>CSS</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/js.svg">
+                                    <p>Javascript</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/react.svg">
+                                    <p>React</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/jquery.svg">
+                                    <p>JQuery</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/ruby.svg">
+                                    <p>Ruby</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/php.svg">
+                                    <p>PHP</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/mysql.svg">
+                                    <p>MySQL</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/jasmine.svg">
+                                    <p>Jasmine</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/shopify.svg">
+                                    <p>Shopify Liquid</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/git.svg">
+                                    <p>Git</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/bash.svg">
+                                    <p>Bash</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/c.svg">
+                                    <p>C</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/java.svg">
+                                    <p>Java</p>
+                                  </div>
                                 </div>
-                                <div class="portfolio-item-content">
-                                    <!--In the future, generate this whole UL out of a Javascript array of objects with a skill and percentage-->
-                                    <ul>
-                                        <li class="skill-li">
-                                            <p>HTML</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-html" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>CSS</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-css" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Javascript</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-javascript" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>JQuery</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-jquery" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>React</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-react" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Ruby on Rails</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-ruby" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>PHP</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-php" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>MySQL</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-mysql" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Jasmine</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-jasmine" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Shopify Liquid</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-liquid" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Git</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-git" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Bash</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-unix" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>C</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-c" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>C++</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-cpp" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                        <li class="skill-li">
-                                            <p>Java</p>
-                                            <div class="bar-outer">
-                                                <div id="skill-java" class="bar-inner"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <a id="github-button" href="https://github.com/Yoannou" target="blank">
-                                    <p>Github</p>
-                                    <img src="vendors/img/GitHub-Mark-Light-64px.png">
+                                <a id="github-button" href="https://github.com/Yoannou" target="blank">
+                                  <p>Github</p>
+                                  <img src="vendors/img/GitHub-Mark-Light-64px.png">
                                 </a>
-                                </div>
+                              </div>
                             </div>
                         </div>
                         <div>

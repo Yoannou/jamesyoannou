@@ -330,6 +330,7 @@ header {
 .portfolio-item-content {
     background-color: teal;
     color: white;
+    padding-bottom: 20px;
 }
 
 .project-boxes {
@@ -337,10 +338,6 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 20px 20px;
-}
-
-#skillset .portfolio-item-content {
-    padding: 10px 20px;
 }
 
 #github-button {
@@ -351,10 +348,12 @@ header {
     text-decoration: none;
     font-size: 80px;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #005050;
     width: 250px;
     text-align: start;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
 }
 
@@ -364,6 +363,37 @@ header {
 
 #github-button:hover {
     background-color: #003030;
+}
+
+.tech-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tech-logo-wrapper {
+  position: relative;
+  height: 140px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #ccc;
+}
+
+.tech-logo-wrapper p {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.tech-logo-icon {
+  max-width: 100px;
+}
+
+/* OLD SKILLSET
+#skillset .portfolio-item-content {
+    padding: 10px 20px;
 }
 
 .skill-li {
@@ -394,6 +424,7 @@ header {
     background-color: var(--light_orange);
     height: 100%;
 }
+*/
 
 /* PROGRESS BARS: Should automate this later in JS */
 #skill-html {width: 95%; right: 95%;}
