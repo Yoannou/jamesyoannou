@@ -24,18 +24,23 @@ h1, h2, h3, h4 {
 }
 
 .name-wrapper {
-    top: 100px;
-    left: 50%;
+  padding-top: 20px;
 }
 
 .name-wrapper h1 {
-    font-size: 60px;
+    font-size: 45px;
+}
+
+#header-video {
+  display: none;
+}
+.background-filter {
+  display: none;
 }
 
 /* BODY */
 
 main {
-    padding: 30px 0px;
     background-color: var(--dark);
 }
 
@@ -62,16 +67,31 @@ h2 {
     width: 100%;
 }
 
+
 @media only screen and (min-width: 1023px) {
-    .name-wrapper {
-        position: absolute;
-        transform: none;
-        top: 200px;
-        left: 100px;
-    }
+
+  #header-video {
+    display: block;
+  }
+  
+  .background-filter {
+    display: block;
+  }
+
+  .name-wrapper {
+      position: absolute;
+      transform: none;
+      top: 200px;
+      left: 100px;
+  }
+
+  .name-wrapper h1 {
+    font-size: 60px;
+  }
 
     main {
-        margin-top: -100px;
+      padding: 30px 0px;
+      margin-top: -100px;
     }
 
     .overview {

@@ -141,7 +141,6 @@ document.addEventListener('scroll', (e) => {
 });
 
 /********** HOME-PAGE INITIAL ANIMATION **********/
-
 const nameWrapper = document.querySelector(".name-wrapper");
 const nameArray = ["", "J", "A", "M", "E", "S", "", "Y", "O", "A", "N", "N", "O", "U"];
 const webDeveloper = document.querySelector(".web-developer");

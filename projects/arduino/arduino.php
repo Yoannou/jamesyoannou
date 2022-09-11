@@ -13,7 +13,7 @@
 
 
         <link rel="stylesheet" href="../../resources2/css/general.css">
-        <link rel="stylesheet" href="./main2.css">
+        <link rel="stylesheet" href="./arduino.css">
         <link rel="stylesheet" href="https://use.typekit.net/yom0nhp.css">
     </head>
     <body>
