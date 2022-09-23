@@ -41,6 +41,10 @@ body {
     z-index: -1;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .section {
     position: relative;
     z-index: 0;

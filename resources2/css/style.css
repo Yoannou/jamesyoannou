@@ -373,15 +373,18 @@ header {
 
 .tech-logo-wrapper {
   position: relative;
-  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
   padding-top: 10px;
   padding-bottom: 20px;
-  color: #ccc;
+  font-weight: bold;
 }
 
 .tech-logo-wrapper p {
   display: block;
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -390,6 +393,10 @@ header {
 
 .tech-logo-icon {
   max-width: 100px;
+}
+
+.tech-logo-spacer {
+  height: 20px;
 }
 
 /* OLD SKILLSET

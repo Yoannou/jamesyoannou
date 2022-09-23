@@ -149,8 +149,8 @@
                                         <figcaption>
                                             <h3>Muddy Crops</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; Lead Liquid developer for local e-commerce website</li>
-                                                <li class="inner-li">&bull; Created custom JSON schemas to grant client control over their storefront</li>
+                                                <li class="inner-li">&bull; Lead <strong style="color: #BAD586">Shopify Liquid</strong> developer for local e-commerce website</li>
+                                                <li class="inner-li">&bull; Created custom <strong style="color: #DDD">JSON</strong> schemas to grant client control over their storefront</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
                                             </ul>
                                         </figcaption>
@@ -158,8 +158,8 @@
                                     <div class="project-caption">
                                             <span class="project-caption-header">Muddy Crops</span>
                                             <ul>
-                                                <li class="inner-li">&bull; Lead Liquid developer for local e-commerce website</li>
-                                                <li class="inner-li">&bull; Created custom JSON schemas to grant client control over their storefront</li>
+                                                <li class="inner-li">&bull; Lead <strong style="color: #6C8934">Shopify Liquid</strong> developer for local e-commerce website</li>
+                                                <li class="inner-li">&bull; Created custom <strong style="color: #333">JSON</strong> schemas to grant client control over their storefront</li>
                                                 <li class="inner-li">&bull; Worked closley with designer and merchant to bring their ideas to the site</li>
                                             </ul>
                                     </div>
@@ -171,7 +171,7 @@
                                             <h3>Microcontroller Projects</h3>
                                             <ul>
                                             <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
-                                            <li class="inner-li">&bull; Coded in C</li>
+                                            <li class="inner-li">&bull; Coded in <strong style="color: #7E9FD4">C</strong> using bitwise operations</li>
                                             <li class="inner-li">&bull; Includes a theremin!</li>
                                             </ul>
                                         </figcaption>
@@ -180,7 +180,7 @@
                                             <span class="project-caption-header">Microcontroller Projects</span>
                                             <ul>
                                             <li class="inner-li">&bull; Programs designed for electronic microcontrollers and robotics</li>
-                                            <li class="inner-li">&bull; Coded in C</li>
+                                            <li class="inner-li">&bull; Coded in <strong style="color: #0645ad">C</strong> using bitwise operations</li>
                                             <li class="inner-li">&bull; Includes a theremin!</li>
                                             </ul>
                                     </div>
@@ -191,8 +191,8 @@
                                         <figcaption>
                                             <h3>Net Zero Now</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; Freelance Wordpress work for Canadian clean energy startup</li>
-                                                <li class="inner-li">&bull; Used additonal PHP and CSS to go beyond the standard theme presets</li>
+                                                <li class="inner-li">&bull; Freelance <strong style="color: #FD8A92">Wordpress</strong> work for Canadian clean energy startup</li>
+                                                <li class="inner-li">&bull; Used additonal <strong style="color: #777BB3">PHP</strong> and <strong style="color: #2965f1">CSS</strong> to go beyond the standard theme presets</li>
                                                 <li class="inner-li">&bull; Implemented advanced plug-ins and best practice web development strategies</li>
                                             </ul>
                                         </figcaption>
@@ -200,8 +200,8 @@
                                     <div class="project-caption">
                                         <span class="project-caption-header">Net Zero Now</span>
                                         <ul>
-                                          <li class="inner-li">&bull; Freelance Wordpress work for Canadian clean energy startup</li>
-                                          <li class="inner-li">&bull; Used additonal PHP and CSS to go beyond the standard theme presets</li>
+                                          <li class="inner-li">&bull; Freelance <strong style="color: #BB666C">Wordpress</strong> work for Canadian clean energy startup</li>
+                                          <li class="inner-li">&bull; Used additonal <strong style="color: #484C89">PHP</strong> and <strong style="color: #264de4">CSS</strong> to go beyond the standard theme presets</li>
                                           <li class="inner-li">&bull; Implemented advanced plug-ins and best practice web development strategies</li>
                                         </ul>
                                     </div>
@@ -212,7 +212,7 @@
                                         <figcaption>
                                             <h3>Spacetagram</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; React project that pulls data from NASA rovers</li>
+                                                <li class="inner-li">&bull; <strong style="color: #61dbfb">React</strong> project that pulls data from NASA rover <strong style="color: #DDD">API</strong></li>
                                                 <li class="inner-li">&bull; Allows users to scroll through the "feed" of Earth and Mars</li>
                                                 <li class="inner-li">&bull; Made for an internship application challenge</li>
                                             </ul>
@@ -221,7 +221,7 @@
                                     <div class="project-caption">
                                         <span class="project-caption-header">Spacetagram</span>
                                         <ul>
-                                          <li class="inner-li">&bull; React project that pulls data from NASA rovers</li>
+                                          <li class="inner-li">&bull; <strong style="color: #469DB4">React</strong> project that pulls data from NASA rover <strong style="color: #333">API</strong></li>
                                           <li class="inner-li">&bull; Allows users to scroll through the "feed" of Earth and Mars</li>
                                           <li class="inner-li">&bull; Made for an internship application challenge</li>
                                         </ul>
@@ -234,7 +234,7 @@
                                             <h3>Cook Assistant</h3>
                                             <ul>
                                                 <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
-                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Programmed in <strong style="color: #61dbfb">React</strong>!</li>
                                                 <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
                                             </ul>
                                         </figcaption>
@@ -243,7 +243,7 @@
                                         <span class="project-caption-header">Cook Assistant</span>
                                             <ul>
                                                 <li class="inner-li">&bull; Webapp designed to instantly convert different metric units</li>
-                                                <li class="inner-li">&bull; Programmed in React!</li>
+                                                <li class="inner-li">&bull; Programmed in <strong style="color: #469DB4">React</strong>!</li>
                                                 <li class="inner-li">&bull; Will be incorporated into larger calorie-tracking application</li>
                                             </ul>
                                     </div>
@@ -254,8 +254,8 @@
                                         <figcaption>
                                             <h3>Shopitabs</h3>
                                             <ul>
-                                                <li class="inner-li">&bull; Javascript-heavy Shopify section that allows merchant to create tabs</li>
-                                                <li class="inner-li">&bull; Includes a JSON schema so that users can customize it in the dashboard</li>
+                                                <li class="inner-li">&bull; <strong style="color: #FBED82">Javascript</strong>-heavy <strong style="color: #BAD586">Shopify</strong> section that allows merchant to create tabs</li>
+                                                <li class="inner-li">&bull; Includes a <strong style="color: #DDD">JSON</strong> schema so that users can customize it in the dashboard</li>
                                                 <li class="inner-li">&bull; Highly customizable and responsive</li>
                                             </ul>
                                         </figcaption>
@@ -263,8 +263,8 @@
                                     <div class="project-caption">
                                         <span class="project-caption-header">Shopitabs</span>
                                         <ul>
-                                            <li class="inner-li">&bull; Javascript-heavy Shopify section that allows merchants to create tabs</li>
-                                            <li class="inner-li">&bull; Includes a JSON schema so that users can customize it in the dashboard</li>
+                                            <li class="inner-li">&bull; <strong style="color: #C7B318">Javascript</strong>-heavy <strong style="color: #6C8934">Shopify</strong> section that allows merchants to create tabs</li>
+                                            <li class="inner-li">&bull; Includes a <strong style="color: #333">JSON</strong> schema so that users can customize it in the dashboard</li>
                                             <li class="inner-li">&bull; Highly customizable and responsive</li>
                                         </ul>
                                     </div>
@@ -283,58 +283,82 @@
                                 <div class="tech-logo-grid">
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" style="max-width: 90px" src="./resources2/img/tech/html5.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>HTML</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/css3.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>CSS</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/js.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Javascript</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/react.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>React</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/chakra.svg">
+                                    <div class="tech-logo-spacer"></div>
+                                    <p>Chakra UI</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
+                                    <img class="tech-logo-icon" src="./resources2/img/tech/tailwind.svg">
+                                    <div class="tech-logo-spacer"></div>
+                                    <p>Tailwind CSS</p>
+                                  </div>
+                                  <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/jquery.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>JQuery</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/ruby.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Ruby</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/php.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>PHP</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/mysql.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>MySQL</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/jasmine.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Jasmine</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/shopify.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Shopify Liquid</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/git.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Git</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/bash.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Bash</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/c.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>C</p>
                                   </div>
                                   <div class="tech-logo-wrapper">
                                     <img class="tech-logo-icon" src="./resources2/img/tech/java.svg">
+                                    <div class="tech-logo-spacer"></div>
                                     <p>Java</p>
                                   </div>
                                 </div>
